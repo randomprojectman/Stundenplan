@@ -136,6 +136,10 @@
         <div class="mt-4 text-xs text-slate-500" id="hintsBlock">
           <p class="font-bold">Hinweise:</p>
           <ul class="list-disc pl-4 mt-2 space-y-1">
+            <li>
+              <span class="font-bold">Letzte Datenaktualisierung:</span>
+              <span class="js-last-updated text-[11px]">wird geladen…</span>
+            </li>
             <li class="font-bold">Dies ist KEINE offizielle Webseite der Hochschule Osnabrück!</li>
             <li class="font-bold">Dies ist eine Private, nicht-kommerzielle Website für Studierende der Hochschule Osnabrück. Keine geschäftsmäßige Nutzung.</li>
             <li class="font-bold">Diese Website speichert lokale Einstellungen (z. B. gewählten Kurs) ausschließlich lokal im Browser (LocalStorage). Es findet keine Serverübertragung oder Speicherung personenbezogener Daten statt.</li>
@@ -160,6 +164,10 @@
         <div class="bg-white rounded-2xl p-4 shadow-soft text-xs text-slate-500">
           <p class="font-bold">Hinweise:</p>
           <ul class="list-disc pl-4 mt-2 space-y-1">
+            <li>
+              <span class="font-bold">Letzte Datenaktualisierung:</span>
+              <span class="js-last-updated text-[11px]">wird geladen…</span>
+            </li>
             <li class="font-bold">Dies ist KEINE offizielle Webseite der Hochschule Osnabrück!</li>
             <li class="font-bold">Dies ist eine Private, nicht-kommerzielle Website für Studierende der Hochschule Osnabrück. Keine geschäftsmäßige Nutzung.</li>
             <li class="font-bold">Diese Website speichert lokale Einstellungen (z. B. gewählten Kurs) ausschließlich lokal im Browser (LocalStorage). Es findet keine Serverübertragung oder Speicherung personenbezogener Daten statt.</li>
@@ -265,12 +273,49 @@
     let EVENTS  = [];
     let SELECTED = new Set(loadSelection());
     let calendar = null;
+    let LAST_UPDATED = null;
+
+    function formatLastUpdated(date) {
+      return date.toLocaleString('de-DE', {
+        dateStyle: 'short',
+        timeStyle: 'short',
+        timeZone: 'Europe/Berlin',
+      });
+    }
+
+    function updateLastUpdatedUI() {
+      if (!LAST_UPDATED) return;
+      const text = formatLastUpdated(LAST_UPDATED);
+      document.querySelectorAll('.js-last-updated').forEach(el => {
+        el.textContent = text;
+      });
+    }
 
     // ---------------- Fetch ----------------
     async function loadData() {
       const [cRes, eRes] = await Promise.all([ fetch(paths.courses), fetch(paths.total) ]);
       if (!cRes.ok) throw new Error(`Konnte courses.json nicht laden (${cRes.status})`);
       if (!eRes.ok) throw new Error(`Konnte total.json nicht laden (${eRes.status})`);
+
+      // NEU: Last-Modified der Daten bestimmen (vor JSON-Parsing)
+      const lastHeader =
+        cRes.headers.get('Last-Modified') ||
+        eRes.headers.get('Last-Modified');
+
+      if (lastHeader) {
+        const d = new Date(lastHeader);
+        if (!isNaN(d.getTime())) {
+          LAST_UPDATED = d;
+          updateLastUpdatedUI();
+          setStatus(`Letzte Datenaktualisierung: ${formatLastUpdated(d)}`);
+        } else {
+          setStatus('Konnte Last-Modified-Header nicht interpretieren.', false);
+        }
+      } else {
+        setStatus('Kein Last-Modified-Header für JSON-Dateien gefunden.', false);
+      }
+
+
       COURSES = await cRes.json();
       EVENTS  = await eRes.json();
       setStatus(`Geladen: ${COURSES.length} Kurse · ${EVENTS.length} Veranstaltungen.`);
