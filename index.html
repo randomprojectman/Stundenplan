@@ -1,0 +1,565 @@
+<!doctype html>
+<html lang="de" class="h-full">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Stundenplan • Auswahl & Kalender</title>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
+
+  <!-- Tailwind -->
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          fontFamily: { sans: ['Inter','ui-sans-serif','system-ui'] },
+          boxShadow: { soft: '0 10px 30px rgba(2, 6, 23, 0.08)' }
+        }
+      }
+    }
+  </script>
+
+  <!-- FullCalendar v6 -->
+  <link href="https://cdn.jsdelivr.net/npm/fullcalendar@6.1.15/index.global.min.css" rel="stylesheet" />
+  <script src="https://cdn.jsdelivr.net/npm/fullcalendar@6.1.15/index.global.min.js"></script>
+
+  <style>
+    html, body { height: 100%; }
+    .fc .fc-toolbar-title { font-weight: 700; }
+    .tag { display:inline-flex; align-items:center; gap:.5rem; border-radius:12px; padding:.25rem .6rem; font-size:.8rem; font-weight:600; color:#fff }
+
+    /* Header kompakt auf Mobile */
+    .fc .fc-header-toolbar { flex-wrap: wrap; row-gap: .5rem; }
+    .fc .fc-toolbar-chunk .fc-button { padding:.3rem .5rem; font-size:.85rem; }
+
+    /* MONTH/TIMEGRID: Events als farbige Pills */
+    .fc-daygrid-event { border-radius: 10px !important; border: 0 !important; }
+    .fc-daygrid-event .fc-event-time, .fc-daygrid-event .fc-event-title {
+      white-space: nowrap; overflow: hidden; text-overflow: ellipsis;
+    }
+    .fc .fc-daygrid-event:hover { filter: saturate(1.1) brightness(1.02); }
+
+    /* ==== LIST-VIEW: keine weißen Unterbrechungen ==== */
+    .fc .fc-list-table {
+      border: 0;
+      border-collapse: separate;
+      border-spacing: 0 10px;
+      background: transparent;
+    }
+    .fc .fc-list table { background: transparent; }
+    .fc .fc-list-event td { border: 0; }
+
+    .fc .fc-list-event.list-colored td {
+      background: var(--row-bg, #e2e8f0);
+      color: var(--row-text, #0f172a);
+    }
+    .fc .fc-list-event.list-colored td:first-child {
+      border-top-left-radius: 12px; border-bottom-left-radius: 12px;
+    }
+    .fc .fc-list-event.list-colored td:last-child {
+      border-top-right-radius: 12px; border-bottom-right-radius: 12px;
+    }
+    .fc .fc-list-event.list-colored:hover td { filter: brightness(0.98); }
+
+    .fc .fc-list-event-dot {
+      width: 10px; height: 10px; border-radius: 9999px;
+      background: var(--row-dot, #334155) !important;
+      border-color: var(--row-dot, #334155) !important;
+    }
+
+    .fc .fc-list-event-time { color:#0f172a; font-weight:600; }
+    .fc .fc-list-event-title a { color:#0f172a !important; font-weight:700; text-decoration:none; }
+
+    /* Tages-Header in der List-View */
+    .fc .fc-list-day { border: 0; }
+    .fc .fc-list-day-cushion {
+      background:#f1f5f9; color:#0f172a; font-weight:700;
+      border-radius:12px; padding:.5rem .75rem;
+    }
+    .fc .fc-list-day-text, .fc .fc-list-day-side-text { color:#334155 !important; font-weight:700; }
+
+    @media (max-width: 640px) {
+      #consentBanner p { font-size: .85rem; }
+    }
+  </style>
+</head>
+<body class="h-full bg-slate-50 text-slate-800">
+  <div class="max-w-7xl mx-auto p-4 md:p-8">
+    <header class="mb-6">
+      <h1 class="text-2xl md:text-3xl font-extrabold tracking-tight">Stundenplan konfigurieren</h1>
+      <p class="text-slate-600 mt-1">Wähle deine Module und zeige anschließend alle zugehörigen Veranstaltungen kompakt im Kalender.</p>
+    </header>
+
+    <!-- STEP 1: Auswahl -->
+    <div id="step-select" class="grid md:grid-cols-3 gap-6">
+      <!-- left: Suche + Liste -->
+      <section class="md:col-span-2 bg-white rounded-2xl p-4 md:p-6 shadow-soft">
+        <div class="flex flex-col md:flex-row md:items-center md:justify-between gap-3">
+          <div class="flex-1">
+            <label class="block text-sm font-semibold text-slate-700 mb-1" for="search">Module suchen</label>
+            <div class="relative">
+              <input id="search" type="text" placeholder="Tippe Modul, Dozent oder Studiengruppe"
+                     class="w-full rounded-xl border border-slate-200 bg-slate-50 px-4 py-2.5 pr-24 focus:outline-none focus:ring-2 focus:ring-indigo-500" />
+              <div class="absolute inset-y-0 right-0 flex items-center pr-2 gap-2 text-xs text-slate-500">
+                <button id="btnSelectAll" class="px-2 py-1 hover:text-indigo-600">alle</button>
+                <span class="opacity-40">|</span>
+                <button id="btnClearAll" class="px-2 py-1 hover:text-rose-600">keine</button>
+              </div>
+            </div>
+          </div>
+          <div class="flex items-center gap-2 text-sm text-slate-600">
+            <span class="hidden md:inline">Ausgewählt:</span>
+            <span id="selectedCount" class="font-semibold">0</span>
+          </div>
+        </div>
+
+        <div id="courseList" class="mt-4 grid sm:grid-cols-2 lg:grid-cols-3 gap-3"></div>
+
+        <div class="mt-4 flex flex-wrap items-center justify-between gap-3">
+          <div id="legend" class="flex flex-wrap gap-2"></div>
+          <div class="flex items-center gap-3">
+            <button id="btnRestore" class="rounded-xl border border-slate-200 px-4 py-2 text-slate-600 hover:bg-slate-100">Letzte Auswahl</button>
+            <button id="btnConfirm" class="rounded-xl bg-indigo-600 px-5 py-2.5 font-semibold text-white shadow-soft hover:bg-indigo-700">Kalender anzeigen</button>
+          </div>
+        </div>
+      </section>
+
+      <!-- right: Hinweise -->
+      <aside class="bg-white rounded-2xl p-5 shadow-soft">
+        <h2 class="font-semibold mb-2">Status</h2>
+        <ul id="status" class="space-y-2 text-sm text-slate-600">
+          <li>⏳ Daten werden geladen…</li>
+        </ul>
+        <div class="mt-4 text-xs text-slate-500" id="hintsBlock">
+          <p class="font-bold">Hinweise:</p>
+          <ul class="list-disc pl-4 mt-2 space-y-1">
+            <li class="font-bold">Dies ist KEINE offizielle Webseite der Hochschule Osnabrück!</li>
+            <li class="font-bold">Dies ist eine Private, nicht-kommerzielle Website für Studierende der Hochschule Osnabrück. Keine geschäftsmäßige Nutzung.</li>
+            <li class="font-bold">Diese Website speichert lokale Einstellungen (z. B. gewählten Kurs) ausschließlich lokal im Browser (LocalStorage). Es findet keine Serverübertragung oder Speicherung personenbezogener Daten statt.</li>
+            <li>Zeitzone Europe/Berlin.</li>
+          </ul>
+        </div>
+      </aside>
+    </div>
+
+    <!-- STEP 2: Kalender -->
+    <div id="step-calendar" class="hidden">
+      <div class="flex flex-wrap items-center justify-between gap-3 mb-3">
+        <div class="flex items-center gap-2">
+          <button id="btnBack" class="rounded-xl border border-slate-200 px-4 py-2 text-slate-700 hover:bg-slate-100">Module ändern</button>
+          <div id="activeLegend" class="hidden md:flex flex-wrap gap-2"></div>
+        </div>
+        <div class="text-sm text-slate-600">Zeitzone: <span class="font-medium">Europe/Berlin</span></div>
+      </div>
+      <div id="calendar" class="bg-white rounded-2xl shadow-soft p-3"></div>
+
+      <footer class="mt-6">
+        <div class="bg-white rounded-2xl p-4 shadow-soft text-xs text-slate-500">
+          <p class="font-bold">Hinweise:</p>
+          <ul class="list-disc pl-4 mt-2 space-y-1">
+            <li class="font-bold">Dies ist KEINE offizielle Webseite der Hochschule Osnabrück!</li>
+            <li class="font-bold">Dies ist eine Private, nicht-kommerzielle Website für Studierende der Hochschule Osnabrück. Keine geschäftsmäßige Nutzung.</li>
+            <li class="font-bold">Diese Website speichert lokale Einstellungen (z. B. gewählten Kurs) ausschließlich lokal im Browser (LocalStorage). Es findet keine Serverübertragung oder Speicherung personenbezogener Daten statt.</li>
+            <li>Zeitzone Europe/Berlin.</li>
+          </ul>
+        </div>
+      </footer>
+    </div>
+  </div>
+
+  <!-- Consent Banner -->
+  <div id="consentBanner" class="hidden fixed bottom-0 inset-x-0 z-50">
+    <div class="mx-auto max-w-5xl m-3 rounded-2xl bg-slate-900 text-white p-4 shadow-soft">
+      <div class="flex flex-col sm:flex-row gap-3 sm:items-center sm:justify-between">
+        <p>Diese Website speichert deine Kursauswahl und die zuletzt genutzte Ansicht lokal im Browser, damit du beim nächsten Besuch direkt startest.
+          Keine Cookies von Drittanbietern, keine personenbezogenen Daten.</p>
+        <div class="flex gap-2 shrink-0">
+          <button id="consentDecline" class="rounded-xl bg-slate-700 hover:bg-slate-600 px-4 py-2">Ablehnen</button>
+          <button id="consentAccept" class="rounded-xl bg-emerald-600 hover:bg-emerald-700 px-4 py-2 font-semibold">Akzeptieren</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Modal -->
+  <dialog id="eventModal" class="rounded-2xl backdrop:bg-black/40 p-0 w-full max-w-lg">
+    <div class="p-5">
+      <div class="flex items-start justify-between mb-2">
+        <h3 id="mTitle" class="text-lg font-bold"></h3>
+        <button id="mClose" class="text-slate-500 hover:text-slate-800">✕</button>
+      </div>
+      <div id="mBody" class="space-y-1 text-sm text-slate-700"></div>
+    </div>
+  </dialog>
+
+  <script>
+    // ---------------- Paths ----------------
+    const paths = {
+      courses: 'data/courses.json',
+      total:   'data/total_data/total.json',
+    };
+
+    // ---------------- Consent / Storage ----------------
+    const CONSENT_KEY   = 'sp_consent';           // 'granted' | 'denied'
+    const SELECT_KEY    = 'selectedGlobalIDs';
+    const LAST_VIEW_KEY = 'sp_last_view';
+
+    const consent = {
+      get()  { return localStorage.getItem(CONSENT_KEY); },
+      set(v) { localStorage.setItem(CONSENT_KEY, v); },
+      allowed() { return localStorage.getItem(CONSENT_KEY) === 'granted'; }
+    };
+
+    function saveSelection(ids) { if (consent.allowed()) localStorage.setItem(SELECT_KEY, JSON.stringify(ids)); }
+    function loadSelection() {
+      if (!consent.allowed()) return [];
+      try { return JSON.parse(localStorage.getItem(SELECT_KEY) || '[]'); } catch { return []; }
+    }
+
+    function saveLastView(viewType) { if (consent.allowed()) localStorage.setItem(LAST_VIEW_KEY, viewType); }
+    function loadLastView() { return consent.allowed() ? localStorage.getItem(LAST_VIEW_KEY) : null; }
+
+    function showConsentBannerIfNeeded() { if (!consent.get()) document.getElementById('consentBanner').classList.remove('hidden'); }
+    function hideConsentBanner() { document.getElementById('consentBanner').classList.add('hidden'); }
+
+    document.getElementById('consentAccept').addEventListener('click', () => {
+      consent.set('granted');
+      saveSelection([...SELECTED]);
+      saveLastView(calendar?.view?.type || '');
+      hideConsentBanner();
+    });
+    document.getElementById('consentDecline').addEventListener('click', () => {
+      consent.set('denied');
+      localStorage.removeItem(SELECT_KEY);
+      localStorage.removeItem(LAST_VIEW_KEY);
+      hideConsentBanner();
+    });
+
+    // ---------------- Status helper ----------------
+    const statusEl = document.getElementById('status');
+    function setStatus(msg, ok = true) {
+      const li = document.createElement('li');
+      li.textContent = msg;
+      li.className = ok ? '' : 'text-rose-600';
+      statusEl.appendChild(li);
+    }
+
+    // ---------------- Colors ----------------
+    function hashHue(str) { let h = 0; for (let i = 0; i < str.length; i++) h = (h * 31 + str.charCodeAt(i)) >>> 0; return h % 360; }
+    function paletteFor(id) {
+      const h = hashHue(id || Math.random().toString());
+      const solid = `hsl(${h} 72% 50%)`;     // kräftig, für Month/Week Blocks
+      const border = `hsl(${h} 72% 32%)`;
+      const soft =  `hsl(${h} 80% 92%)`;     // pastell, für List-Zeilen
+      const dot  =  `hsl(${h} 65% 38%)`;     // Punkt in der Liste
+      return { h, solid, border, soft, dot, textOnSolid: '#fff', textOnSoft: '#0f172a' };
+    }
+
+    function normalizeDateTime(s) { return s?.replace(' ', 'T'); }
+
+    // ---------------- State ----------------
+    let COURSES = [];
+    let EVENTS  = [];
+    let SELECTED = new Set(loadSelection());
+    let calendar = null;
+
+    // ---------------- Fetch ----------------
+    async function loadData() {
+      const [cRes, eRes] = await Promise.all([ fetch(paths.courses), fetch(paths.total) ]);
+      if (!cRes.ok) throw new Error(`Konnte courses.json nicht laden (${cRes.status})`);
+      if (!eRes.ok) throw new Error(`Konnte total.json nicht laden (${eRes.status})`);
+      COURSES = await cRes.json();
+      EVENTS  = await eRes.json();
+      setStatus(`Geladen: ${COURSES.length} Kurse · ${EVENTS.length} Veranstaltungen.`);
+    }
+
+    // ---------------- Course list ----------------
+    const courseList     = document.getElementById('courseList');
+    const legend         = document.getElementById('legend');
+    const activeLegend   = document.getElementById('activeLegend');
+    const selectedCount  = document.getElementById('selectedCount');
+
+    function courseMatchesQuery(course, q) {
+      if (!q) return true;
+      q = q.toLowerCase();
+      return (
+        (course.summary||'').toLowerCase().includes(q) ||
+        (course.Dozent||'').toLowerCase().includes(q) ||
+        (course.Studiengruppe||'').toLowerCase().includes(q) ||
+        (course.globalID||'').toLowerCase().includes(q)
+      );
+    }
+
+    function renderCourseList(filter = '') {
+      courseList.innerHTML = '';
+      legend.innerHTML = '';
+      const frag = document.createDocumentFragment();
+      const legFrag = document.createDocumentFragment();
+
+      COURSES
+        .filter(c => courseMatchesQuery(c, filter))
+        .sort((a,b)=> (a.summary||'').localeCompare(b.summary||''))
+        .forEach(c => {
+          const id = c.globalID || c.summary || crypto.randomUUID();
+          const checked = SELECTED.has(id);
+          const pal = paletteFor(id);
+
+          const label = document.createElement('label');
+          label.className = `flex items-start gap-3 rounded-xl border border-slate-200 p-3 hover:shadow-soft transition-shadow cursor-pointer`;
+          label.innerHTML = `
+            <input type="checkbox" class="mt-1 h-4 w-4" data-id="${id}" ${checked?'checked':''} />
+            <div class="flex-1">
+              <div class="flex items-center justify-between">
+                <div class="font-semibold">${c.summary || 'Unbenannt'}</div>
+                <span class="inline-flex h-3 w-3 rounded-full" style="background:${pal.solid}; border:2px solid ${pal.border}"></span>
+              </div>
+              <div class="text-xs text-slate-600 mt-0.5">Dozent: <span class="font-medium">${c.Dozent || '—'}</span></div>
+              <div class="text-xs text-slate-500">Gruppe: ${c.Studiengruppe || '—'}</div>
+              <div class="text-[10px] text-slate-400 mt-0.5">ID: ${id}</div>
+            </div>`;
+          frag.appendChild(label);
+
+          if (checked) {
+            const d = document.createElement('div');
+            d.className = 'tag';
+            d.style.background = pal.solid;
+            d.textContent = c.summary || 'Unbenannt';
+            legFrag.appendChild(d);
+          }
+        });
+
+      courseList.appendChild(frag);
+      legend.appendChild(legFrag);
+      selectedCount.textContent = SELECTED.size;
+    }
+
+    // Selection handlers
+    document.getElementById('search').addEventListener('input', (e)=> renderCourseList(e.target.value));
+    courseList.addEventListener('change', (e)=>{
+      const cb = e.target.closest('input[type="checkbox"]'); if (!cb) return;
+      const id = cb.dataset.id;
+      if (cb.checked) SELECTED.add(id); else SELECTED.delete(id);
+      saveSelection([...SELECTED]);
+      renderCourseList(document.getElementById('search').value);
+    });
+    document.getElementById('btnSelectAll').addEventListener('click', ()=>{
+      COURSES.forEach(c => SELECTED.add(c.globalID||c.summary));
+      saveSelection([...SELECTED]);
+      renderCourseList(document.getElementById('search').value);
+    });
+    document.getElementById('btnClearAll').addEventListener('click', ()=>{
+      SELECTED.clear(); saveSelection([]); renderCourseList(document.getElementById('search').value);
+    });
+    document.getElementById('btnRestore').addEventListener('click', ()=>{
+      SELECTED = new Set(loadSelection()); renderCourseList(document.getElementById('search').value);
+    });
+
+    // ---------------- Build events ----------------
+    function buildCalendarEvents() {
+      const selectedIDs = new Set(SELECTED);
+      const byID = new Map(COURSES.map(c=>[c.globalID||c.summary, c]));
+      return EVENTS
+        .filter(ev => selectedIDs.has(ev.globalID || ev.summary))
+        .map(ev => {
+          const id = ev.globalID || ev.summary || 'X';
+          const pal = paletteFor(id);
+          const title = ev.summary || byID.get(id)?.summary || 'Veranstaltung';
+          const room = ev.location || ev.Raum || '';
+          const lecturer = ev.Dozent || byID.get(id)?.Dozent || '';
+          return {
+            id: ev.uid || crypto.randomUUID(),
+            // Titel bewusst NUR der Kursname, Raum separat in extendedProps
+            title: `${title}${room ? ` · Raum ${room}` : ''}`,
+            start: normalizeDateTime(ev.start),
+            end: normalizeDateTime(ev.end),
+            extendedProps: { lecturer, room, gid: id, raw: ev, pal },
+            backgroundColor: pal.solid,
+            borderColor: pal.border,
+            textColor: pal.textOnSolid
+          };
+        });
+    }
+
+    // ---------------- Calendar ----------------
+    function showCalendar() {
+      document.getElementById('step-select').classList.add('hidden');
+      document.getElementById('step-calendar').classList.remove('hidden');
+
+      // Legend aktiv
+      activeLegend.innerHTML = '';
+      const frag = document.createDocumentFragment();
+      COURSES.forEach(c => {
+        const id = c.globalID || c.summary;
+        if (!SELECTED.has(id)) return;
+        const pal = paletteFor(id);
+        const el = document.createElement('div');
+        el.className = 'tag';
+        el.style.background = pal.solid;
+        el.textContent = c.summary || 'Unbenannt';
+        frag.appendChild(el);
+      });
+      activeLegend.appendChild(frag);
+      activeLegend.classList.toggle('hidden', SELECTED.size === 0);
+
+      const calendarEl = document.getElementById('calendar');
+      if (calendar) calendar.destroy();
+
+      const savedView = loadLastView();
+      const isSmall = window.matchMedia('(max-width: 640px)').matches;
+      const initialView = savedView || (isSmall ? 'dayGridMonth' : 'timeGridWeek');
+
+      calendar = new FullCalendar.Calendar(calendarEl, {
+        locale: 'de',
+        timeZone: 'Europe/Berlin',
+        firstDay: 1,
+        height: 'auto',
+        stickyHeaderDates: true,
+        nowIndicator: true,
+        slotMinTime: '07:00:00',
+        slotMaxTime: '21:00:00',
+        initialView,
+        buttonText: { today: 'today', month: 'month', week: 'week', day: 'day', list: 'list' },
+        headerToolbar: {
+          left: 'prev,next today',
+          center: 'title',
+          right: 'dayGridMonth,timeGridWeek,timeGridDay,listWeek'
+        },
+        eventDisplay: 'block',
+        events: buildCalendarEvents(),
+
+        // Styling je nach Ansicht
+        eventDidMount: (info) => {
+          const pal = info.event.extendedProps.pal;
+
+          if (!info.view.type.startsWith('list')) {
+            // Grid-Ansichten: sichtbarer Text in der Kachel
+            
+            info.el.style.borderRadius = '12px';
+            info.el.style.color = pal.textOnSolid;
+            info.el.style.padding = '2px 6px';
+            info.el.title = `${info.event.title}${info.event.extendedProps.room ? ' · Raum ' + info.event.extendedProps.room : ''}${info.event.extendedProps.lecturer ? ' · ' + info.event.extendedProps.lecturer : ''}`;
+            return;
+          }
+
+          // LIST: Pastell + sicherer Textinhalt
+const row = info.el;
+row.classList.add('list-colored');
+row.style.setProperty('--row-bg', pal.soft);
+row.style.setProperty('--row-text', '#0f172a');
+row.style.setProperty('--row-dot', pal.dot);
+
+const titleTd = row.querySelector('td.fc-list-event-title');
+if (titleTd) {
+  titleTd.innerHTML = ''; // Alte Inhalte leeren, wir rendern neu
+  const titleSpan = document.createElement('span');
+  titleSpan.textContent = info.event.extendedProps.raw.summary || info.event.title || 'Unbenannt';
+  titleSpan.style.fontWeight = '700';
+  titleSpan.style.color = '#0f172a';
+
+  const room = info.event.extendedProps.room;
+  const roomSpan = document.createElement('span');
+  if (room) {
+    roomSpan.textContent = ` · Raum ${room}`;
+    roomSpan.style.marginLeft = '0.25rem';
+    roomSpan.style.fontWeight = '600';
+    roomSpan.style.color = '#0f172a';
+  }
+
+  titleTd.appendChild(titleSpan);
+  if (room) titleTd.appendChild(roomSpan);
+}
+
+        },
+
+        // Letzte Ansicht merken
+        viewDidMount: (arg) => saveLastView(arg.view.type),
+        datesSet: (arg) => saveLastView(arg.view.type),
+
+        // Eigener Inhalt in Grid-Ansichten: Kursname + Raum
+        eventContent: (arg) => {
+          if (arg.view.type.startsWith('list')) return; // Listen-Template lassen, wir fügen Raum via eventDidMount ein
+
+          const room = arg.event.extendedProps.room;
+          const course = arg.event.title;
+
+          // Fallback-Zeit, falls arg.timeText leer ist
+          let timeText = arg.timeText || '';
+          if (!timeText && arg.event.start && arg.event.end) {
+            const s = arg.event.start;
+            const e = arg.event.end;
+            const fmt = (d)=> d.toLocaleTimeString('de-DE',{hour:'2-digit',minute:'2-digit'});
+            timeText = `${fmt(s)}–${fmt(e)}`;
+          }
+
+          const wrap = document.createElement('div');
+          wrap.className = 'text-[11px] leading-tight';
+          wrap.style.whiteSpace = 'nowrap';
+          wrap.style.overflow = 'hidden';
+          wrap.style.textOverflow = 'ellipsis';
+
+          wrap.innerHTML = `
+            <div class="font-semibold">${timeText ? timeText + ' · ' : ''}${course}</div>
+            <div class="opacity-90">${room ? 'Raum ' + room : ''}</div>
+          `;
+          return { domNodes: [wrap] };
+        }
+      });
+
+      calendar.render();
+
+      // Event-Klick -> Modal
+      calendar.setOption('eventClick', (info) => {
+        const ev = info.event;
+        const raw = ev.extendedProps.raw || {};
+        mTitle.textContent = ev.title;
+        mBody.innerHTML = `
+          <div><span class="font-medium">Zeit:</span> ${ev.start?.toLocaleString('de-DE')} – ${ev.end?.toLocaleString('de-DE')}</div>
+          <div><span class="font-medium">Dozent:</span> ${ev.extendedProps.lecturer || '—'}</div>
+          <div><span class="font-medium">Raum:</span> ${ev.extendedProps.room || '—'}</div>
+          <div class="text-slate-500 mt-2 text-xs">UID: ${raw.uid || '—'} · Kurs-ID: ${ev.extendedProps.gid}</div>
+        `;
+        modal.showModal();
+      });
+    }
+
+    // ---------------- Buttons ----------------
+    document.getElementById('btnConfirm').addEventListener('click', ()=>{
+      if (SELECTED.size === 0) { alert('Bitte wähle mindestens ein Modul.'); return; }
+      saveSelection([...SELECTED]);
+      showCalendar();
+    });
+    document.getElementById('btnBack').addEventListener('click', ()=>{
+      document.getElementById('step-calendar').classList.add('hidden');
+      document.getElementById('step-select').classList.remove('hidden');
+      renderCourseList(document.getElementById('search').value);
+    });
+
+    // ---------------- Modal ----------------
+    const modal  = document.getElementById('eventModal');
+    const mTitle = document.getElementById('mTitle');
+    const mBody  = document.getElementById('mBody');
+    document.getElementById('mClose').addEventListener('click', ()=> modal.close());
+    modal.addEventListener('click', (e)=>{ if (e.target === modal) modal.close(); });
+
+    // ---------------- Boot ----------------
+    (async function init(){
+      try {
+        showConsentBannerIfNeeded();
+        await loadData();
+        setStatus('Daten bereit. Wähle deine Module.');
+
+        SELECTED = new Set(loadSelection());
+        renderCourseList();
+
+        if (consent.allowed() && SELECTED.size > 0) showCalendar();
+      } catch (err) {
+        console.error(err);
+        setStatus(err.message || 'Unbekannter Fehler beim Laden.', false);
+      }
+    })();
+  </script>
+</body>
+</html>
