@@ -1,176 +1,176 @@
 [
     {
-        "summary": "Auslegung technischer Baugruppen",
-        "Dozent": "Austerhoff",
-        "Studiengruppe": "24BTS-MAS-3, 24BTS-MEC-3",
-        "globalID": "M23YNN"
-    },
-    {
         "summary": "Thermodynamik",
         "Dozent": "Koke",
         "Studiengruppe": "24BTS-CPV-3, 24BTS-MAS-3",
-        "globalID": "6O826W"
+        "globalID": "1B96JA"
     },
     {
         "summary": "Statistik",
         "Dozent": "Grunwald",
         "Studiengruppe": "24BTS-CPV-3, 24BTS-MAS-3",
-        "globalID": "M1JINL"
-    },
-    {
-        "summary": "Mechanik: Dynamik",
-        "Dozent": "Voicu",
-        "Studiengruppe": "24BTS-EAT-3, 24BTS-MAS-3, 24BTS-MEC-3",
-        "globalID": "FS8Q20"
-    },
-    {
-        "summary": "Technische Physik - Physikalische Modelle",
-        "Dozent": "Voicu",
-        "Studiengruppe": "24BTS-MAS-3",
-        "globalID": "IZZ115"
-    },
-    {
-        "summary": "Rechnergestütztes Konstruieren",
-        "Dozent": "Leonhardt",
-        "Studiengruppe": "24BTS-MAS-3",
-        "globalID": "303H64"
-    },
-    {
-        "summary": "Infos zum Studium",
-        "Dozent": "Arens-Fischer, Schlautmann-Kemner, Schultheis",
-        "Studiengruppe": "24BTS-CPV-3, 24BTS-EAT-3, 24BTS-MAS-3, 24BTS-MEC-3, 24BTS-TIN-3, 24DNB1-3, 24DNB2-3, 24DNB3-3, 24DNB3-STE-3, 24DNB4-3, 24DNE1-3, 24DNE2-3, 24DNI1-3, 24DNI2-3, 24DNI2-STE-3",
-        "globalID": "AKQQ7S"
-    },
-    {
-        "summary": "Metallbau (Vorbereitung Kammerprüfung)",
-        "Dozent": "Scholz",
-        "Studiengruppe": "24BTS-CPV-3, 24BTS-EAT-3, 24BTS-MAS-3, 24BTS-MEC-3, 24BTS-TIN-3, 24DNE1-3, 24DNE2-3",
-        "globalID": "KDA7HW"
-    },
-    {
-        "summary": "Elektrotechnik (Vorbereitung Kammerprüfung)",
-        "Dozent": "Gerdes",
-        "Studiengruppe": "24BTS-CPV-3, 24BTS-EAT-3, 24BTS-MAS-3, 24BTS-MEC-3, 24BTS-TIN-3, 24DNE1-3, 24DNE2-3",
-        "globalID": "YGSAK7"
-    },
-    {
-        "summary": "Englisch",
-        "Dozent": "Fitzgerald, van Heugten",
-        "Studiengruppe": "24BTS-MAS-3",
-        "globalID": "GT72ED"
-    },
-    {
-        "summary": "Semestergespräch",
-        "Dozent": "Kerperien",
-        "Studiengruppe": "24BTS-CPV-3, 24BTS-EAT-3, 24BTS-MAS-3, 24BTS-MEC-3, 24BTS-TIN-3",
-        "globalID": "1OP4XC"
+        "globalID": "VD0YIH"
     },
     {
         "summary": "Grundlagen Data Science",
         "Dozent": "Guericke",
         "Studiengruppe": "24BTS-CPV-3",
-        "globalID": "4CY82K"
+        "globalID": "21EFRK"
     },
     {
         "summary": "Technische Physik - Physikalische Modelle",
         "Dozent": "Voicu",
         "Studiengruppe": "24BTS-CPV-3, 24BTS-EAT-3, 24BTS-MEC-3, 24BTS-TIN-3",
-        "globalID": "VF0FKR"
+        "globalID": "VN5FJ0"
     },
     {
         "summary": "Rechnergestütztes Konstruieren",
         "Dozent": "Leonhardt",
         "Studiengruppe": "24BTS-CPV-3, 24BTS-EAT-3, 24BTS-MEC-3, 24BTS-TIN-3",
-        "globalID": "JDKBC1"
+        "globalID": "72GDJK"
     },
     {
         "summary": "Englisch",
         "Dozent": "Fitzgerald, van Heugten",
         "Studiengruppe": "24BTS-CPV-3, 24BTS-EAT-3, 24BTS-MEC-3, 24BTS-TIN-3",
-        "globalID": "7NFVOH"
+        "globalID": "HX6OYR"
     },
     {
         "summary": "Physikalische Chemie",
         "Dozent": "Jordan",
         "Studiengruppe": "24BTS-CPV-3",
-        "globalID": "AWVTM2"
+        "globalID": "NE6T3T"
     },
     {
-        "summary": "Technische Elektrodynamik",
-        "Dozent": "Kling",
-        "Studiengruppe": "24BTS-EAT-3, 24BTS-MEC-3",
-        "globalID": "E1FXPB"
+        "summary": "Infos zum Studium",
+        "Dozent": "Arens-Fischer, Schlautmann-Kemner, Schultheis",
+        "Studiengruppe": "24BTS-CPV-3, 24BTS-EAT-3, 24BTS-MAS-3, 24BTS-MEC-3, 24BTS-TIN-3, 24DNB1-3, 24DNB2-3, 24DNB3-3, 24DNB3-STE-3, 24DNB4-3, 24DNE1-3, 24DNE2-3, 24DNI1-3, 24DNI2-3, 24DNI2-STE-3",
+        "globalID": "90L717"
+    },
+    {
+        "summary": "Elektrotechnik (Vorbereitung Kammerprüfung)",
+        "Dozent": "Gerdes",
+        "Studiengruppe": "24BTS-CPV-3, 24BTS-EAT-3, 24BTS-MAS-3, 24BTS-MEC-3, 24BTS-TIN-3, 24DNE1-3, 24DNE2-3",
+        "globalID": "MHA4D8"
+    },
+    {
+        "summary": "Semestergespräch",
+        "Dozent": "Kerperien",
+        "Studiengruppe": "24BTS-CPV-3, 24BTS-EAT-3, 24BTS-MAS-3, 24BTS-MEC-3, 24BTS-TIN-3",
+        "globalID": "J8IZVV"
+    },
+    {
+        "summary": "Metallbau (Vorbereitung Kammerprüfung)",
+        "Dozent": "Scholz",
+        "Studiengruppe": "24BTS-CPV-3, 24BTS-EAT-3, 24BTS-MAS-3, 24BTS-MEC-3, 24BTS-TIN-3, 24DNE1-3, 24DNE2-3",
+        "globalID": "NDJV88"
     },
     {
         "summary": "Elektrische und elektronische Bauelemente",
         "Dozent": "Voges",
         "Studiengruppe": "24BTS-EAT-3, 24BTS-MEC-3, 24BTS-TIN-3",
-        "globalID": "GH0D0U"
-    },
-    {
-        "summary": "Elektrische Maschinen",
-        "Dozent": "Terörde",
-        "Studiengruppe": "24BTS-EAT-3, 24BTS-MEC-3, 24BTS-TIN-3",
-        "globalID": "QAC2XO"
+        "globalID": "NJDRJA"
     },
     {
         "summary": "Datenbanken",
         "Dozent": "Siepermann",
         "Studiengruppe": "24BTS-TIN-3, 24DNI1-3, 24DNI2-3, 24DNI2-STE-3",
-        "globalID": "06AKHI"
+        "globalID": "4BX1JA"
     },
     {
-        "summary": "Marketingpolitiken",
-        "Dozent": "Diederichs",
-        "Studiengruppe": "24DNI1-3",
-        "globalID": "R236O2"
-    },
-    {
-        "summary": "Statistik",
-        "Dozent": "Ornau",
-        "Studiengruppe": "24DNI1-3, 24DNI2-3, 24DNI2-STE-3",
-        "globalID": "6KE3QX"
-    },
-    {
-        "summary": "Informatik (Vorbereitung Kammerprüfung)",
-        "Dozent": "Zilinski",
-        "Studiengruppe": "24DNI1-3, 24DNI2-3, 24DNI2-STE-3",
-        "globalID": "6MMNVS"
-    },
-    {
-        "summary": "Nachhaltiges Prozessmanagement und angewandte Fallstudien",
-        "Dozent": "Barenkamp",
-        "Studiengruppe": "24DNI1-3, 24DNI2-3, 24DNI2-STE-3",
-        "globalID": "OHM5ZU"
-    },
-    {
-        "summary": "Grundlagen Data Science",
-        "Dozent": "Guericke",
-        "Studiengruppe": "24DNI1-3, 24DNI2-3, 24DNI2-STE-3",
-        "globalID": "I3BUBC"
+        "summary": "Elektrische Maschinen",
+        "Dozent": "Terörde",
+        "Studiengruppe": "24BTS-EAT-3, 24BTS-MEC-3, 24BTS-TIN-3",
+        "globalID": "F3P5HC"
     },
     {
         "summary": "Algorythmen und Datenstrukturen",
         "Dozent": "Streekmann",
         "Studiengruppe": "24BTS-TIN-3, 24DNI1-3",
-        "globalID": "1NH2FC"
+        "globalID": "9LW3QB"
+    },
+    {
+        "summary": "Technische Elektrodynamik",
+        "Dozent": "Kling",
+        "Studiengruppe": "24BTS-EAT-3, 24BTS-MEC-3",
+        "globalID": "39E3CU"
+    },
+    {
+        "summary": "Auslegung technischer Baugruppen",
+        "Dozent": "Austerhoff",
+        "Studiengruppe": "24BTS-MAS-3, 24BTS-MEC-3",
+        "globalID": "8MACNU"
+    },
+    {
+        "summary": "Mechanik: Dynamik",
+        "Dozent": "Voicu",
+        "Studiengruppe": "24BTS-EAT-3, 24BTS-MAS-3, 24BTS-MEC-3",
+        "globalID": "MEOWDJ"
+    },
+    {
+        "summary": "Technische Physik - Physikalische Modelle",
+        "Dozent": "Voicu",
+        "Studiengruppe": "24BTS-MAS-3",
+        "globalID": "272TNS"
+    },
+    {
+        "summary": "Rechnergestütztes Konstruieren",
+        "Dozent": "Leonhardt",
+        "Studiengruppe": "24BTS-MAS-3",
+        "globalID": "NXW9SZ"
+    },
+    {
+        "summary": "Englisch",
+        "Dozent": "Fitzgerald, van Heugten",
+        "Studiengruppe": "24BTS-MAS-3",
+        "globalID": "ITDE6Q"
+    },
+    {
+        "summary": "Marketingpolitiken",
+        "Dozent": "Diederichs",
+        "Studiengruppe": "24DNI1-3",
+        "globalID": "BX8CYM"
+    },
+    {
+        "summary": "Statistik",
+        "Dozent": "Ornau",
+        "Studiengruppe": "24DNI1-3, 24DNI2-3, 24DNI2-STE-3",
+        "globalID": "Y9C2AK"
+    },
+    {
+        "summary": "Informatik (Vorbereitung Kammerprüfung)",
+        "Dozent": "Zilinski",
+        "Studiengruppe": "24DNI1-3, 24DNI2-3, 24DNI2-STE-3",
+        "globalID": "5UFV5U"
+    },
+    {
+        "summary": "Nachhaltiges Prozessmanagement und angewandte Fallstudien",
+        "Dozent": "Barenkamp",
+        "Studiengruppe": "24DNI1-3, 24DNI2-3, 24DNI2-STE-3",
+        "globalID": "MV0D10"
+    },
+    {
+        "summary": "Grundlagen Data Science",
+        "Dozent": "Guericke",
+        "Studiengruppe": "24DNI1-3, 24DNI2-3, 24DNI2-STE-3",
+        "globalID": "QE8J0K"
     },
     {
         "summary": "Finanzbuchhaltung / Jahresabschluss",
         "Dozent": "Neugebauer",
         "Studiengruppe": "24DNI1-3, 24DNI2-3",
-        "globalID": "0JSNUV"
+        "globalID": "JJ5DSP"
     },
     {
         "summary": "Internes Rechnungswesen",
         "Dozent": "Schwellnuß",
         "Studiengruppe": "24DNI1-3",
-        "globalID": "YA76AO"
+        "globalID": "KWR7RH"
     },
     {
         "summary": "Englisch",
         "Dozent": "Friedenstab",
         "Studiengruppe": "24DNI1-3",
-        "globalID": "GESPMV"
+        "globalID": "3MX2LH"
     }
 ]
