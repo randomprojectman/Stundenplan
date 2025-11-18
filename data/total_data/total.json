@@ -5,7 +5,7 @@
         "end": "2025-11-18 15:30:00",
         "location": "KA0005",
         "organizer": null,
-        "created": "2025-11-18 07:01:38",
+        "created": "2025-11-18 08:01:24",
         "last_modified": null,
         "uid": "sked.de290457",
         "Veranstaltung": "Thermodynamik",
@@ -13,7 +13,7 @@
         "Art": "SV",
         "Studiengruppe": "24BTS-CPV-3, 24BTS-MAS-3",
         "Anmerkung": "-",
-        "globalID": "1B96JA"
+        "globalID": "M5CJME"
     },
     {
         "summary": "Statistik",
@@ -21,7 +21,7 @@
         "end": "2025-12-16 19:00:00",
         "location": "KA0004",
         "organizer": null,
-        "created": "2025-11-18 07:01:38",
+        "created": "2025-11-18 08:01:24",
         "last_modified": null,
         "uid": "sked.de291122",
         "Veranstaltung": "Statistik",
@@ -29,7 +29,7 @@
         "Art": "SV",
         "Studiengruppe": "24BTS-CPV-3, 24BTS-MAS-3",
         "Anmerkung": "-",
-        "globalID": "VD0YIH"
+        "globalID": "VBRH3O"
     },
     {
         "summary": "Statistik",
@@ -37,7 +37,7 @@
         "end": "2025-11-19 19:00:00",
         "location": "KD0004",
         "organizer": null,
-        "created": "2025-11-18 07:01:38",
+        "created": "2025-11-18 08:01:24",
         "last_modified": null,
         "uid": "sked.de290523",
         "Veranstaltung": "Statistik",
@@ -45,7 +45,7 @@
         "Art": "SV",
         "Studiengruppe": "24BTS-CPV-3, 24BTS-MAS-3",
         "Anmerkung": "-",
-        "globalID": "VD0YIH"
+        "globalID": "VBRH3O"
     },
     {
         "summary": "Statistik",
@@ -53,7 +53,7 @@
         "end": "2025-11-28 15:30:00",
         "location": "KD0202",
         "organizer": null,
-        "created": "2025-11-18 07:01:38",
+        "created": "2025-11-18 08:01:24",
         "last_modified": null,
         "uid": "sked.de290524",
         "Veranstaltung": "Statistik",
@@ -61,7 +61,7 @@
         "Art": "SV",
         "Studiengruppe": "24BTS-CPV-3, 24BTS-MAS-3",
         "Anmerkung": "-",
-        "globalID": "VD0YIH"
+        "globalID": "VBRH3O"
     },
     {
         "summary": "Statistik",
@@ -69,7 +69,7 @@
         "end": "2025-12-08 19:00:00",
         "location": "KA0004",
         "organizer": null,
-        "created": "2025-11-18 07:01:38",
+        "created": "2025-11-18 08:01:24",
         "last_modified": null,
         "uid": "sked.de291127",
         "Veranstaltung": "Statistik",
@@ -77,7 +77,7 @@
         "Art": "SV",
         "Studiengruppe": "24BTS-CPV-3, 24BTS-MAS-3",
         "Anmerkung": "-",
-        "globalID": "VD0YIH"
+        "globalID": "VBRH3O"
     },
     {
         "summary": "Grundlagen Data Science",
@@ -85,7 +85,7 @@
         "end": "2025-11-19 11:30:00",
         "location": "KA0005",
         "organizer": null,
-        "created": "2025-11-18 07:01:38",
+        "created": "2025-11-18 08:01:24",
         "last_modified": null,
         "uid": "sked.de290440",
         "Veranstaltung": "Grundlagen Data Science",
@@ -93,7 +93,7 @@
         "Art": "SV",
         "Studiengruppe": "24BTS-CPV-3",
         "Anmerkung": "-",
-        "globalID": "21EFRK"
+        "globalID": "NHXHWH"
     },
     {
         "summary": "Technische Physik - Physikalische Modelle",
@@ -101,7 +101,7 @@
         "end": "2025-12-09 15:30:00",
         "location": "KA0004",
         "organizer": null,
-        "created": "2025-11-18 07:01:38",
+        "created": "2025-11-18 08:01:24",
         "last_modified": null,
         "uid": "sked.de291041",
         "Veranstaltung": "Technische Physik - Physikalische Modelle",
@@ -109,7 +109,7 @@
         "Art": "SV",
         "Studiengruppe": "24BTS-CPV-3, 24BTS-EAT-3, 24BTS-MEC-3, 24BTS-TIN-3",
         "Anmerkung": "-",
-        "globalID": "VN5FJ0"
+        "globalID": "QC25RN"
     },
     {
         "summary": "Grundlagen Data Science",
@@ -117,7 +117,7 @@
         "end": "2025-11-17 15:30:00",
         "location": "LN0001",
         "organizer": null,
-        "created": "2025-11-18 07:01:38",
+        "created": "2025-11-18 08:01:24",
         "last_modified": null,
         "uid": "sked.de290441",
         "Veranstaltung": "Grundlagen Data Science",
@@ -125,7 +125,7 @@
         "Art": "SV",
         "Studiengruppe": "24BTS-CPV-3",
         "Anmerkung": "-",
-        "globalID": "21EFRK"
+        "globalID": "NHXHWH"
     },
     {
         "summary": "Grundlagen Data Science",
@@ -133,7 +133,7 @@
         "end": "2025-11-25 15:30:00",
         "location": "LK0101/LK0102",
         "organizer": null,
-        "created": "2025-11-18 07:01:38",
+        "created": "2025-11-18 08:01:24",
         "last_modified": null,
         "uid": "sked.de290446",
         "Veranstaltung": "Grundlagen Data Science",
@@ -141,7 +141,7 @@
         "Art": "SV",
         "Studiengruppe": "24BTS-CPV-3",
         "Anmerkung": "-",
-        "globalID": "21EFRK"
+        "globalID": "NHXHWH"
     },
     {
         "summary": "Technische Physik - Physikalische Modelle",
@@ -149,7 +149,7 @@
         "end": "2025-12-15 19:00:00",
         "location": "KA0005",
         "organizer": null,
-        "created": "2025-11-18 07:01:38",
+        "created": "2025-11-18 08:01:24",
         "last_modified": null,
         "uid": "sked.de291047",
         "Veranstaltung": "Technische Physik - Physikalische Modelle",
@@ -157,7 +157,7 @@
         "Art": "SV",
         "Studiengruppe": "24BTS-CPV-3, 24BTS-EAT-3, 24BTS-MEC-3, 24BTS-TIN-3",
         "Anmerkung": "-",
-        "globalID": "VN5FJ0"
+        "globalID": "QC25RN"
     },
     {
         "summary": "Rechnergestütztes Konstruieren",
@@ -165,7 +165,7 @@
         "end": "2026-01-08 11:30:00",
         "location": "LW0114",
         "organizer": null,
-        "created": "2025-11-18 07:01:38",
+        "created": "2025-11-18 08:01:24",
         "last_modified": null,
         "uid": "sked.de291311",
         "Veranstaltung": "Rechnergestütztes Konstruieren",
@@ -173,7 +173,7 @@
         "Art": "SV",
         "Studiengruppe": "24BTS-CPV-3, 24BTS-EAT-3, 24BTS-MEC-3, 24BTS-TIN-3",
         "Anmerkung": "-",
-        "globalID": "72GDJK"
+        "globalID": "49ZBR5"
     },
     {
         "summary": "Rechnergestütztes Konstruieren",
@@ -181,7 +181,7 @@
         "end": "2026-01-13 11:30:00",
         "location": "LW0114",
         "organizer": null,
-        "created": "2025-11-18 07:01:38",
+        "created": "2025-11-18 08:01:24",
         "last_modified": null,
         "uid": "sked.de291314",
         "Veranstaltung": "Rechnergestütztes Konstruieren",
@@ -189,7 +189,7 @@
         "Art": "SV",
         "Studiengruppe": "24BTS-CPV-3, 24BTS-EAT-3, 24BTS-MEC-3, 24BTS-TIN-3",
         "Anmerkung": "-",
-        "globalID": "72GDJK"
+        "globalID": "49ZBR5"
     },
     {
         "summary": "Technische Physik - Physikalische Modelle",
@@ -197,7 +197,7 @@
         "end": "2025-12-02 19:00:00",
         "location": "KA0004",
         "organizer": null,
-        "created": "2025-11-18 07:01:38",
+        "created": "2025-11-18 08:01:24",
         "last_modified": null,
         "uid": "sked.de290514",
         "Veranstaltung": "Technische Physik - Physikalische Modelle",
@@ -205,7 +205,7 @@
         "Art": "SV",
         "Studiengruppe": "24BTS-CPV-3, 24BTS-EAT-3, 24BTS-MEC-3, 24BTS-TIN-3",
         "Anmerkung": "-",
-        "globalID": "VN5FJ0"
+        "globalID": "QC25RN"
     },
     {
         "summary": "Thermodynamik",
@@ -213,7 +213,7 @@
         "end": "2025-12-17 15:30:00",
         "location": "LN0001",
         "organizer": null,
-        "created": "2025-11-18 07:01:38",
+        "created": "2025-11-18 08:01:24",
         "last_modified": null,
         "uid": "sked.de291117",
         "Veranstaltung": "Thermodynamik",
@@ -221,7 +221,7 @@
         "Art": "SV",
         "Studiengruppe": "24BTS-CPV-3, 24BTS-MAS-3",
         "Anmerkung": "-",
-        "globalID": "1B96JA"
+        "globalID": "M5CJME"
     },
     {
         "summary": "Englisch",
@@ -229,7 +229,7 @@
         "end": "2025-12-17 19:00:00",
         "location": "KD0002",
         "organizer": null,
-        "created": "2025-11-18 07:01:38",
+        "created": "2025-11-18 08:01:24",
         "last_modified": null,
         "uid": "sked.de290965",
         "Veranstaltung": "Englisch",
@@ -237,7 +237,7 @@
         "Art": "BK",
         "Studiengruppe": "24BTS-CPV-3, 24BTS-EAT-3, 24BTS-MEC-3, 24BTS-TIN-3",
         "Anmerkung": "-",
-        "globalID": "HX6OYR"
+        "globalID": "015E2H"
     },
     {
         "summary": "Englisch",
@@ -245,7 +245,7 @@
         "end": "2025-12-10 11:30:00",
         "location": "KD0001",
         "organizer": null,
-        "created": "2025-11-18 07:01:38",
+        "created": "2025-11-18 08:01:24",
         "last_modified": null,
         "uid": "sked.de290836",
         "Veranstaltung": "Englisch",
@@ -253,7 +253,7 @@
         "Art": "BK",
         "Studiengruppe": "24BTS-CPV-3, 24BTS-EAT-3, 24BTS-MEC-3, 24BTS-TIN-3",
         "Anmerkung": "-",
-        "globalID": "HX6OYR"
+        "globalID": "015E2H"
     },
     {
         "summary": "Physikalische Chemie",
@@ -261,7 +261,7 @@
         "end": "2025-12-16 11:30:00",
         "location": "KB0103 PC",
         "organizer": null,
-        "created": "2025-11-18 07:01:38",
+        "created": "2025-11-18 08:01:24",
         "last_modified": null,
         "uid": "sked.de291081",
         "Veranstaltung": "Physikalische Chemie",
@@ -269,7 +269,7 @@
         "Art": "SV",
         "Studiengruppe": "24BTS-CPV-3",
         "Anmerkung": "-",
-        "globalID": "NE6T3T"
+        "globalID": "AXLWFD"
     },
     {
         "summary": "Technische Physik - Physikalische Modelle",
@@ -277,7 +277,7 @@
         "end": "2025-11-27 19:00:00",
         "location": "KD0002",
         "organizer": null,
-        "created": "2025-11-18 07:01:38",
+        "created": "2025-11-18 08:01:24",
         "last_modified": null,
         "uid": "sked.de290501",
         "Veranstaltung": "Technische Physik - Physikalische Modelle",
@@ -285,7 +285,7 @@
         "Art": "SV",
         "Studiengruppe": "24BTS-CPV-3, 24BTS-EAT-3, 24BTS-MEC-3, 24BTS-TIN-3",
         "Anmerkung": "-",
-        "globalID": "VN5FJ0"
+        "globalID": "QC25RN"
     },
     {
         "summary": "Infos zum Studium",
@@ -293,7 +293,7 @@
         "end": "2025-11-28 17:30:00",
         "location": "Online",
         "organizer": null,
-        "created": "2025-11-18 07:01:38",
+        "created": "2025-11-18 08:01:24",
         "last_modified": null,
         "uid": "sked.de291284",
         "Veranstaltung": "Infos zum Studium",
@@ -304,7 +304,7 @@
         "https": "//hs-osnabrueck.zoom.us/j/98437103953?pwd=Byg1CopvJEzEUtER3bcIwpK5CfdZP8.1",
         "Meeting-ID": "984 3710 3953",
         "Kenncode": "991518",
-        "globalID": "90L717"
+        "globalID": "TTYC76"
     },
     {
         "summary": "Technische Physik - Physikalische Modelle",
@@ -312,7 +312,7 @@
         "end": "2025-11-17 19:00:00",
         "location": "KD0004",
         "organizer": null,
-        "created": "2025-11-18 07:01:38",
+        "created": "2025-11-18 08:01:24",
         "last_modified": null,
         "uid": "sked.de290507",
         "Veranstaltung": "Technische Physik - Physikalische Modelle",
@@ -320,7 +320,7 @@
         "Art": "SV",
         "Studiengruppe": "24BTS-CPV-3, 24BTS-EAT-3, 24BTS-MEC-3, 24BTS-TIN-3",
         "Anmerkung": "-",
-        "globalID": "VN5FJ0"
+        "globalID": "QC25RN"
     },
     {
         "summary": "Grundlagen Data Science",
@@ -328,7 +328,7 @@
         "end": "2026-01-12 11:30:00",
         "location": "KA0004",
         "organizer": null,
-        "created": "2025-11-18 07:01:38",
+        "created": "2025-11-18 08:01:24",
         "last_modified": null,
         "uid": "sked.de291350",
         "Veranstaltung": "Grundlagen Data Science",
@@ -336,7 +336,7 @@
         "Art": "SV",
         "Studiengruppe": "24BTS-CPV-3",
         "Anmerkung": "-",
-        "globalID": "21EFRK"
+        "globalID": "NHXHWH"
     },
     {
         "summary": "Grundlagen Data Science",
@@ -344,7 +344,7 @@
         "end": "2025-12-10 15:30:00",
         "location": "LK0101/LK0102",
         "organizer": null,
-        "created": "2025-11-18 07:01:38",
+        "created": "2025-11-18 08:01:24",
         "last_modified": null,
         "uid": "sked.de291089",
         "Veranstaltung": "Grundlagen Data Science",
@@ -352,7 +352,7 @@
         "Art": "SV",
         "Studiengruppe": "24BTS-CPV-3",
         "Anmerkung": "-",
-        "globalID": "21EFRK"
+        "globalID": "NHXHWH"
     },
     {
         "summary": "Rechnergestütztes Konstruieren",
@@ -360,7 +360,7 @@
         "end": "2025-12-02 15:30:00",
         "location": "LW0114",
         "organizer": null,
-        "created": "2025-11-18 07:01:38",
+        "created": "2025-11-18 08:01:24",
         "last_modified": null,
         "uid": "sked.de290352",
         "Veranstaltung": "Rechnergestütztes Konstruieren",
@@ -368,7 +368,7 @@
         "Art": "SV",
         "Studiengruppe": "24BTS-CPV-3, 24BTS-EAT-3, 24BTS-MEC-3, 24BTS-TIN-3",
         "Anmerkung": "-",
-        "globalID": "72GDJK"
+        "globalID": "49ZBR5"
     },
     {
         "summary": "Rechnergestütztes Konstruieren",
@@ -376,7 +376,7 @@
         "end": "2025-12-03 11:30:00",
         "location": "LW0114",
         "organizer": null,
-        "created": "2025-11-18 07:01:38",
+        "created": "2025-11-18 08:01:24",
         "last_modified": null,
         "uid": "sked.de290353",
         "Veranstaltung": "Rechnergestütztes Konstruieren",
@@ -384,7 +384,7 @@
         "Art": "SV",
         "Studiengruppe": "24BTS-CPV-3, 24BTS-EAT-3, 24BTS-MEC-3, 24BTS-TIN-3",
         "Anmerkung": "-",
-        "globalID": "72GDJK"
+        "globalID": "49ZBR5"
     },
     {
         "summary": "Elektrotechnik (Vorbereitung Kammerprüfung)",
@@ -392,7 +392,7 @@
         "end": "2025-11-25 19:00:00",
         "location": "KD0004",
         "organizer": null,
-        "created": "2025-11-18 07:01:38",
+        "created": "2025-11-18 08:01:24",
         "last_modified": null,
         "uid": "sked.de290754",
         "Veranstaltung": "Elektrotechnik (Vorbereitung Kammerprüfung)",
@@ -400,7 +400,7 @@
         "Art": "PV",
         "Studiengruppe": "24BTS-CPV-3, 24BTS-EAT-3, 24BTS-MAS-3, 24BTS-MEC-3, 24BTS-TIN-3, 24DNE1-3, 24DNE2-3",
         "Anmerkung": "-",
-        "globalID": "MHA4D8"
+        "globalID": "MTSYS8"
     },
     {
         "summary": "Elektrotechnik (Vorbereitung Kammerprüfung)",
@@ -408,7 +408,7 @@
         "end": "2025-12-03 19:00:00",
         "location": "KD0004",
         "organizer": null,
-        "created": "2025-11-18 07:01:38",
+        "created": "2025-11-18 08:01:24",
         "last_modified": null,
         "uid": "sked.de290755",
         "Veranstaltung": "Elektrotechnik (Vorbereitung Kammerprüfung)",
@@ -416,7 +416,7 @@
         "Art": "PV",
         "Studiengruppe": "24BTS-CPV-3, 24BTS-EAT-3, 24BTS-MAS-3, 24BTS-MEC-3, 24BTS-TIN-3, 24DNE1-3, 24DNE2-3",
         "Anmerkung": "-",
-        "globalID": "MHA4D8"
+        "globalID": "MTSYS8"
     },
     {
         "summary": "Physikalische Chemie",
@@ -424,7 +424,7 @@
         "end": "2026-01-13 15:30:00",
         "location": "KD0101",
         "organizer": null,
-        "created": "2025-11-18 07:01:38",
+        "created": "2025-11-18 08:01:24",
         "last_modified": null,
         "uid": "sked.de291356",
         "Veranstaltung": "Physikalische Chemie",
@@ -432,7 +432,7 @@
         "Art": "SV",
         "Studiengruppe": "24BTS-CPV-3",
         "Anmerkung": "-",
-        "globalID": "NE6T3T"
+        "globalID": "AXLWFD"
     },
     {
         "summary": "Rechnergestütztes Konstruieren",
@@ -440,7 +440,7 @@
         "end": "2025-11-25 11:30:00",
         "location": "LW0114",
         "organizer": null,
-        "created": "2025-11-18 07:01:38",
+        "created": "2025-11-18 08:01:24",
         "last_modified": null,
         "uid": "sked.de290351",
         "Veranstaltung": "Rechnergestütztes Konstruieren",
@@ -448,7 +448,7 @@
         "Art": "SV",
         "Studiengruppe": "24BTS-CPV-3, 24BTS-EAT-3, 24BTS-MEC-3, 24BTS-TIN-3",
         "Anmerkung": "-",
-        "globalID": "72GDJK"
+        "globalID": "49ZBR5"
     },
     {
         "summary": "Thermodynamik",
@@ -456,7 +456,7 @@
         "end": "2025-12-12 15:30:00",
         "location": "KD0304",
         "organizer": null,
-        "created": "2025-11-18 07:01:38",
+        "created": "2025-11-18 08:01:24",
         "last_modified": null,
         "uid": "sked.de291185",
         "Veranstaltung": "Thermodynamik",
@@ -464,7 +464,7 @@
         "Art": "SV",
         "Studiengruppe": "24BTS-CPV-3, 24BTS-MAS-3",
         "Anmerkung": "-",
-        "globalID": "1B96JA"
+        "globalID": "M5CJME"
     },
     {
         "summary": "Physikalische Chemie",
@@ -472,7 +472,7 @@
         "end": "2026-01-09 11:30:00",
         "location": "KF0004",
         "organizer": null,
-        "created": "2025-11-18 07:01:38",
+        "created": "2025-11-18 08:01:24",
         "last_modified": null,
         "uid": "sked.de291429",
         "Veranstaltung": "Physikalische Chemie",
@@ -480,7 +480,7 @@
         "Art": "SV",
         "Studiengruppe": "24BTS-CPV-3",
         "Anmerkung": "-",
-        "globalID": "NE6T3T"
+        "globalID": "AXLWFD"
     },
     {
         "summary": "Thermodynamik",
@@ -488,7 +488,7 @@
         "end": "2025-12-01 15:30:00",
         "location": "LK0101/LK0102",
         "organizer": null,
-        "created": "2025-11-18 07:01:38",
+        "created": "2025-11-18 08:01:24",
         "last_modified": null,
         "uid": "sked.de290472",
         "Veranstaltung": "Thermodynamik",
@@ -496,7 +496,7 @@
         "Art": "SV",
         "Studiengruppe": "24BTS-CPV-3, 24BTS-MAS-3",
         "Anmerkung": "-",
-        "globalID": "1B96JA"
+        "globalID": "M5CJME"
     },
     {
         "summary": "Englisch",
@@ -504,7 +504,7 @@
         "end": "2025-11-26 11:30:00",
         "location": "KD0001",
         "organizer": null,
-        "created": "2025-11-18 07:01:38",
+        "created": "2025-11-18 08:01:24",
         "last_modified": null,
         "uid": "sked.de290273",
         "Veranstaltung": "Englisch",
@@ -512,7 +512,7 @@
         "Art": "BK",
         "Studiengruppe": "24BTS-CPV-3, 24BTS-EAT-3, 24BTS-MEC-3, 24BTS-TIN-3",
         "Anmerkung": "-",
-        "globalID": "HX6OYR"
+        "globalID": "015E2H"
     },
     {
         "summary": "Semestergespräch",
@@ -520,7 +520,7 @@
         "end": "2025-11-18 17:15:00",
         "location": "KD0201",
         "organizer": null,
-        "created": "2025-11-18 07:01:38",
+        "created": "2025-11-18 08:01:24",
         "last_modified": null,
         "uid": "sked.de290588",
         "Veranstaltung": "Semestergespräch",
@@ -528,7 +528,7 @@
         "Art": "Info",
         "Studiengruppe": "24BTS-CPV-3, 24BTS-EAT-3, 24BTS-MAS-3, 24BTS-MEC-3, 24BTS-TIN-3",
         "Anmerkung": "-",
-        "globalID": "J8IZVV"
+        "globalID": "09HPJV"
     },
     {
         "summary": "Grundlagen Data Science",
@@ -536,7 +536,7 @@
         "end": "2026-01-06 11:30:00",
         "location": "KD0003",
         "organizer": null,
-        "created": "2025-11-18 07:01:38",
+        "created": "2025-11-18 08:01:24",
         "last_modified": null,
         "uid": "sked.de291340",
         "Veranstaltung": "Grundlagen Data Science",
@@ -544,7 +544,7 @@
         "Art": "SV",
         "Studiengruppe": "24BTS-CPV-3",
         "Anmerkung": "-",
-        "globalID": "21EFRK"
+        "globalID": "NHXHWH"
     },
     {
         "summary": "Physikalische Chemie",
@@ -552,7 +552,7 @@
         "end": "2025-12-09 11:30:00",
         "location": "KB0102 PC",
         "organizer": null,
-        "created": "2025-11-18 07:01:38",
+        "created": "2025-11-18 08:01:24",
         "last_modified": null,
         "uid": "sked.de291079",
         "Veranstaltung": "Physikalische Chemie",
@@ -560,7 +560,7 @@
         "Art": "SV",
         "Studiengruppe": "24BTS-CPV-3",
         "Anmerkung": "-",
-        "globalID": "NE6T3T"
+        "globalID": "AXLWFD"
     },
     {
         "summary": "Physikalische Chemie",
@@ -568,7 +568,7 @@
         "end": "2025-11-28 11:30:00",
         "location": "KE0008",
         "organizer": null,
-        "created": "2025-11-18 07:01:38",
+        "created": "2025-11-18 08:01:24",
         "last_modified": null,
         "uid": "sked.de290341",
         "Veranstaltung": "Physikalische Chemie",
@@ -576,7 +576,7 @@
         "Art": "SV",
         "Studiengruppe": "24BTS-CPV-3",
         "Anmerkung": "-",
-        "globalID": "NE6T3T"
+        "globalID": "AXLWFD"
     },
     {
         "summary": "Grundlagen Data Science",
@@ -584,7 +584,7 @@
         "end": "2026-01-14 11:30:00",
         "location": "KD0003",
         "organizer": null,
-        "created": "2025-11-18 07:01:38",
+        "created": "2025-11-18 08:01:24",
         "last_modified": null,
         "uid": "sked.de291345",
         "Veranstaltung": "Grundlagen Data Science",
@@ -592,7 +592,7 @@
         "Art": "SV",
         "Studiengruppe": "24BTS-CPV-3",
         "Anmerkung": "-",
-        "globalID": "21EFRK"
+        "globalID": "NHXHWH"
     },
     {
         "summary": "Physikalische Chemie",
@@ -600,7 +600,7 @@
         "end": "2025-11-18 11:30:00",
         "location": "KD0101",
         "organizer": null,
-        "created": "2025-11-18 07:01:38",
+        "created": "2025-11-18 08:01:24",
         "last_modified": null,
         "uid": "sked.de290345",
         "Veranstaltung": "Physikalische Chemie",
@@ -608,7 +608,7 @@
         "Art": "SV",
         "Studiengruppe": "24BTS-CPV-3",
         "Anmerkung": "-",
-        "globalID": "NE6T3T"
+        "globalID": "AXLWFD"
     },
     {
         "summary": "Statistik",
@@ -616,7 +616,7 @@
         "end": "2026-01-16 15:30:00",
         "location": "KA0004",
         "organizer": null,
-        "created": "2025-11-18 07:01:38",
+        "created": "2025-11-18 08:01:24",
         "last_modified": null,
         "uid": "sked.de291410",
         "Veranstaltung": "Statistik",
@@ -624,7 +624,7 @@
         "Art": "SV",
         "Studiengruppe": "24BTS-CPV-3, 24BTS-MAS-3",
         "Anmerkung": "-",
-        "globalID": "VD0YIH"
+        "globalID": "VBRH3O"
     },
     {
         "summary": "Physikalische Chemie",
@@ -632,7 +632,7 @@
         "end": "2025-12-04 15:30:00",
         "location": "LW0104 (BR)",
         "organizer": null,
-        "created": "2025-11-18 07:01:38",
+        "created": "2025-11-18 08:01:24",
         "last_modified": null,
         "uid": "sked.de290610",
         "Veranstaltung": "Physikalische Chemie",
@@ -640,7 +640,7 @@
         "Art": "SV",
         "Studiengruppe": "24BTS-CPV-3",
         "Anmerkung": "-",
-        "globalID": "NE6T3T"
+        "globalID": "AXLWFD"
     },
     {
         "summary": "Rechnergestütztes Konstruieren",
@@ -648,7 +648,7 @@
         "end": "2025-11-21 11:30:00",
         "location": "LW0114",
         "organizer": null,
-        "created": "2025-11-18 07:01:38",
+        "created": "2025-11-18 08:01:24",
         "last_modified": null,
         "uid": "sked.de290348",
         "Veranstaltung": "Rechnergestütztes Konstruieren",
@@ -656,7 +656,7 @@
         "Art": "SV",
         "Studiengruppe": "24BTS-CPV-3, 24BTS-EAT-3, 24BTS-MEC-3, 24BTS-TIN-3",
         "Anmerkung": "-",
-        "globalID": "72GDJK"
+        "globalID": "49ZBR5"
     },
     {
         "summary": "Grundlagen Data Science",
@@ -664,7 +664,7 @@
         "end": "2025-12-02 11:30:00",
         "location": "KD0301",
         "organizer": null,
-        "created": "2025-11-18 07:01:38",
+        "created": "2025-11-18 08:01:24",
         "last_modified": null,
         "uid": "sked.de290450",
         "Veranstaltung": "Grundlagen Data Science",
@@ -672,7 +672,7 @@
         "Art": "SV",
         "Studiengruppe": "24BTS-CPV-3",
         "Anmerkung": "-",
-        "globalID": "21EFRK"
+        "globalID": "NHXHWH"
     },
     {
         "summary": "Statistik",
@@ -680,7 +680,7 @@
         "end": "2026-01-09 15:30:00",
         "location": "KA0004",
         "organizer": null,
-        "created": "2025-11-18 07:01:38",
+        "created": "2025-11-18 08:01:24",
         "last_modified": null,
         "uid": "sked.de291398",
         "Veranstaltung": "Statistik",
@@ -688,7 +688,7 @@
         "Art": "SV",
         "Studiengruppe": "24BTS-CPV-3, 24BTS-MAS-3",
         "Anmerkung": "-",
-        "globalID": "VD0YIH"
+        "globalID": "VBRH3O"
     },
     {
         "summary": "Rechnergestütztes Konstruieren",
@@ -696,7 +696,7 @@
         "end": "2025-12-19 11:30:00",
         "location": "LW0114",
         "organizer": null,
-        "created": "2025-11-18 07:01:38",
+        "created": "2025-11-18 08:01:24",
         "last_modified": null,
         "uid": "sked.de291019",
         "Veranstaltung": "Rechnergestütztes Konstruieren",
@@ -704,7 +704,7 @@
         "Art": "SV",
         "Studiengruppe": "24BTS-CPV-3, 24BTS-EAT-3, 24BTS-MEC-3, 24BTS-TIN-3",
         "Anmerkung": "-",
-        "globalID": "72GDJK"
+        "globalID": "49ZBR5"
     },
     {
         "summary": "Rechnergestütztes Konstruieren",
@@ -712,7 +712,7 @@
         "end": "2025-12-12 11:30:00",
         "location": "LW0114",
         "organizer": null,
-        "created": "2025-11-18 07:01:38",
+        "created": "2025-11-18 08:01:24",
         "last_modified": null,
         "uid": "sked.de291018",
         "Veranstaltung": "Rechnergestütztes Konstruieren",
@@ -720,7 +720,7 @@
         "Art": "SV",
         "Studiengruppe": "24BTS-CPV-3, 24BTS-EAT-3, 24BTS-MEC-3, 24BTS-TIN-3",
         "Anmerkung": "-",
-        "globalID": "72GDJK"
+        "globalID": "49ZBR5"
     },
     {
         "summary": "Thermodynamik",
@@ -728,7 +728,7 @@
         "end": "2025-11-24 11:30:00",
         "location": "LN0001",
         "organizer": null,
-        "created": "2025-11-18 07:01:38",
+        "created": "2025-11-18 08:01:24",
         "last_modified": null,
         "uid": "sked.de290462",
         "Veranstaltung": "Thermodynamik",
@@ -736,7 +736,7 @@
         "Art": "SV",
         "Studiengruppe": "24BTS-CPV-3, 24BTS-MAS-3",
         "Anmerkung": "-",
-        "globalID": "1B96JA"
+        "globalID": "M5CJME"
     },
     {
         "summary": "Thermodynamik",
@@ -744,7 +744,7 @@
         "end": "2025-12-04 11:30:00",
         "location": "LW0114",
         "organizer": null,
-        "created": "2025-11-18 07:01:38",
+        "created": "2025-11-18 08:01:24",
         "last_modified": null,
         "uid": "sked.de290468",
         "Veranstaltung": "Thermodynamik",
@@ -752,7 +752,7 @@
         "Art": "SV",
         "Studiengruppe": "24BTS-CPV-3, 24BTS-MAS-3",
         "Anmerkung": "-",
-        "globalID": "1B96JA"
+        "globalID": "M5CJME"
     },
     {
         "summary": "Technische Physik - Physikalische Modelle",
@@ -760,7 +760,7 @@
         "end": "2026-01-07 19:00:00",
         "location": "KD0002",
         "organizer": null,
-        "created": "2025-11-18 07:01:38",
+        "created": "2025-11-18 08:01:24",
         "last_modified": null,
         "uid": "sked.de291385",
         "Veranstaltung": "Technische Physik - Physikalische Modelle",
@@ -768,7 +768,7 @@
         "Art": "SV",
         "Studiengruppe": "24BTS-CPV-3, 24BTS-EAT-3, 24BTS-MEC-3, 24BTS-TIN-3",
         "Anmerkung": "-",
-        "globalID": "VN5FJ0"
+        "globalID": "QC25RN"
     },
     {
         "summary": "Statistik",
@@ -776,7 +776,7 @@
         "end": "2025-12-01 19:00:00",
         "location": "KF0004",
         "organizer": null,
-        "created": "2025-11-18 07:01:38",
+        "created": "2025-11-18 08:01:24",
         "last_modified": null,
         "uid": "sked.de290533",
         "Veranstaltung": "Statistik",
@@ -784,7 +784,7 @@
         "Art": "SV",
         "Studiengruppe": "24BTS-CPV-3, 24BTS-MAS-3",
         "Anmerkung": "-",
-        "globalID": "VD0YIH"
+        "globalID": "VBRH3O"
     },
     {
         "summary": "Physikalische Chemie",
@@ -792,7 +792,7 @@
         "end": "2025-12-05 15:30:00",
         "location": "KE0104",
         "organizer": null,
-        "created": "2025-11-18 07:01:38",
+        "created": "2025-11-18 08:01:24",
         "last_modified": null,
         "uid": "sked.de290334",
         "Veranstaltung": "Physikalische Chemie",
@@ -800,7 +800,7 @@
         "Art": "SV",
         "Studiengruppe": "24BTS-CPV-3",
         "Anmerkung": "-",
-        "globalID": "NE6T3T"
+        "globalID": "AXLWFD"
     },
     {
         "summary": "Physikalische Chemie",
@@ -808,7 +808,7 @@
         "end": "2025-11-24 15:30:00",
         "location": "KD0106",
         "organizer": null,
-        "created": "2025-11-18 07:01:38",
+        "created": "2025-11-18 08:01:24",
         "last_modified": null,
         "uid": "sked.de290338",
         "Veranstaltung": "Physikalische Chemie",
@@ -816,7 +816,7 @@
         "Art": "SV",
         "Studiengruppe": "24BTS-CPV-3",
         "Anmerkung": "-",
-        "globalID": "NE6T3T"
+        "globalID": "AXLWFD"
     },
     {
         "summary": "Metallbau (Vorbereitung Kammerprüfung)",
@@ -824,7 +824,7 @@
         "end": "2025-11-26 19:00:00",
         "location": "KD0001",
         "organizer": null,
-        "created": "2025-11-18 07:01:38",
+        "created": "2025-11-18 08:01:24",
         "last_modified": null,
         "uid": "sked.de291181",
         "Veranstaltung": "Metallbau (Vorbereitung Kammerprüfung)",
@@ -832,7 +832,7 @@
         "Art": "PV",
         "Studiengruppe": "24BTS-CPV-3, 24BTS-EAT-3, 24BTS-MAS-3, 24BTS-MEC-3, 24BTS-TIN-3, 24DNE1-3, 24DNE2-3",
         "Anmerkung": "-",
-        "globalID": "NDJV88"
+        "globalID": "AJNYVX"
     },
     {
         "summary": "Metallbau (Vorbereitung Kammerprüfung)",
@@ -840,7 +840,7 @@
         "end": "2025-12-03 19:00:00",
         "location": "KD0001",
         "organizer": null,
-        "created": "2025-11-18 07:01:38",
+        "created": "2025-11-18 08:01:24",
         "last_modified": null,
         "uid": "sked.de291182",
         "Veranstaltung": "Metallbau (Vorbereitung Kammerprüfung)",
@@ -848,7 +848,7 @@
         "Art": "PV",
         "Studiengruppe": "24BTS-CPV-3, 24BTS-EAT-3, 24BTS-MAS-3, 24BTS-MEC-3, 24BTS-TIN-3, 24DNE1-3, 24DNE2-3",
         "Anmerkung": "-",
-        "globalID": "NDJV88"
+        "globalID": "AJNYVX"
     },
     {
         "summary": "Metallbau (Vorbereitung Kammerprüfung)",
@@ -856,7 +856,7 @@
         "end": "2025-12-10 19:00:00",
         "location": "KE0008",
         "organizer": null,
-        "created": "2025-11-18 07:01:38",
+        "created": "2025-11-18 08:01:24",
         "last_modified": null,
         "uid": "sked.de291183",
         "Veranstaltung": "Metallbau (Vorbereitung Kammerprüfung)",
@@ -864,7 +864,7 @@
         "Art": "PV",
         "Studiengruppe": "24BTS-CPV-3, 24BTS-EAT-3, 24BTS-MAS-3, 24BTS-MEC-3, 24BTS-TIN-3, 24DNE1-3, 24DNE2-3",
         "Anmerkung": "-",
-        "globalID": "NDJV88"
+        "globalID": "AJNYVX"
     },
     {
         "summary": "Metallbau (Vorbereitung Kammerprüfung)",
@@ -872,7 +872,7 @@
         "end": "2025-11-25 19:00:00",
         "location": "KE0101",
         "organizer": null,
-        "created": "2025-11-18 07:01:38",
+        "created": "2025-11-18 08:01:24",
         "last_modified": null,
         "uid": "sked.de291184",
         "Veranstaltung": "Metallbau (Vorbereitung Kammerprüfung)",
@@ -880,7 +880,7 @@
         "Art": "PV",
         "Studiengruppe": "24BTS-CPV-3, 24BTS-EAT-3, 24BTS-MAS-3, 24BTS-MEC-3, 24BTS-TIN-3, 24DNE1-3, 24DNE2-3",
         "Anmerkung": "-",
-        "globalID": "NDJV88"
+        "globalID": "AJNYVX"
     },
     {
         "summary": "Statistik",
@@ -888,7 +888,7 @@
         "end": "2026-01-14 15:30:00",
         "location": "KD0101",
         "organizer": null,
-        "created": "2025-11-18 07:01:38",
+        "created": "2025-11-18 08:01:24",
         "last_modified": null,
         "uid": "sked.de291405",
         "Veranstaltung": "Statistik",
@@ -896,7 +896,7 @@
         "Art": "SV",
         "Studiengruppe": "24BTS-CPV-3, 24BTS-MAS-3",
         "Anmerkung": "-",
-        "globalID": "VD0YIH"
+        "globalID": "VBRH3O"
     },
     {
         "summary": "Englisch",
@@ -904,7 +904,7 @@
         "end": "2026-01-07 11:30:00",
         "location": "KD0002",
         "organizer": null,
-        "created": "2025-11-18 07:01:38",
+        "created": "2025-11-18 08:01:24",
         "last_modified": null,
         "uid": "sked.de290850",
         "Veranstaltung": "Englisch",
@@ -912,7 +912,7 @@
         "Art": "BK",
         "Studiengruppe": "24BTS-CPV-3, 24BTS-EAT-3, 24BTS-MEC-3, 24BTS-TIN-3",
         "Anmerkung": "-",
-        "globalID": "HX6OYR"
+        "globalID": "015E2H"
     },
     {
         "summary": "Technische Physik - Physikalische Modelle",
@@ -920,7 +920,7 @@
         "end": "2026-01-13 19:00:00",
         "location": "KD0003",
         "organizer": null,
-        "created": "2025-11-18 07:01:38",
+        "created": "2025-11-18 08:01:24",
         "last_modified": null,
         "uid": "sked.de291389",
         "Veranstaltung": "Technische Physik - Physikalische Modelle",
@@ -928,7 +928,7 @@
         "Art": "SV",
         "Studiengruppe": "24BTS-CPV-3, 24BTS-EAT-3, 24BTS-MEC-3, 24BTS-TIN-3",
         "Anmerkung": "-",
-        "globalID": "VN5FJ0"
+        "globalID": "QC25RN"
     },
     {
         "summary": "Elektrische und elektronische Bauelemente",
@@ -936,7 +936,7 @@
         "end": "2025-12-15 11:30:00",
         "location": "KD0004",
         "organizer": null,
-        "created": "2025-11-18 07:01:41",
+        "created": "2025-11-18 08:01:27",
         "last_modified": null,
         "uid": "sked.de290254",
         "Veranstaltung": "Elektrische und elektronische Bauelemente",
@@ -944,7 +944,7 @@
         "Art": "SV",
         "Studiengruppe": "24BTS-EAT-3, 24BTS-MEC-3, 24BTS-TIN-3",
         "Anmerkung": "-",
-        "globalID": "NJDRJA"
+        "globalID": "V6LGWF"
     },
     {
         "summary": "Elektrische und elektronische Bauelemente",
@@ -952,7 +952,7 @@
         "end": "2025-12-16 15:30:00",
         "location": "KD0003",
         "organizer": null,
-        "created": "2025-11-18 07:01:41",
+        "created": "2025-11-18 08:01:27",
         "last_modified": null,
         "uid": "sked.de290255",
         "Veranstaltung": "Elektrische und elektronische Bauelemente",
@@ -960,7 +960,7 @@
         "Art": "SV",
         "Studiengruppe": "24BTS-EAT-3, 24BTS-MEC-3, 24BTS-TIN-3",
         "Anmerkung": "-",
-        "globalID": "NJDRJA"
+        "globalID": "V6LGWF"
     },
     {
         "summary": "Elektrische und elektronische Bauelemente",
@@ -968,7 +968,7 @@
         "end": "2025-12-17 11:30:00",
         "location": "KD0001",
         "organizer": null,
-        "created": "2025-11-18 07:01:41",
+        "created": "2025-11-18 08:01:27",
         "last_modified": null,
         "uid": "sked.de290257",
         "Veranstaltung": "Elektrische und elektronische Bauelemente",
@@ -976,7 +976,7 @@
         "Art": "SV",
         "Studiengruppe": "24BTS-EAT-3, 24BTS-MEC-3, 24BTS-TIN-3",
         "Anmerkung": "-",
-        "globalID": "NJDRJA"
+        "globalID": "V6LGWF"
     },
     {
         "summary": "Elektrische und elektronische Bauelemente",
@@ -984,7 +984,7 @@
         "end": "2025-12-18 15:30:00",
         "location": "KD0001",
         "organizer": null,
-        "created": "2025-11-18 07:01:41",
+        "created": "2025-11-18 08:01:27",
         "last_modified": null,
         "uid": "sked.de290258",
         "Veranstaltung": "Elektrische und elektronische Bauelemente",
@@ -992,7 +992,7 @@
         "Art": "SV",
         "Studiengruppe": "24BTS-EAT-3, 24BTS-MEC-3, 24BTS-TIN-3",
         "Anmerkung": "-",
-        "globalID": "NJDRJA"
+        "globalID": "V6LGWF"
     },
     {
         "summary": "Datenbanken",
@@ -1000,7 +1000,7 @@
         "end": "2025-12-16 11:30:00",
         "location": "KD0201",
         "organizer": null,
-        "created": "2025-11-18 07:01:41",
+        "created": "2025-11-18 08:01:27",
         "last_modified": null,
         "uid": "sked.de290925",
         "Veranstaltung": "Datenbanken",
@@ -1008,7 +1008,7 @@
         "Art": "SV",
         "Studiengruppe": "24BTS-TIN-3, 24DNI1-3, 24DNI2-3, 24DNI2-STE-3",
         "Anmerkung": "-",
-        "globalID": "4BX1JA"
+        "globalID": "Q4LQEJ"
     },
     {
         "summary": "Datenbanken",
@@ -1016,7 +1016,7 @@
         "end": "2025-12-09 11:30:00",
         "location": "LK0101/LK0102",
         "organizer": null,
-        "created": "2025-11-18 07:01:41",
+        "created": "2025-11-18 08:01:27",
         "last_modified": null,
         "uid": "sked.de290926",
         "Veranstaltung": "Datenbanken",
@@ -1024,7 +1024,7 @@
         "Art": "SV",
         "Studiengruppe": "24BTS-TIN-3, 24DNI1-3, 24DNI2-3, 24DNI2-STE-3",
         "Anmerkung": "-",
-        "globalID": "4BX1JA"
+        "globalID": "Q4LQEJ"
     },
     {
         "summary": "Elektrische Maschinen",
@@ -1032,7 +1032,7 @@
         "end": "2025-12-03 15:30:00",
         "location": "KD0003",
         "organizer": null,
-        "created": "2025-11-18 07:01:41",
+        "created": "2025-11-18 08:01:27",
         "last_modified": null,
         "uid": "sked.de290242",
         "Veranstaltung": "Elektrische Maschinen",
@@ -1040,7 +1040,7 @@
         "Art": "SV",
         "Studiengruppe": "24BTS-EAT-3, 24BTS-MEC-3, 24BTS-TIN-3",
         "Anmerkung": "-",
-        "globalID": "F3P5HC"
+        "globalID": "KRUJOM"
     },
     {
         "summary": "Elektrische Maschinen",
@@ -1048,7 +1048,7 @@
         "end": "2025-12-04 15:30:00",
         "location": "KE0002",
         "organizer": null,
-        "created": "2025-11-18 07:01:41",
+        "created": "2025-11-18 08:01:27",
         "last_modified": null,
         "uid": "sked.de290243",
         "Veranstaltung": "Elektrische Maschinen",
@@ -1056,7 +1056,7 @@
         "Art": "SV",
         "Studiengruppe": "24BTS-EAT-3, 24BTS-MEC-3, 24BTS-TIN-3",
         "Anmerkung": "-",
-        "globalID": "F3P5HC"
+        "globalID": "KRUJOM"
     },
     {
         "summary": "Elektrische Maschinen",
@@ -1064,7 +1064,7 @@
         "end": "2025-11-26 15:30:00",
         "location": "KD0003",
         "organizer": null,
-        "created": "2025-11-18 07:01:41",
+        "created": "2025-11-18 08:01:27",
         "last_modified": null,
         "uid": "sked.de290241",
         "Veranstaltung": "Elektrische Maschinen",
@@ -1072,7 +1072,7 @@
         "Art": "SV",
         "Studiengruppe": "24BTS-EAT-3, 24BTS-MEC-3, 24BTS-TIN-3",
         "Anmerkung": "-",
-        "globalID": "F3P5HC"
+        "globalID": "KRUJOM"
     },
     {
         "summary": "Elektrische und elektronische Bauelemente",
@@ -1080,7 +1080,7 @@
         "end": "2025-11-19 11:30:00",
         "location": "KD0002",
         "organizer": null,
-        "created": "2025-11-18 07:01:41",
+        "created": "2025-11-18 08:01:27",
         "last_modified": null,
         "uid": "sked.de290245",
         "Veranstaltung": "Elektrische und elektronische Bauelemente",
@@ -1088,7 +1088,7 @@
         "Art": "SV",
         "Studiengruppe": "24BTS-EAT-3, 24BTS-MEC-3, 24BTS-TIN-3",
         "Anmerkung": "-",
-        "globalID": "NJDRJA"
+        "globalID": "V6LGWF"
     },
     {
         "summary": "Elektrische und elektronische Bauelemente",
@@ -1096,7 +1096,7 @@
         "end": "2025-11-18 15:30:00",
         "location": "KD0002",
         "organizer": null,
-        "created": "2025-11-18 07:01:41",
+        "created": "2025-11-18 08:01:27",
         "last_modified": null,
         "uid": "sked.de290244",
         "Veranstaltung": "Elektrische und elektronische Bauelemente",
@@ -1104,7 +1104,7 @@
         "Art": "SV",
         "Studiengruppe": "24BTS-EAT-3, 24BTS-MEC-3, 24BTS-TIN-3",
         "Anmerkung": "-",
-        "globalID": "NJDRJA"
+        "globalID": "V6LGWF"
     },
     {
         "summary": "Elektrische und elektronische Bauelemente",
@@ -1112,7 +1112,7 @@
         "end": "2025-11-20 15:30:00",
         "location": "KA0004",
         "organizer": null,
-        "created": "2025-11-18 07:01:41",
+        "created": "2025-11-18 08:01:27",
         "last_modified": null,
         "uid": "sked.de290249",
         "Veranstaltung": "Elektrische und elektronische Bauelemente",
@@ -1120,7 +1120,7 @@
         "Art": "SV",
         "Studiengruppe": "24BTS-EAT-3, 24BTS-MEC-3, 24BTS-TIN-3",
         "Anmerkung": "-",
-        "globalID": "NJDRJA"
+        "globalID": "V6LGWF"
     },
     {
         "summary": "Elektrische Maschinen",
@@ -1128,7 +1128,7 @@
         "end": "2026-01-07 15:30:00",
         "location": "KD0004",
         "organizer": null,
-        "created": "2025-11-18 07:01:41",
+        "created": "2025-11-18 08:01:27",
         "last_modified": null,
         "uid": "sked.de291315",
         "Veranstaltung": "Elektrische Maschinen",
@@ -1136,7 +1136,7 @@
         "Art": "SV",
         "Studiengruppe": "24BTS-EAT-3, 24BTS-MEC-3, 24BTS-TIN-3",
         "Anmerkung": "-",
-        "globalID": "F3P5HC"
+        "globalID": "KRUJOM"
     },
     {
         "summary": "Elektrische Maschinen",
@@ -1144,7 +1144,7 @@
         "end": "2026-01-14 15:30:00",
         "location": "KD0003",
         "organizer": null,
-        "created": "2025-11-18 07:01:41",
+        "created": "2025-11-18 08:01:27",
         "last_modified": null,
         "uid": "sked.de291316",
         "Veranstaltung": "Elektrische Maschinen",
@@ -1152,7 +1152,7 @@
         "Art": "SV",
         "Studiengruppe": "24BTS-EAT-3, 24BTS-MEC-3, 24BTS-TIN-3",
         "Anmerkung": "-",
-        "globalID": "F3P5HC"
+        "globalID": "KRUJOM"
     },
     {
         "summary": "Elektrische Maschinen",
@@ -1160,7 +1160,7 @@
         "end": "2025-12-08 11:30:00",
         "location": "LK0103",
         "organizer": null,
-        "created": "2025-11-18 07:01:41",
+        "created": "2025-11-18 08:01:27",
         "last_modified": null,
         "uid": "sked.de290962",
         "Veranstaltung": "Elektrische Maschinen",
@@ -1168,7 +1168,7 @@
         "Art": "SV",
         "Studiengruppe": "24BTS-EAT-3, 24BTS-MEC-3, 24BTS-TIN-3",
         "Anmerkung": "-",
-        "globalID": "F3P5HC"
+        "globalID": "KRUJOM"
     },
     {
         "summary": "Elektrische Maschinen",
@@ -1176,7 +1176,7 @@
         "end": "2025-12-10 15:30:00",
         "location": "KE0103",
         "organizer": null,
-        "created": "2025-11-18 07:01:41",
+        "created": "2025-11-18 08:01:27",
         "last_modified": null,
         "uid": "sked.de290963",
         "Veranstaltung": "Elektrische Maschinen",
@@ -1184,7 +1184,7 @@
         "Art": "SV",
         "Studiengruppe": "24BTS-EAT-3, 24BTS-MEC-3, 24BTS-TIN-3",
         "Anmerkung": "-",
-        "globalID": "F3P5HC"
+        "globalID": "KRUJOM"
     },
     {
         "summary": "Elektrische Maschinen",
@@ -1192,7 +1192,7 @@
         "end": "2025-12-17 15:30:00",
         "location": "KE0101",
         "organizer": null,
-        "created": "2025-11-18 07:01:41",
+        "created": "2025-11-18 08:01:27",
         "last_modified": null,
         "uid": "sked.de290966",
         "Veranstaltung": "Elektrische Maschinen",
@@ -1200,7 +1200,7 @@
         "Art": "SV",
         "Studiengruppe": "24BTS-EAT-3, 24BTS-MEC-3, 24BTS-TIN-3",
         "Anmerkung": "-",
-        "globalID": "F3P5HC"
+        "globalID": "KRUJOM"
     },
     {
         "summary": "Algorythmen und Datenstrukturen",
@@ -1208,7 +1208,7 @@
         "end": "2025-11-27 15:30:00",
         "location": "KD0201",
         "organizer": null,
-        "created": "2025-11-18 07:01:41",
+        "created": "2025-11-18 08:01:27",
         "last_modified": null,
         "uid": "sked.de290230",
         "Veranstaltung": "Algorythmen und Datenstrukturen",
@@ -1216,7 +1216,7 @@
         "Art": "SV",
         "Studiengruppe": "24BTS-TIN-3, 24DNI1-3",
         "Anmerkung": "-",
-        "globalID": "9LW3QB"
+        "globalID": "7XFLER"
     },
     {
         "summary": "Algorythmen und Datenstrukturen",
@@ -1224,7 +1224,7 @@
         "end": "2025-12-04 11:30:00",
         "location": "KD0001",
         "organizer": null,
-        "created": "2025-11-18 07:01:41",
+        "created": "2025-11-18 08:01:27",
         "last_modified": null,
         "uid": "sked.de290233",
         "Veranstaltung": "Algorythmen und Datenstrukturen",
@@ -1232,7 +1232,7 @@
         "Art": "SV",
         "Studiengruppe": "24BTS-TIN-3, 24DNI1-3",
         "Anmerkung": "-",
-        "globalID": "9LW3QB"
+        "globalID": "7XFLER"
     },
     {
         "summary": "Elektrische Maschinen",
@@ -1240,7 +1240,7 @@
         "end": "2025-11-19 15:30:00",
         "location": "KD0002",
         "organizer": null,
-        "created": "2025-11-18 07:01:41",
+        "created": "2025-11-18 08:01:27",
         "last_modified": null,
         "uid": "sked.de290239",
         "Veranstaltung": "Elektrische Maschinen",
@@ -1248,7 +1248,7 @@
         "Art": "SV",
         "Studiengruppe": "24BTS-EAT-3, 24BTS-MEC-3, 24BTS-TIN-3",
         "Anmerkung": "-",
-        "globalID": "F3P5HC"
+        "globalID": "KRUJOM"
     },
     {
         "summary": "Algorythmen und Datenstrukturen",
@@ -1256,7 +1256,7 @@
         "end": "2025-12-18 11:30:00",
         "location": "LK0103",
         "organizer": null,
-        "created": "2025-11-18 07:01:41",
+        "created": "2025-11-18 08:01:27",
         "last_modified": null,
         "uid": "sked.de290956",
         "Veranstaltung": "Algorythmen und Datenstrukturen",
@@ -1264,7 +1264,7 @@
         "Art": "SV",
         "Studiengruppe": "24BTS-TIN-3, 24DNI1-3",
         "Anmerkung": "-",
-        "globalID": "9LW3QB"
+        "globalID": "7XFLER"
     },
     {
         "summary": "Elektrische und elektronische Bauelemente",
@@ -1272,7 +1272,7 @@
         "end": "2025-11-25 15:30:00",
         "location": "KD0003",
         "organizer": null,
-        "created": "2025-11-18 07:01:41",
+        "created": "2025-11-18 08:01:27",
         "last_modified": null,
         "uid": "sked.de290251",
         "Veranstaltung": "Elektrische und elektronische Bauelemente",
@@ -1280,7 +1280,7 @@
         "Art": "SV",
         "Studiengruppe": "24BTS-EAT-3, 24BTS-MEC-3, 24BTS-TIN-3",
         "Anmerkung": "-",
-        "globalID": "NJDRJA"
+        "globalID": "V6LGWF"
     },
     {
         "summary": "Algorythmen und Datenstrukturen",
@@ -1288,7 +1288,7 @@
         "end": "2025-12-11 11:30:00",
         "location": "KE0102",
         "organizer": null,
-        "created": "2025-11-18 07:01:41",
+        "created": "2025-11-18 08:01:27",
         "last_modified": null,
         "uid": "sked.de290959",
         "Veranstaltung": "Algorythmen und Datenstrukturen",
@@ -1296,7 +1296,7 @@
         "Art": "SV",
         "Studiengruppe": "24BTS-TIN-3, 24DNI1-3",
         "Anmerkung": "-",
-        "globalID": "9LW3QB"
+        "globalID": "7XFLER"
     },
     {
         "summary": "Algorythmen und Datenstrukturen",
@@ -1304,7 +1304,7 @@
         "end": "2025-11-20 11:30:00",
         "location": "KD0001",
         "organizer": null,
-        "created": "2025-11-18 07:01:41",
+        "created": "2025-11-18 08:01:27",
         "last_modified": null,
         "uid": "sked.de290222",
         "Veranstaltung": "Algorythmen und Datenstrukturen",
@@ -1312,7 +1312,7 @@
         "Art": "SV",
         "Studiengruppe": "24BTS-TIN-3, 24DNI1-3",
         "Anmerkung": "-",
-        "globalID": "9LW3QB"
+        "globalID": "7XFLER"
     },
     {
         "summary": "Algorythmen und Datenstrukturen",
@@ -1320,7 +1320,7 @@
         "end": "2026-01-14 11:30:00",
         "location": "KD0106",
         "organizer": null,
-        "created": "2025-11-18 07:01:41",
+        "created": "2025-11-18 08:01:27",
         "last_modified": null,
         "uid": "sked.de291424",
         "Veranstaltung": "Algorythmen und Datenstrukturen",
@@ -1328,7 +1328,7 @@
         "Art": "SV",
         "Studiengruppe": "24BTS-TIN-3, 24DNI1-3",
         "Anmerkung": "-",
-        "globalID": "9LW3QB"
+        "globalID": "7XFLER"
     },
     {
         "summary": "Datenbanken",
@@ -1336,7 +1336,7 @@
         "end": "2025-11-18 11:30:00",
         "location": "KD0201",
         "organizer": null,
-        "created": "2025-11-18 07:01:41",
+        "created": "2025-11-18 08:01:27",
         "last_modified": null,
         "uid": "sked.de290225",
         "Veranstaltung": "Datenbanken",
@@ -1344,7 +1344,7 @@
         "Art": "SV",
         "Studiengruppe": "24BTS-TIN-3, 24DNI1-3, 24DNI2-3, 24DNI2-STE-3",
         "Anmerkung": "-",
-        "globalID": "4BX1JA"
+        "globalID": "Q4LQEJ"
     },
     {
         "summary": "Datenbanken",
@@ -1352,7 +1352,7 @@
         "end": "2025-11-24 11:30:00",
         "location": "LK0101/LK0102",
         "organizer": null,
-        "created": "2025-11-18 07:01:41",
+        "created": "2025-11-18 08:01:27",
         "last_modified": null,
         "uid": "sked.de290226",
         "Veranstaltung": "Datenbanken",
@@ -1360,7 +1360,7 @@
         "Art": "SV",
         "Studiengruppe": "24BTS-TIN-3, 24DNI1-3, 24DNI2-3, 24DNI2-STE-3",
         "Anmerkung": "-",
-        "globalID": "4BX1JA"
+        "globalID": "Q4LQEJ"
     },
     {
         "summary": "Datenbanken",
@@ -1368,7 +1368,7 @@
         "end": "2025-12-01 11:30:00",
         "location": "KD0201",
         "organizer": null,
-        "created": "2025-11-18 07:01:41",
+        "created": "2025-11-18 08:01:27",
         "last_modified": null,
         "uid": "sked.de290227",
         "Veranstaltung": "Datenbanken",
@@ -1376,7 +1376,7 @@
         "Art": "SV",
         "Studiengruppe": "24BTS-TIN-3, 24DNI1-3, 24DNI2-3, 24DNI2-STE-3",
         "Anmerkung": "-",
-        "globalID": "4BX1JA"
+        "globalID": "Q4LQEJ"
     },
     {
         "summary": "Datenbanken",
@@ -1384,7 +1384,7 @@
         "end": "2025-12-05 11:30:00",
         "location": "KD0202",
         "organizer": null,
-        "created": "2025-11-18 07:01:41",
+        "created": "2025-11-18 08:01:27",
         "last_modified": null,
         "uid": "sked.de290228",
         "Veranstaltung": "Datenbanken",
@@ -1392,7 +1392,7 @@
         "Art": "SV",
         "Studiengruppe": "24BTS-TIN-3, 24DNI1-3, 24DNI2-3, 24DNI2-STE-3",
         "Anmerkung": "-",
-        "globalID": "4BX1JA"
+        "globalID": "Q4LQEJ"
     },
     {
         "summary": "Algorythmen und Datenstrukturen",
@@ -1400,7 +1400,7 @@
         "end": "2026-01-15 11:30:00",
         "location": "KD0003",
         "organizer": null,
-        "created": "2025-11-18 07:01:41",
+        "created": "2025-11-18 08:01:27",
         "last_modified": null,
         "uid": "sked.de291188",
         "Veranstaltung": "Algorythmen und Datenstrukturen",
@@ -1408,7 +1408,7 @@
         "Art": "SV",
         "Studiengruppe": "24BTS-TIN-3, 24DNI1-3",
         "Anmerkung": "-",
-        "globalID": "9LW3QB"
+        "globalID": "7XFLER"
     },
     {
         "summary": "Elektrische und elektronische Bauelemente",
@@ -1416,7 +1416,7 @@
         "end": "2025-12-18 19:00:00",
         "location": "KD0001",
         "organizer": null,
-        "created": "2025-11-18 07:01:41",
+        "created": "2025-11-18 08:01:27",
         "last_modified": null,
         "uid": "sked.de291147",
         "Veranstaltung": "Elektrische und elektronische Bauelemente",
@@ -1424,7 +1424,7 @@
         "Art": "SV",
         "Studiengruppe": "24BTS-EAT-3, 24BTS-MEC-3, 24BTS-TIN-3",
         "Anmerkung": "-",
-        "globalID": "NJDRJA"
+        "globalID": "V6LGWF"
     },
     {
         "summary": "Elektrische und elektronische Bauelemente",
@@ -1432,7 +1432,7 @@
         "end": "2026-01-06 19:30:00",
         "location": "KD0001",
         "organizer": null,
-        "created": "2025-11-18 07:01:41",
+        "created": "2025-11-18 08:01:27",
         "last_modified": null,
         "uid": "sked.de291148",
         "Veranstaltung": "Elektrische und elektronische Bauelemente",
@@ -1440,7 +1440,7 @@
         "Art": "K",
         "Studiengruppe": "24BTS-EAT-3, 24BTS-MEC-3, 24BTS-TIN-3",
         "Anmerkung": "-",
-        "globalID": "NJDRJA"
+        "globalID": "V6LGWF"
     },
     {
         "summary": "Elektrische und elektronische Bauelemente",
@@ -1448,7 +1448,7 @@
         "end": "2026-01-05 11:30:00",
         "location": "KD0001",
         "organizer": null,
-        "created": "2025-11-18 07:01:41",
+        "created": "2025-11-18 08:01:27",
         "last_modified": null,
         "uid": "sked.de291149",
         "Veranstaltung": "Elektrische und elektronische Bauelemente",
@@ -1456,7 +1456,7 @@
         "Art": "SV",
         "Studiengruppe": "24BTS-EAT-3, 24BTS-MEC-3, 24BTS-TIN-3",
         "Anmerkung": "-",
-        "globalID": "NJDRJA"
+        "globalID": "V6LGWF"
     },
     {
         "summary": "Datenbanken",
@@ -1464,7 +1464,7 @@
         "end": "2026-01-06 11:30:00",
         "location": "KD0201",
         "organizer": null,
-        "created": "2025-11-18 07:01:41",
+        "created": "2025-11-18 08:01:27",
         "last_modified": null,
         "uid": "sked.de291264",
         "Veranstaltung": "Datenbanken",
@@ -1472,7 +1472,7 @@
         "Art": "SV",
         "Studiengruppe": "24BTS-TIN-3, 24DNI1-3, 24DNI2-3, 24DNI2-STE-3",
         "Anmerkung": "-",
-        "globalID": "4BX1JA"
+        "globalID": "Q4LQEJ"
     },
     {
         "summary": "Datenbanken",
@@ -1480,7 +1480,7 @@
         "end": "2026-01-12 11:30:00",
         "location": "LK0101/LK0102",
         "organizer": null,
-        "created": "2025-11-18 07:01:41",
+        "created": "2025-11-18 08:01:27",
         "last_modified": null,
         "uid": "sked.de291265",
         "Veranstaltung": "Datenbanken",
@@ -1488,7 +1488,7 @@
         "Art": "SV",
         "Studiengruppe": "24BTS-TIN-3, 24DNI1-3, 24DNI2-3, 24DNI2-STE-3",
         "Anmerkung": "-",
-        "globalID": "4BX1JA"
+        "globalID": "Q4LQEJ"
     },
     {
         "summary": "Algorythmen und Datenstrukturen",
@@ -1496,7 +1496,7 @@
         "end": "2026-01-08 15:30:00",
         "location": "KD0002",
         "organizer": null,
-        "created": "2025-11-18 07:01:41",
+        "created": "2025-11-18 08:01:27",
         "last_modified": null,
         "uid": "sked.de291187",
         "Veranstaltung": "Algorythmen und Datenstrukturen",
@@ -1504,7 +1504,7 @@
         "Art": "SV",
         "Studiengruppe": "24BTS-TIN-3, 24DNI1-3",
         "Anmerkung": "-",
-        "globalID": "9LW3QB"
+        "globalID": "7XFLER"
     },
     {
         "summary": "Technische Elektrodynamik",
@@ -1512,7 +1512,7 @@
         "end": "2025-11-18 11:30:00",
         "location": "KA0004",
         "organizer": null,
-        "created": "2025-11-18 07:01:40",
+        "created": "2025-11-18 08:01:27",
         "last_modified": null,
         "uid": "sked.de290453",
         "Veranstaltung": "Technische Elektrodynamik",
@@ -1520,7 +1520,7 @@
         "Art": "SV",
         "Studiengruppe": "24BTS-EAT-3, 24BTS-MEC-3",
         "Anmerkung": "-",
-        "globalID": "39E3CU"
+        "globalID": "GK3FTW"
     },
     {
         "summary": "Auslegung technischer Baugruppen",
@@ -1528,7 +1528,7 @@
         "end": "2026-01-12 15:30:00",
         "location": "KD0003",
         "organizer": null,
-        "created": "2025-11-18 07:01:40",
+        "created": "2025-11-18 08:01:27",
         "last_modified": null,
         "uid": "sked.de291054",
         "Veranstaltung": "Auslegung technischer Baugruppen",
@@ -1536,7 +1536,7 @@
         "Art": "SV",
         "Studiengruppe": "24BTS-MAS-3, 24BTS-MEC-3",
         "Anmerkung": "-",
-        "globalID": "8MACNU"
+        "globalID": "AQ78NF"
     },
     {
         "summary": "Auslegung technischer Baugruppen",
@@ -1544,7 +1544,7 @@
         "end": "2026-01-05 15:30:00",
         "location": "KD0003",
         "organizer": null,
-        "created": "2025-11-18 07:01:40",
+        "created": "2025-11-18 08:01:27",
         "last_modified": null,
         "uid": "sked.de291055",
         "Veranstaltung": "Auslegung technischer Baugruppen",
@@ -1552,7 +1552,7 @@
         "Art": "SV",
         "Studiengruppe": "24BTS-MAS-3, 24BTS-MEC-3",
         "Anmerkung": "-",
-        "globalID": "8MACNU"
+        "globalID": "AQ78NF"
     },
     {
         "summary": "Technische Elektrodynamik",
@@ -1560,7 +1560,7 @@
         "end": "2025-11-24 11:30:00",
         "location": "KA0004",
         "organizer": null,
-        "created": "2025-11-18 07:01:40",
+        "created": "2025-11-18 08:01:27",
         "last_modified": null,
         "uid": "sked.de290458",
         "Veranstaltung": "Technische Elektrodynamik",
@@ -1568,7 +1568,7 @@
         "Art": "SV",
         "Studiengruppe": "24BTS-EAT-3, 24BTS-MEC-3",
         "Anmerkung": "-",
-        "globalID": "39E3CU"
+        "globalID": "GK3FTW"
     },
     {
         "summary": "Mechanik: Dynamik",
@@ -1576,7 +1576,7 @@
         "end": "2025-11-17 15:30:00",
         "location": "KD0106",
         "organizer": null,
-        "created": "2025-11-18 07:01:40",
+        "created": "2025-11-18 08:01:27",
         "last_modified": null,
         "uid": "sked.de290503",
         "Veranstaltung": "Mechanik: Dynamik",
@@ -1584,7 +1584,7 @@
         "Art": "SV",
         "Studiengruppe": "24BTS-EAT-3, 24BTS-MAS-3, 24BTS-MEC-3",
         "Anmerkung": "-",
-        "globalID": "MEOWDJ"
+        "globalID": "EUPF79"
     },
     {
         "summary": "Auslegung technischer Baugruppen",
@@ -1592,7 +1592,7 @@
         "end": "2025-12-01 11:30:00",
         "location": "KD0002",
         "organizer": null,
-        "created": "2025-11-18 07:01:40",
+        "created": "2025-11-18 08:01:27",
         "last_modified": null,
         "uid": "sked.de290172",
         "Veranstaltung": "Auslegung technischer Baugruppen",
@@ -1600,7 +1600,7 @@
         "Art": "SV",
         "Studiengruppe": "24BTS-MAS-3, 24BTS-MEC-3",
         "Anmerkung": "-",
-        "globalID": "8MACNU"
+        "globalID": "AQ78NF"
     },
     {
         "summary": "Mechanik: Dynamik",
@@ -1608,7 +1608,7 @@
         "end": "2025-12-09 11:30:00",
         "location": "LW0114",
         "organizer": null,
-        "created": "2025-11-18 07:01:40",
+        "created": "2025-11-18 08:01:27",
         "last_modified": null,
         "uid": "sked.de291040",
         "Veranstaltung": "Mechanik: Dynamik",
@@ -1616,7 +1616,7 @@
         "Art": "SV",
         "Studiengruppe": "24BTS-EAT-3, 24BTS-MAS-3, 24BTS-MEC-3",
         "Anmerkung": "-",
-        "globalID": "MEOWDJ"
+        "globalID": "EUPF79"
     },
     {
         "summary": "Mechanik: Dynamik",
@@ -1624,7 +1624,7 @@
         "end": "2025-12-16 11:30:00",
         "location": "LN0002",
         "organizer": null,
-        "created": "2025-11-18 07:01:40",
+        "created": "2025-11-18 08:01:27",
         "last_modified": null,
         "uid": "sked.de291044",
         "Veranstaltung": "Mechanik: Dynamik",
@@ -1632,7 +1632,7 @@
         "Art": "SV",
         "Studiengruppe": "24BTS-EAT-3, 24BTS-MAS-3, 24BTS-MEC-3",
         "Anmerkung": "-",
-        "globalID": "MEOWDJ"
+        "globalID": "EUPF79"
     },
     {
         "summary": "Mechanik: Dynamik",
@@ -1640,7 +1640,7 @@
         "end": "2026-01-15 11:30:00",
         "location": "LN0002",
         "organizer": null,
-        "created": "2025-11-18 07:01:40",
+        "created": "2025-11-18 08:01:27",
         "last_modified": null,
         "uid": "sked.de291388",
         "Veranstaltung": "Mechanik: Dynamik",
@@ -1648,7 +1648,7 @@
         "Art": "SV",
         "Studiengruppe": "24BTS-EAT-3, 24BTS-MAS-3, 24BTS-MEC-3",
         "Anmerkung": "-",
-        "globalID": "MEOWDJ"
+        "globalID": "EUPF79"
     },
     {
         "summary": "Mechanik: Dynamik",
@@ -1656,7 +1656,7 @@
         "end": "2025-12-18 11:30:00",
         "location": "LN0002",
         "organizer": null,
-        "created": "2025-11-18 07:01:40",
+        "created": "2025-11-18 08:01:27",
         "last_modified": null,
         "uid": "sked.de291045",
         "Veranstaltung": "Mechanik: Dynamik",
@@ -1664,7 +1664,7 @@
         "Art": "SV",
         "Studiengruppe": "24BTS-EAT-3, 24BTS-MAS-3, 24BTS-MEC-3",
         "Anmerkung": "-",
-        "globalID": "MEOWDJ"
+        "globalID": "EUPF79"
     },
     {
         "summary": "Technische Elektrodynamik",
@@ -1672,7 +1672,7 @@
         "end": "2026-01-08 15:30:00",
         "location": "KD0001",
         "organizer": null,
-        "created": "2025-11-18 07:01:40",
+        "created": "2025-11-18 08:01:27",
         "last_modified": null,
         "uid": "sked.de291361",
         "Veranstaltung": "Technische Elektrodynamik",
@@ -1680,7 +1680,7 @@
         "Art": "SV",
         "Studiengruppe": "24BTS-EAT-3, 24BTS-MEC-3",
         "Anmerkung": "-",
-        "globalID": "39E3CU"
+        "globalID": "GK3FTW"
     },
     {
         "summary": "Technische Elektrodynamik",
@@ -1688,7 +1688,7 @@
         "end": "2026-01-13 15:30:00",
         "location": "KD0106",
         "organizer": null,
-        "created": "2025-11-18 07:01:40",
+        "created": "2025-11-18 08:01:27",
         "last_modified": null,
         "uid": "sked.de291364",
         "Veranstaltung": "Technische Elektrodynamik",
@@ -1696,7 +1696,7 @@
         "Art": "SV",
         "Studiengruppe": "24BTS-EAT-3, 24BTS-MEC-3",
         "Anmerkung": "-",
-        "globalID": "39E3CU"
+        "globalID": "GK3FTW"
     },
     {
         "summary": "Auslegung technischer Baugruppen",
@@ -1704,7 +1704,7 @@
         "end": "2025-11-17 11:30:00",
         "location": "KD0001",
         "organizer": null,
-        "created": "2025-11-18 07:01:40",
+        "created": "2025-11-18 08:01:27",
         "last_modified": null,
         "uid": "sked.de290168",
         "Veranstaltung": "Auslegung technischer Baugruppen",
@@ -1712,7 +1712,7 @@
         "Art": "SV",
         "Studiengruppe": "24BTS-MAS-3, 24BTS-MEC-3",
         "Anmerkung": "-",
-        "globalID": "8MACNU"
+        "globalID": "AQ78NF"
     },
     {
         "summary": "Auslegung technischer Baugruppen",
@@ -1720,7 +1720,7 @@
         "end": "2025-11-24 15:30:00",
         "location": "KD0003",
         "organizer": null,
-        "created": "2025-11-18 07:01:40",
+        "created": "2025-11-18 08:01:27",
         "last_modified": null,
         "uid": "sked.de290169",
         "Veranstaltung": "Auslegung technischer Baugruppen",
@@ -1728,7 +1728,7 @@
         "Art": "SV",
         "Studiengruppe": "24BTS-MAS-3, 24BTS-MEC-3",
         "Anmerkung": "-",
-        "globalID": "8MACNU"
+        "globalID": "AQ78NF"
     },
     {
         "summary": "Technische Elektrodynamik",
@@ -1736,7 +1736,7 @@
         "end": "2025-12-11 15:30:00",
         "location": "KB0202",
         "organizer": null,
-        "created": "2025-11-18 07:01:40",
+        "created": "2025-11-18 08:01:27",
         "last_modified": null,
         "uid": "sked.de291101",
         "Veranstaltung": "Technische Elektrodynamik",
@@ -1744,7 +1744,7 @@
         "Art": "SV",
         "Studiengruppe": "24BTS-EAT-3, 24BTS-MEC-3",
         "Anmerkung": "-",
-        "globalID": "39E3CU"
+        "globalID": "GK3FTW"
     },
     {
         "summary": "Auslegung technischer Baugruppen",
@@ -1752,7 +1752,7 @@
         "end": "2025-12-15 15:30:00",
         "location": "KD0003",
         "organizer": null,
-        "created": "2025-11-18 07:01:40",
+        "created": "2025-11-18 08:01:27",
         "last_modified": null,
         "uid": "sked.de290883",
         "Veranstaltung": "Auslegung technischer Baugruppen",
@@ -1760,7 +1760,7 @@
         "Art": "SV",
         "Studiengruppe": "24BTS-MAS-3, 24BTS-MEC-3",
         "Anmerkung": "-",
-        "globalID": "8MACNU"
+        "globalID": "AQ78NF"
     },
     {
         "summary": "Auslegung technischer Baugruppen",
@@ -1768,7 +1768,7 @@
         "end": "2025-12-08 15:30:00",
         "location": "KD0106",
         "organizer": null,
-        "created": "2025-11-18 07:01:40",
+        "created": "2025-11-18 08:01:27",
         "last_modified": null,
         "uid": "sked.de290885",
         "Veranstaltung": "Auslegung technischer Baugruppen",
@@ -1776,7 +1776,7 @@
         "Art": "SV",
         "Studiengruppe": "24BTS-MAS-3, 24BTS-MEC-3",
         "Anmerkung": "-",
-        "globalID": "8MACNU"
+        "globalID": "AQ78NF"
     },
     {
         "summary": "Mechanik: Dynamik",
@@ -1784,7 +1784,7 @@
         "end": "2025-11-27 15:30:00",
         "location": "KD0003",
         "organizer": null,
-        "created": "2025-11-18 07:01:40",
+        "created": "2025-11-18 08:01:27",
         "last_modified": null,
         "uid": "sked.de290502",
         "Veranstaltung": "Mechanik: Dynamik",
@@ -1792,7 +1792,7 @@
         "Art": "SV",
         "Studiengruppe": "24BTS-EAT-3, 24BTS-MAS-3, 24BTS-MEC-3",
         "Anmerkung": "-",
-        "globalID": "MEOWDJ"
+        "globalID": "EUPF79"
     },
     {
         "summary": "Technische Elektrodynamik",
@@ -1800,7 +1800,7 @@
         "end": "2025-12-16 19:00:00",
         "location": "KA0005",
         "organizer": null,
-        "created": "2025-11-18 07:01:40",
+        "created": "2025-11-18 08:01:27",
         "last_modified": null,
         "uid": "sked.de291107",
         "Veranstaltung": "Technische Elektrodynamik",
@@ -1808,7 +1808,7 @@
         "Art": "SV",
         "Studiengruppe": "24BTS-EAT-3, 24BTS-MEC-3",
         "Anmerkung": "-",
-        "globalID": "39E3CU"
+        "globalID": "GK3FTW"
     },
     {
         "summary": "Auslegung technischer Baugruppen",
@@ -1816,7 +1816,7 @@
         "end": "2025-12-19 15:30:00",
         "location": "KE0104",
         "organizer": null,
-        "created": "2025-11-18 07:01:40",
+        "created": "2025-11-18 08:01:27",
         "last_modified": null,
         "uid": "sked.de291050",
         "Veranstaltung": "Auslegung technischer Baugruppen",
@@ -1824,7 +1824,7 @@
         "Art": "SV",
         "Studiengruppe": "24BTS-MAS-3, 24BTS-MEC-3",
         "Anmerkung": "-",
-        "globalID": "8MACNU"
+        "globalID": "AQ78NF"
     },
     {
         "summary": "Technische Elektrodynamik",
@@ -1832,7 +1832,7 @@
         "end": "2025-11-28 15:30:00",
         "location": "KA0005",
         "organizer": null,
-        "created": "2025-11-18 07:01:40",
+        "created": "2025-11-18 08:01:27",
         "last_modified": null,
         "uid": "sked.de290464",
         "Veranstaltung": "Technische Elektrodynamik",
@@ -1840,7 +1840,7 @@
         "Art": "SV",
         "Studiengruppe": "24BTS-EAT-3, 24BTS-MEC-3",
         "Anmerkung": "-",
-        "globalID": "39E3CU"
+        "globalID": "GK3FTW"
     },
     {
         "summary": "Technische Elektrodynamik",
@@ -1848,7 +1848,7 @@
         "end": "2025-12-04 11:30:00",
         "location": "LN0001",
         "organizer": null,
-        "created": "2025-11-18 07:01:40",
+        "created": "2025-11-18 08:01:27",
         "last_modified": null,
         "uid": "sked.de290469",
         "Veranstaltung": "Technische Elektrodynamik",
@@ -1856,7 +1856,7 @@
         "Art": "SV",
         "Studiengruppe": "24BTS-EAT-3, 24BTS-MEC-3",
         "Anmerkung": "-",
-        "globalID": "39E3CU"
+        "globalID": "GK3FTW"
     },
     {
         "summary": "Mechanik: Dynamik",
@@ -1864,7 +1864,7 @@
         "end": "2026-01-06 11:30:00",
         "location": "LK0103",
         "organizer": null,
-        "created": "2025-11-18 07:01:40",
+        "created": "2025-11-18 08:01:27",
         "last_modified": null,
         "uid": "sked.de291381",
         "Veranstaltung": "Mechanik: Dynamik",
@@ -1872,7 +1872,7 @@
         "Art": "SV",
         "Studiengruppe": "24BTS-EAT-3, 24BTS-MAS-3, 24BTS-MEC-3",
         "Anmerkung": "-",
-        "globalID": "MEOWDJ"
+        "globalID": "EUPF79"
     },
     {
         "summary": "Auslegung technischer Baugruppen",
@@ -1880,7 +1880,7 @@
         "end": "2026-01-14 11:30:00",
         "location": "KD0001",
         "organizer": null,
-        "created": "2025-11-18 07:01:40",
+        "created": "2025-11-18 08:01:27",
         "last_modified": null,
         "uid": "sked.de291051",
         "Veranstaltung": "Auslegung technischer Baugruppen",
@@ -1888,7 +1888,7 @@
         "Art": "SV",
         "Studiengruppe": "24BTS-MAS-3, 24BTS-MEC-3",
         "Anmerkung": "-",
-        "globalID": "8MACNU"
+        "globalID": "AQ78NF"
     },
     {
         "summary": "Technische Physik - Physikalische Modelle",
@@ -1896,7 +1896,7 @@
         "end": "2025-12-08 11:30:00",
         "location": "LK0101/LK0102",
         "organizer": null,
-        "created": "2025-11-18 07:01:39",
+        "created": "2025-11-18 08:01:26",
         "last_modified": null,
         "uid": "sked.de291042",
         "Veranstaltung": "Technische Physik - Physikalische Modelle",
@@ -1904,7 +1904,7 @@
         "Art": "SV",
         "Studiengruppe": "24BTS-MAS-3",
         "Anmerkung": "-",
-        "globalID": "272TNS"
+        "globalID": "DK1948"
     },
     {
         "summary": "Technische Physik - Physikalische Modelle",
@@ -1912,7 +1912,7 @@
         "end": "2025-12-16 15:30:00",
         "location": "LN0001",
         "organizer": null,
-        "created": "2025-11-18 07:01:39",
+        "created": "2025-11-18 08:01:26",
         "last_modified": null,
         "uid": "sked.de291048",
         "Veranstaltung": "Technische Physik - Physikalische Modelle",
@@ -1920,7 +1920,7 @@
         "Art": "SV",
         "Studiengruppe": "24BTS-MAS-3",
         "Anmerkung": "-",
-        "globalID": "272TNS"
+        "globalID": "DK1948"
     },
     {
         "summary": "Rechnergestütztes Konstruieren",
@@ -1928,7 +1928,7 @@
         "end": "2026-01-07 11:30:00",
         "location": "LW0114",
         "organizer": null,
-        "created": "2025-11-18 07:01:39",
+        "created": "2025-11-18 08:01:26",
         "last_modified": null,
         "uid": "sked.de291312",
         "Veranstaltung": "Rechnergestütztes Konstruieren",
@@ -1936,7 +1936,7 @@
         "Art": "SV",
         "Studiengruppe": "24BTS-MAS-3",
         "Anmerkung": "-",
-        "globalID": "NXW9SZ"
+        "globalID": "SOBCRX"
     },
     {
         "summary": "Rechnergestütztes Konstruieren",
@@ -1944,7 +1944,7 @@
         "end": "2026-01-12 11:30:00",
         "location": "LW0114",
         "organizer": null,
-        "created": "2025-11-18 07:01:39",
+        "created": "2025-11-18 08:01:26",
         "last_modified": null,
         "uid": "sked.de291313",
         "Veranstaltung": "Rechnergestütztes Konstruieren",
@@ -1952,7 +1952,7 @@
         "Art": "SV",
         "Studiengruppe": "24BTS-MAS-3",
         "Anmerkung": "-",
-        "globalID": "NXW9SZ"
+        "globalID": "SOBCRX"
     },
     {
         "summary": "Technische Physik - Physikalische Modelle",
@@ -1960,7 +1960,7 @@
         "end": "2025-12-03 15:30:00",
         "location": "KA0004",
         "organizer": null,
-        "created": "2025-11-18 07:01:39",
+        "created": "2025-11-18 08:01:26",
         "last_modified": null,
         "uid": "sked.de290512",
         "Veranstaltung": "Technische Physik - Physikalische Modelle",
@@ -1968,7 +1968,7 @@
         "Art": "SV",
         "Studiengruppe": "24BTS-MAS-3",
         "Anmerkung": "-",
-        "globalID": "272TNS"
+        "globalID": "DK1948"
     },
     {
         "summary": "Technische Physik - Physikalische Modelle",
@@ -1976,7 +1976,7 @@
         "end": "2025-12-02 15:30:00",
         "location": "KA0004",
         "organizer": null,
-        "created": "2025-11-18 07:01:39",
+        "created": "2025-11-18 08:01:26",
         "last_modified": null,
         "uid": "sked.de290513",
         "Veranstaltung": "Technische Physik - Physikalische Modelle",
@@ -1984,7 +1984,7 @@
         "Art": "SV",
         "Studiengruppe": "24BTS-MAS-3",
         "Anmerkung": "-",
-        "globalID": "272TNS"
+        "globalID": "DK1948"
     },
     {
         "summary": "Technische Physik - Physikalische Modelle",
@@ -1992,7 +1992,7 @@
         "end": "2025-11-20 15:45:00",
         "location": "KE0103",
         "organizer": null,
-        "created": "2025-11-18 07:01:39",
+        "created": "2025-11-18 08:01:26",
         "last_modified": null,
         "uid": "sked.de290505",
         "Veranstaltung": "Technische Physik - Physikalische Modelle",
@@ -2000,7 +2000,7 @@
         "Art": "SV",
         "Studiengruppe": "24BTS-MAS-3",
         "Anmerkung": "-",
-        "globalID": "272TNS"
+        "globalID": "DK1948"
     },
     {
         "summary": "Technische Physik - Physikalische Modelle",
@@ -2008,7 +2008,7 @@
         "end": "2025-11-18 11:30:00",
         "location": "LK0101/LK0102",
         "organizer": null,
-        "created": "2025-11-18 07:01:39",
+        "created": "2025-11-18 08:01:26",
         "last_modified": null,
         "uid": "sked.de290504",
         "Veranstaltung": "Technische Physik - Physikalische Modelle",
@@ -2016,7 +2016,7 @@
         "Art": "SV",
         "Studiengruppe": "24BTS-MAS-3",
         "Anmerkung": "-",
-        "globalID": "272TNS"
+        "globalID": "DK1948"
     },
     {
         "summary": "Rechnergestütztes Konstruieren",
@@ -2024,7 +2024,7 @@
         "end": "2025-11-27 11:30:00",
         "location": "LW0114",
         "organizer": null,
-        "created": "2025-11-18 07:01:39",
+        "created": "2025-11-18 08:01:26",
         "last_modified": null,
         "uid": "sked.de290350",
         "Veranstaltung": "Rechnergestütztes Konstruieren",
@@ -2032,7 +2032,7 @@
         "Art": "SV",
         "Studiengruppe": "24BTS-MAS-3",
         "Anmerkung": "-",
-        "globalID": "NXW9SZ"
+        "globalID": "SOBCRX"
     },
     {
         "summary": "Technische Physik - Physikalische Modelle",
@@ -2040,7 +2040,7 @@
         "end": "2025-11-26 15:30:00",
         "location": "KD0303",
         "organizer": null,
-        "created": "2025-11-18 07:01:39",
+        "created": "2025-11-18 08:01:26",
         "last_modified": null,
         "uid": "sked.de290509",
         "Veranstaltung": "Technische Physik - Physikalische Modelle",
@@ -2048,7 +2048,7 @@
         "Art": "SV",
         "Studiengruppe": "24BTS-MAS-3",
         "Anmerkung": "-",
-        "globalID": "272TNS"
+        "globalID": "DK1948"
     },
     {
         "summary": "Rechnergestütztes Konstruieren",
@@ -2056,7 +2056,7 @@
         "end": "2025-12-02 11:30:00",
         "location": "LW0114",
         "organizer": null,
-        "created": "2025-11-18 07:01:39",
+        "created": "2025-11-18 08:01:26",
         "last_modified": null,
         "uid": "sked.de290354",
         "Veranstaltung": "Rechnergestütztes Konstruieren",
@@ -2064,7 +2064,7 @@
         "Art": "SV",
         "Studiengruppe": "24BTS-MAS-3",
         "Anmerkung": "-",
-        "globalID": "NXW9SZ"
+        "globalID": "SOBCRX"
     },
     {
         "summary": "Rechnergestütztes Konstruieren",
@@ -2072,7 +2072,7 @@
         "end": "2025-12-15 11:30:00",
         "location": "LW0114",
         "organizer": null,
-        "created": "2025-11-18 07:01:39",
+        "created": "2025-11-18 08:01:26",
         "last_modified": null,
         "uid": "sked.de291020",
         "Veranstaltung": "Rechnergestütztes Konstruieren",
@@ -2080,7 +2080,7 @@
         "Art": "SV",
         "Studiengruppe": "24BTS-MAS-3",
         "Anmerkung": "-",
-        "globalID": "NXW9SZ"
+        "globalID": "SOBCRX"
     },
     {
         "summary": "Englisch",
@@ -2088,7 +2088,7 @@
         "end": "2025-11-19 15:30:00",
         "location": "KD0001",
         "organizer": null,
-        "created": "2025-11-18 07:01:39",
+        "created": "2025-11-18 08:01:26",
         "last_modified": null,
         "uid": "sked.de290271",
         "Veranstaltung": "Englisch",
@@ -2096,7 +2096,7 @@
         "Art": "BK",
         "Studiengruppe": "24BTS-MAS-3",
         "Anmerkung": "-",
-        "globalID": "ITDE6Q"
+        "globalID": "RIIXWE"
     },
     {
         "summary": "Rechnergestütztes Konstruieren",
@@ -2104,7 +2104,7 @@
         "end": "2025-11-20 11:30:00",
         "location": "LW0114",
         "organizer": null,
-        "created": "2025-11-18 07:01:39",
+        "created": "2025-11-18 08:01:26",
         "last_modified": null,
         "uid": "sked.de290347",
         "Veranstaltung": "Rechnergestütztes Konstruieren",
@@ -2112,7 +2112,7 @@
         "Art": "SV",
         "Studiengruppe": "24BTS-MAS-3",
         "Anmerkung": "-",
-        "globalID": "NXW9SZ"
+        "globalID": "SOBCRX"
     },
     {
         "summary": "Rechnergestütztes Konstruieren",
@@ -2120,7 +2120,7 @@
         "end": "2025-11-21 15:30:00",
         "location": "LW0114",
         "organizer": null,
-        "created": "2025-11-18 07:01:39",
+        "created": "2025-11-18 08:01:26",
         "last_modified": null,
         "uid": "sked.de290349",
         "Veranstaltung": "Rechnergestütztes Konstruieren",
@@ -2128,7 +2128,7 @@
         "Art": "SV",
         "Studiengruppe": "24BTS-MAS-3",
         "Anmerkung": "-",
-        "globalID": "NXW9SZ"
+        "globalID": "SOBCRX"
     },
     {
         "summary": "Englisch",
@@ -2136,7 +2136,7 @@
         "end": "2025-12-03 11:30:00",
         "location": "LK0103",
         "organizer": null,
-        "created": "2025-11-18 07:01:39",
+        "created": "2025-11-18 08:01:26",
         "last_modified": null,
         "uid": "sked.de290993",
         "Veranstaltung": "Englisch",
@@ -2144,7 +2144,7 @@
         "Art": "BK",
         "Studiengruppe": "24BTS-MAS-3",
         "Anmerkung": "-",
-        "globalID": "ITDE6Q"
+        "globalID": "RIIXWE"
     },
     {
         "summary": "Englisch",
@@ -2152,7 +2152,7 @@
         "end": "2025-12-10 15:30:00",
         "location": "KA0005",
         "organizer": null,
-        "created": "2025-11-18 07:01:39",
+        "created": "2025-11-18 08:01:26",
         "last_modified": null,
         "uid": "sked.de290996",
         "Veranstaltung": "Englisch",
@@ -2160,7 +2160,7 @@
         "Art": "BK",
         "Studiengruppe": "24BTS-MAS-3",
         "Anmerkung": "-",
-        "globalID": "ITDE6Q"
+        "globalID": "RIIXWE"
     },
     {
         "summary": "Rechnergestütztes Konstruieren",
@@ -2168,7 +2168,7 @@
         "end": "2025-12-10 11:30:00",
         "location": "LW0114",
         "organizer": null,
-        "created": "2025-11-18 07:01:39",
+        "created": "2025-11-18 08:01:26",
         "last_modified": null,
         "uid": "sked.de291017",
         "Veranstaltung": "Rechnergestütztes Konstruieren",
@@ -2176,7 +2176,7 @@
         "Art": "SV",
         "Studiengruppe": "24BTS-MAS-3",
         "Anmerkung": "-",
-        "globalID": "NXW9SZ"
+        "globalID": "SOBCRX"
     },
     {
         "summary": "Technische Physik - Physikalische Modelle",
@@ -2184,7 +2184,7 @@
         "end": "2026-01-05 11:30:00",
         "location": "KA0004",
         "organizer": null,
-        "created": "2025-11-18 07:01:39",
+        "created": "2025-11-18 08:01:26",
         "last_modified": null,
         "uid": "sked.de291383",
         "Veranstaltung": "Technische Physik - Physikalische Modelle",
@@ -2192,7 +2192,7 @@
         "Art": "SV",
         "Studiengruppe": "24BTS-MAS-3",
         "Anmerkung": "-",
-        "globalID": "272TNS"
+        "globalID": "DK1948"
     },
     {
         "summary": "Technische Physik - Physikalische Modelle",
@@ -2200,7 +2200,7 @@
         "end": "2026-01-07 15:30:00",
         "location": "KD0301",
         "organizer": null,
-        "created": "2025-11-18 07:01:39",
+        "created": "2025-11-18 08:01:26",
         "last_modified": null,
         "uid": "sked.de291384",
         "Veranstaltung": "Technische Physik - Physikalische Modelle",
@@ -2208,7 +2208,7 @@
         "Art": "SV",
         "Studiengruppe": "24BTS-MAS-3",
         "Anmerkung": "-",
-        "globalID": "272TNS"
+        "globalID": "DK1948"
     },
     {
         "summary": "Marketingpolitiken",
@@ -2216,7 +2216,7 @@
         "end": "2025-12-12 15:30:00",
         "location": "KE0008",
         "organizer": null,
-        "created": "2025-11-18 07:01:53",
+        "created": "2025-11-18 08:01:35",
         "last_modified": null,
         "uid": "sked.de290972",
         "Veranstaltung": "Marketingpolitiken",
@@ -2224,7 +2224,7 @@
         "Art": "SV",
         "Studiengruppe": "24DNI1-3",
         "Anmerkung": "-",
-        "globalID": "BX8CYM"
+        "globalID": "XCKBH4"
     },
     {
         "summary": "Statistik",
@@ -2232,7 +2232,7 @@
         "end": "2026-01-07 11:30:00",
         "location": "LK0101/LK0102",
         "organizer": null,
-        "created": "2025-11-18 07:01:53",
+        "created": "2025-11-18 08:01:35",
         "last_modified": null,
         "uid": "sked.de291373",
         "Veranstaltung": "Statistik",
@@ -2240,7 +2240,7 @@
         "Art": "SV",
         "Studiengruppe": "24DNI1-3, 24DNI2-3, 24DNI2-STE-3",
         "Anmerkung": "-",
-        "globalID": "Y9C2AK"
+        "globalID": "D9VUGW"
     },
     {
         "summary": "Informatik (Vorbereitung Kammerprüfung)",
@@ -2248,7 +2248,7 @@
         "end": "2025-11-27 19:00:00",
         "location": "KD0201",
         "organizer": null,
-        "created": "2025-11-18 07:01:53",
+        "created": "2025-11-18 08:01:35",
         "last_modified": null,
         "uid": "sked.de291174",
         "Veranstaltung": "Informatik (Vorbereitung Kammerprüfung)",
@@ -2256,7 +2256,7 @@
         "Art": "PV",
         "Studiengruppe": "24DNI1-3, 24DNI2-3, 24DNI2-STE-3",
         "Anmerkung": "-",
-        "globalID": "5UFV5U"
+        "globalID": "89G1MM"
     },
     {
         "summary": "Nachhaltiges Prozessmanagement und angewandte Fallstudien",
@@ -2264,7 +2264,7 @@
         "end": "2025-12-01 19:00:00",
         "location": "KD0201",
         "organizer": null,
-        "created": "2025-11-18 07:01:53",
+        "created": "2025-11-18 08:01:35",
         "last_modified": null,
         "uid": "sked.de290175",
         "Veranstaltung": "Nachhaltiges Prozessmanagement und angewandte Fallstudien",
@@ -2272,7 +2272,7 @@
         "Art": "SV",
         "Studiengruppe": "24DNI1-3, 24DNI2-3, 24DNI2-STE-3",
         "Anmerkung": "-",
-        "globalID": "MV0D10"
+        "globalID": "KWGXQ0"
     },
     {
         "summary": "Informatik (Vorbereitung Kammerprüfung)",
@@ -2280,7 +2280,7 @@
         "end": "2025-12-02 19:00:00",
         "location": "KD0202",
         "organizer": null,
-        "created": "2025-11-18 07:01:53",
+        "created": "2025-11-18 08:01:35",
         "last_modified": null,
         "uid": "sked.de291176",
         "Veranstaltung": "Informatik (Vorbereitung Kammerprüfung)",
@@ -2288,7 +2288,7 @@
         "Art": "PV",
         "Studiengruppe": "24DNI1-3, 24DNI2-3, 24DNI2-STE-3",
         "Anmerkung": "-",
-        "globalID": "5UFV5U"
+        "globalID": "89G1MM"
     },
     {
         "summary": "Informatik (Vorbereitung Kammerprüfung)",
@@ -2296,7 +2296,7 @@
         "end": "2025-12-04 19:00:00",
         "location": "KD0201",
         "organizer": null,
-        "created": "2025-11-18 07:01:53",
+        "created": "2025-11-18 08:01:35",
         "last_modified": null,
         "uid": "sked.de291177",
         "Veranstaltung": "Informatik (Vorbereitung Kammerprüfung)",
@@ -2304,7 +2304,7 @@
         "Art": "PV",
         "Studiengruppe": "24DNI1-3, 24DNI2-3, 24DNI2-STE-3",
         "Anmerkung": "-",
-        "globalID": "5UFV5U"
+        "globalID": "89G1MM"
     },
     {
         "summary": "Informatik (Vorbereitung Kammerprüfung)",
@@ -2312,7 +2312,7 @@
         "end": "2025-12-11 19:00:00",
         "location": "KD0201",
         "organizer": null,
-        "created": "2025-11-18 07:01:53",
+        "created": "2025-11-18 08:01:35",
         "last_modified": null,
         "uid": "sked.de291178",
         "Veranstaltung": "Informatik (Vorbereitung Kammerprüfung)",
@@ -2320,7 +2320,7 @@
         "Art": "PV",
         "Studiengruppe": "24DNI1-3, 24DNI2-3, 24DNI2-STE-3",
         "Anmerkung": "-",
-        "globalID": "5UFV5U"
+        "globalID": "89G1MM"
     },
     {
         "summary": "Informatik (Vorbereitung Kammerprüfung)",
@@ -2328,7 +2328,7 @@
         "end": "2025-12-16 19:00:00",
         "location": "KD0201",
         "organizer": null,
-        "created": "2025-11-18 07:01:53",
+        "created": "2025-11-18 08:01:35",
         "last_modified": null,
         "uid": "sked.de291179",
         "Veranstaltung": "Informatik (Vorbereitung Kammerprüfung)",
@@ -2336,7 +2336,7 @@
         "Art": "PV",
         "Studiengruppe": "24DNI1-3, 24DNI2-3, 24DNI2-STE-3",
         "Anmerkung": "-",
-        "globalID": "5UFV5U"
+        "globalID": "89G1MM"
     },
     {
         "summary": "Informatik (Vorbereitung Kammerprüfung)",
@@ -2344,7 +2344,7 @@
         "end": "2025-11-29 11:30:00",
         "location": "LK0101/LK0102",
         "organizer": null,
-        "created": "2025-11-18 07:01:53",
+        "created": "2025-11-18 08:01:35",
         "last_modified": null,
         "uid": "sked.de291175",
         "Veranstaltung": "Informatik (Vorbereitung Kammerprüfung)",
@@ -2352,7 +2352,7 @@
         "Art": "PV",
         "Studiengruppe": "24DNI1-3, 24DNI2-3, 24DNI2-STE-3",
         "Anmerkung": "-",
-        "globalID": "5UFV5U"
+        "globalID": "89G1MM"
     },
     {
         "summary": "Nachhaltiges Prozessmanagement und angewandte Fallstudien",
@@ -2360,7 +2360,7 @@
         "end": "2025-11-24 15:30:00",
         "location": "KD0201",
         "organizer": null,
-        "created": "2025-11-18 07:01:53",
+        "created": "2025-11-18 08:01:35",
         "last_modified": null,
         "uid": "sked.de290178",
         "Veranstaltung": "Nachhaltiges Prozessmanagement und angewandte Fallstudien",
@@ -2368,7 +2368,7 @@
         "Art": "SV",
         "Studiengruppe": "24DNI1-3, 24DNI2-3, 24DNI2-STE-3",
         "Anmerkung": "-",
-        "globalID": "MV0D10"
+        "globalID": "KWGXQ0"
     },
     {
         "summary": "Informatik (Vorbereitung Kammerprüfung)",
@@ -2376,7 +2376,7 @@
         "end": "2025-11-21 15:30:00",
         "location": "LK0101/LK0102",
         "organizer": null,
-        "created": "2025-11-18 07:01:53",
+        "created": "2025-11-18 08:01:35",
         "last_modified": null,
         "uid": "sked.de291173",
         "Veranstaltung": "Informatik (Vorbereitung Kammerprüfung)",
@@ -2384,7 +2384,7 @@
         "Art": "PV",
         "Studiengruppe": "24DNI1-3, 24DNI2-3, 24DNI2-STE-3",
         "Anmerkung": "-",
-        "globalID": "5UFV5U"
+        "globalID": "89G1MM"
     },
     {
         "summary": "Nachhaltiges Prozessmanagement und angewandte Fallstudien",
@@ -2392,7 +2392,7 @@
         "end": "2025-11-17 19:00:00",
         "location": "KD0201",
         "organizer": null,
-        "created": "2025-11-18 07:01:53",
+        "created": "2025-11-18 08:01:35",
         "last_modified": null,
         "uid": "sked.de290174",
         "Veranstaltung": "Nachhaltiges Prozessmanagement und angewandte Fallstudien",
@@ -2400,7 +2400,7 @@
         "Art": "SV",
         "Studiengruppe": "24DNI1-3, 24DNI2-3, 24DNI2-STE-3",
         "Anmerkung": "-",
-        "globalID": "MV0D10"
+        "globalID": "KWGXQ0"
     },
     {
         "summary": "Grundlagen Data Science",
@@ -2408,7 +2408,7 @@
         "end": "2025-12-03 11:30:00",
         "location": "KD0201",
         "organizer": null,
-        "created": "2025-11-18 07:01:53",
+        "created": "2025-11-18 08:01:35",
         "last_modified": null,
         "uid": "sked.de290449",
         "Veranstaltung": "Grundlagen Data Science",
@@ -2416,7 +2416,7 @@
         "Art": "SV",
         "Studiengruppe": "24DNI1-3, 24DNI2-3, 24DNI2-STE-3",
         "Anmerkung": "-",
-        "globalID": "QE8J0K"
+        "globalID": "77L1RA"
     },
     {
         "summary": "Grundlagen Data Science",
@@ -2424,7 +2424,7 @@
         "end": "2025-12-10 11:30:00",
         "location": "KD0201",
         "organizer": null,
-        "created": "2025-11-18 07:01:53",
+        "created": "2025-11-18 08:01:35",
         "last_modified": null,
         "uid": "sked.de291092",
         "Veranstaltung": "Grundlagen Data Science",
@@ -2432,7 +2432,7 @@
         "Art": "SV",
         "Studiengruppe": "24DNI1-3, 24DNI2-3, 24DNI2-STE-3",
         "Anmerkung": "-",
-        "globalID": "QE8J0K"
+        "globalID": "77L1RA"
     },
     {
         "summary": "Statistik",
@@ -2440,7 +2440,7 @@
         "end": "2025-11-28 11:30:00",
         "location": "LN0002",
         "organizer": null,
-        "created": "2025-11-18 07:01:53",
+        "created": "2025-11-18 08:01:35",
         "last_modified": null,
         "uid": "sked.de290494",
         "Veranstaltung": "Statistik",
@@ -2448,7 +2448,7 @@
         "Art": "SV",
         "Studiengruppe": "24DNI1-3, 24DNI2-3, 24DNI2-STE-3",
         "Anmerkung": "-",
-        "globalID": "Y9C2AK"
+        "globalID": "D9VUGW"
     },
     {
         "summary": "Statistik",
@@ -2456,7 +2456,7 @@
         "end": "2025-12-03 15:30:00",
         "location": "KD0001",
         "organizer": null,
-        "created": "2025-11-18 07:01:53",
+        "created": "2025-11-18 08:01:35",
         "last_modified": null,
         "uid": "sked.de290496",
         "Veranstaltung": "Statistik",
@@ -2464,7 +2464,7 @@
         "Art": "SV",
         "Studiengruppe": "24DNI1-3, 24DNI2-3, 24DNI2-STE-3",
         "Anmerkung": "-",
-        "globalID": "Y9C2AK"
+        "globalID": "D9VUGW"
     },
     {
         "summary": "Grundlagen Data Science",
@@ -2472,7 +2472,7 @@
         "end": "2025-11-21 11:30:00",
         "location": "LN0002",
         "organizer": null,
-        "created": "2025-11-18 07:01:53",
+        "created": "2025-11-18 08:01:35",
         "last_modified": null,
         "uid": "sked.de290437",
         "Veranstaltung": "Grundlagen Data Science",
@@ -2480,7 +2480,7 @@
         "Art": "SV",
         "Studiengruppe": "24DNI1-3, 24DNI2-3, 24DNI2-STE-3",
         "Anmerkung": "-",
-        "globalID": "QE8J0K"
+        "globalID": "77L1RA"
     },
     {
         "summary": "Nachhaltiges Prozessmanagement und angewandte Fallstudien",
@@ -2488,7 +2488,7 @@
         "end": "2025-12-15 15:30:00",
         "location": "KD0201",
         "organizer": null,
-        "created": "2025-11-18 07:01:53",
+        "created": "2025-11-18 08:01:35",
         "last_modified": null,
         "uid": "sked.de290880",
         "Veranstaltung": "Nachhaltiges Prozessmanagement und angewandte Fallstudien",
@@ -2496,7 +2496,7 @@
         "Art": "SV",
         "Studiengruppe": "24DNI1-3, 24DNI2-3, 24DNI2-STE-3",
         "Anmerkung": "-",
-        "globalID": "MV0D10"
+        "globalID": "KWGXQ0"
     },
     {
         "summary": "Statistik",
@@ -2504,7 +2504,7 @@
         "end": "2025-11-19 15:30:00",
         "location": "KA0004",
         "organizer": null,
-        "created": "2025-11-18 07:01:53",
+        "created": "2025-11-18 08:01:35",
         "last_modified": null,
         "uid": "sked.de290481",
         "Veranstaltung": "Statistik",
@@ -2512,7 +2512,7 @@
         "Art": "SV",
         "Studiengruppe": "24DNI1-3, 24DNI2-3, 24DNI2-STE-3",
         "Anmerkung": "-",
-        "globalID": "Y9C2AK"
+        "globalID": "D9VUGW"
     },
     {
         "summary": "Finanzbuchhaltung / Jahresabschluss",
@@ -2520,7 +2520,7 @@
         "end": "2025-11-18 19:00:00",
         "location": "KD0001",
         "organizer": null,
-        "created": "2025-11-18 07:01:53",
+        "created": "2025-11-18 08:01:35",
         "last_modified": null,
         "uid": "sked.de291039",
         "Veranstaltung": "Finanzbuchhaltung / Jahresabschluss",
@@ -2528,7 +2528,7 @@
         "Art": "BK",
         "Studiengruppe": "24DNI1-3, 24DNI2-3",
         "Anmerkung": "Nur bei Ausbildung zur Industriekaufperson",
-        "globalID": "JJ5DSP"
+        "globalID": "9B8K3J"
     },
     {
         "summary": "Internes Rechnungswesen",
@@ -2536,7 +2536,7 @@
         "end": "2025-11-17 15:30:00",
         "location": "LK0103",
         "organizer": null,
-        "created": "2025-11-18 07:01:53",
+        "created": "2025-11-18 08:01:35",
         "last_modified": null,
         "uid": "sked.de290406",
         "Veranstaltung": "Internes Rechnungswesen",
@@ -2544,7 +2544,7 @@
         "Art": "SV",
         "Studiengruppe": "24DNI1-3",
         "Anmerkung": "-",
-        "globalID": "KWR7RH"
+        "globalID": "CGVEVT"
     },
     {
         "summary": "Englisch",
@@ -2552,7 +2552,7 @@
         "end": "2025-12-02 11:30:00",
         "location": "KA0004",
         "organizer": null,
-        "created": "2025-11-18 07:01:53",
+        "created": "2025-11-18 08:01:35",
         "last_modified": null,
         "uid": "sked.de290552",
         "Veranstaltung": "Englisch",
@@ -2560,7 +2560,7 @@
         "Art": "BK",
         "Studiengruppe": "24DNI1-3",
         "Anmerkung": "-",
-        "globalID": "3MX2LH"
+        "globalID": "9CQTBY"
     },
     {
         "summary": "Internes Rechnungswesen",
@@ -2568,7 +2568,7 @@
         "end": "2025-11-19 11:30:00",
         "location": "KE0002",
         "organizer": null,
-        "created": "2025-11-18 07:01:53",
+        "created": "2025-11-18 08:01:35",
         "last_modified": null,
         "uid": "sked.de290407",
         "Veranstaltung": "Internes Rechnungswesen",
@@ -2576,7 +2576,7 @@
         "Art": "SV",
         "Studiengruppe": "24DNI1-3",
         "Anmerkung": "-",
-        "globalID": "KWR7RH"
+        "globalID": "CGVEVT"
     },
     {
         "summary": "Marketingpolitiken",
@@ -2584,7 +2584,7 @@
         "end": "2025-11-18 15:30:00",
         "location": "KD0003",
         "organizer": null,
-        "created": "2025-11-18 07:01:53",
+        "created": "2025-11-18 08:01:35",
         "last_modified": null,
         "uid": "sked.de290382",
         "Veranstaltung": "Marketingpolitiken",
@@ -2592,7 +2592,7 @@
         "Art": "SV",
         "Studiengruppe": "24DNI1-3",
         "Anmerkung": "-",
-        "globalID": "BX8CYM"
+        "globalID": "XCKBH4"
     },
     {
         "summary": "Internes Rechnungswesen",
@@ -2600,7 +2600,7 @@
         "end": "2025-12-11 15:30:00",
         "location": "LN0002",
         "organizer": null,
-        "created": "2025-11-18 07:01:53",
+        "created": "2025-11-18 08:01:35",
         "last_modified": null,
         "uid": "sked.de291021",
         "Veranstaltung": "Internes Rechnungswesen",
@@ -2608,7 +2608,7 @@
         "Art": "SV",
         "Studiengruppe": "24DNI1-3",
         "Anmerkung": "-",
-        "globalID": "KWR7RH"
+        "globalID": "CGVEVT"
     },
     {
         "summary": "Nachhaltiges Prozessmanagement und angewandte Fallstudien",
@@ -2616,7 +2616,7 @@
         "end": "2026-01-12 15:30:00",
         "location": "LK0101/LK0102",
         "organizer": null,
-        "created": "2025-11-18 07:01:53",
+        "created": "2025-11-18 08:01:35",
         "last_modified": null,
         "uid": "sked.de291224",
         "Veranstaltung": "Nachhaltiges Prozessmanagement und angewandte Fallstudien",
@@ -2624,7 +2624,7 @@
         "Art": "SV",
         "Studiengruppe": "24DNI1-3, 24DNI2-3, 24DNI2-STE-3",
         "Anmerkung": "-",
-        "globalID": "MV0D10"
+        "globalID": "KWGXQ0"
     },
     {
         "summary": "Internes Rechnungswesen",
@@ -2632,7 +2632,7 @@
         "end": "2025-12-15 11:30:00",
         "location": "KE0102",
         "organizer": null,
-        "created": "2025-11-18 07:01:53",
+        "created": "2025-11-18 08:01:35",
         "last_modified": null,
         "uid": "sked.de291026",
         "Veranstaltung": "Internes Rechnungswesen",
@@ -2640,7 +2640,7 @@
         "Art": "SV",
         "Studiengruppe": "24DNI1-3",
         "Anmerkung": "-",
-        "globalID": "KWR7RH"
+        "globalID": "CGVEVT"
     },
     {
         "summary": "Grundlagen Data Science",
@@ -2648,7 +2648,7 @@
         "end": "2026-01-09 11:30:00",
         "location": "KD0201",
         "organizer": null,
-        "created": "2025-11-18 07:01:53",
+        "created": "2025-11-18 08:01:35",
         "last_modified": null,
         "uid": "sked.de291342",
         "Veranstaltung": "Grundlagen Data Science",
@@ -2656,7 +2656,7 @@
         "Art": "SV",
         "Studiengruppe": "24DNI1-3, 24DNI2-3, 24DNI2-STE-3",
         "Anmerkung": "-",
-        "globalID": "QE8J0K"
+        "globalID": "77L1RA"
     },
     {
         "summary": "Internes Rechnungswesen",
@@ -2664,7 +2664,7 @@
         "end": "2026-01-06 15:30:00",
         "location": "KA0001",
         "organizer": null,
-        "created": "2025-11-18 07:01:53",
+        "created": "2025-11-18 08:01:35",
         "last_modified": null,
         "uid": "sked.de291391",
         "Veranstaltung": "Internes Rechnungswesen",
@@ -2672,7 +2672,7 @@
         "Art": "SV",
         "Studiengruppe": "24DNI1-3",
         "Anmerkung": "-",
-        "globalID": "KWR7RH"
+        "globalID": "CGVEVT"
     },
     {
         "summary": "Grundlagen Data Science",
@@ -2680,7 +2680,7 @@
         "end": "2026-01-16 11:30:00",
         "location": "LK0101/LK0102",
         "organizer": null,
-        "created": "2025-11-18 07:01:53",
+        "created": "2025-11-18 08:01:35",
         "last_modified": null,
         "uid": "sked.de291349",
         "Veranstaltung": "Grundlagen Data Science",
@@ -2688,7 +2688,7 @@
         "Art": "SV",
         "Studiengruppe": "24DNI1-3, 24DNI2-3, 24DNI2-STE-3",
         "Anmerkung": "-",
-        "globalID": "QE8J0K"
+        "globalID": "77L1RA"
     },
     {
         "summary": "Internes Rechnungswesen",
@@ -2696,7 +2696,7 @@
         "end": "2026-01-08 11:30:00",
         "location": "LK0101/LK0102",
         "organizer": null,
-        "created": "2025-11-18 07:01:53",
+        "created": "2025-11-18 08:01:35",
         "last_modified": null,
         "uid": "sked.de291393",
         "Veranstaltung": "Internes Rechnungswesen",
@@ -2704,7 +2704,7 @@
         "Art": "SV",
         "Studiengruppe": "24DNI1-3",
         "Anmerkung": "-",
-        "globalID": "KWR7RH"
+        "globalID": "CGVEVT"
     },
     {
         "summary": "Internes Rechnungswesen",
@@ -2712,7 +2712,7 @@
         "end": "2025-11-27 11:30:00",
         "location": "KC0302 (BR)",
         "organizer": null,
-        "created": "2025-11-18 07:01:53",
+        "created": "2025-11-18 08:01:35",
         "last_modified": null,
         "uid": "sked.de290412",
         "Veranstaltung": "Internes Rechnungswesen",
@@ -2720,7 +2720,7 @@
         "Art": "SV",
         "Studiengruppe": "24DNI1-3",
         "Anmerkung": "-",
-        "globalID": "KWR7RH"
+        "globalID": "CGVEVT"
     },
     {
         "summary": "Internes Rechnungswesen",
@@ -2728,7 +2728,7 @@
         "end": "2025-12-01 15:30:00",
         "location": "KA0005",
         "organizer": null,
-        "created": "2025-11-18 07:01:53",
+        "created": "2025-11-18 08:01:35",
         "last_modified": null,
         "uid": "sked.de290415",
         "Veranstaltung": "Internes Rechnungswesen",
@@ -2736,7 +2736,7 @@
         "Art": "SV",
         "Studiengruppe": "24DNI1-3",
         "Anmerkung": "-",
-        "globalID": "KWR7RH"
+        "globalID": "CGVEVT"
     },
     {
         "summary": "Statistik",
@@ -2744,7 +2744,7 @@
         "end": "2025-12-09 15:30:00",
         "location": "LW0114",
         "organizer": null,
-        "created": "2025-11-18 07:01:53",
+        "created": "2025-11-18 08:01:35",
         "last_modified": null,
         "uid": "sked.de291061",
         "Veranstaltung": "Statistik",
@@ -2752,7 +2752,7 @@
         "Art": "SV",
         "Studiengruppe": "24DNI1-3, 24DNI2-3, 24DNI2-STE-3",
         "Anmerkung": "-",
-        "globalID": "Y9C2AK"
+        "globalID": "D9VUGW"
     },
     {
         "summary": "Statistik",
@@ -2760,7 +2760,7 @@
         "end": "2025-12-17 15:30:00",
         "location": "LK0101/LK0102",
         "organizer": null,
-        "created": "2025-11-18 07:01:53",
+        "created": "2025-11-18 08:01:35",
         "last_modified": null,
         "uid": "sked.de291068",
         "Veranstaltung": "Statistik",
@@ -2768,7 +2768,7 @@
         "Art": "SV",
         "Studiengruppe": "24DNI1-3, 24DNI2-3, 24DNI2-STE-3",
         "Anmerkung": "-",
-        "globalID": "Y9C2AK"
+        "globalID": "D9VUGW"
     },
     {
         "summary": "Statistik",
@@ -2776,7 +2776,7 @@
         "end": "2025-12-19 15:30:00",
         "location": "LK0101/LK0102",
         "organizer": null,
-        "created": "2025-11-18 07:01:53",
+        "created": "2025-11-18 08:01:35",
         "last_modified": null,
         "uid": "sked.de291069",
         "Veranstaltung": "Statistik",
@@ -2784,7 +2784,7 @@
         "Art": "SV",
         "Studiengruppe": "24DNI1-3, 24DNI2-3, 24DNI2-STE-3",
         "Anmerkung": "-",
-        "globalID": "Y9C2AK"
+        "globalID": "D9VUGW"
     },
     {
         "summary": "Nachhaltiges Prozessmanagement und angewandte Fallstudien",
@@ -2792,7 +2792,7 @@
         "end": "2025-12-18 19:00:00",
         "location": "LK0101/LK0102",
         "organizer": null,
-        "created": "2025-11-18 07:01:53",
+        "created": "2025-11-18 08:01:35",
         "last_modified": null,
         "uid": "sked.de291132",
         "Veranstaltung": "Nachhaltiges Prozessmanagement und angewandte Fallstudien",
@@ -2800,7 +2800,7 @@
         "Art": "SV",
         "Studiengruppe": "24DNI1-3, 24DNI2-3, 24DNI2-STE-3",
         "Anmerkung": "-",
-        "globalID": "MV0D10"
+        "globalID": "KWGXQ0"
     },
     {
         "summary": "Nachhaltiges Prozessmanagement und angewandte Fallstudien",
@@ -2808,7 +2808,7 @@
         "end": "2026-01-05 15:30:00",
         "location": "KD0201",
         "organizer": null,
-        "created": "2025-11-18 07:01:53",
+        "created": "2025-11-18 08:01:35",
         "last_modified": null,
         "uid": "sked.de291133",
         "Veranstaltung": "Nachhaltiges Prozessmanagement und angewandte Fallstudien",
@@ -2816,7 +2816,7 @@
         "Art": "SV",
         "Studiengruppe": "24DNI1-3, 24DNI2-3, 24DNI2-STE-3",
         "Anmerkung": "-",
-        "globalID": "MV0D10"
+        "globalID": "KWGXQ0"
     },
     {
         "summary": "Grundlagen Data Science",
@@ -2824,7 +2824,7 @@
         "end": "2025-12-08 15:30:00",
         "location": "KD0201",
         "organizer": null,
-        "created": "2025-11-18 07:01:53",
+        "created": "2025-11-18 08:01:35",
         "last_modified": null,
         "uid": "sked.de291334",
         "Veranstaltung": "Grundlagen Data Science",
@@ -2832,7 +2832,7 @@
         "Art": "SV",
         "Studiengruppe": "24DNI1-3, 24DNI2-3, 24DNI2-STE-3",
         "Anmerkung": "-",
-        "globalID": "QE8J0K"
+        "globalID": "77L1RA"
     },
     {
         "summary": "Statistik",
@@ -2840,7 +2840,7 @@
         "end": "2026-01-13 11:30:00",
         "location": "KD0302",
         "organizer": null,
-        "created": "2025-11-18 07:01:53",
+        "created": "2025-11-18 08:01:35",
         "last_modified": null,
         "uid": "sked.de291380",
         "Veranstaltung": "Statistik",
@@ -2848,7 +2848,7 @@
         "Art": "SV",
         "Studiengruppe": "24DNI1-3, 24DNI2-3, 24DNI2-STE-3",
         "Anmerkung": "-",
-        "globalID": "Y9C2AK"
+        "globalID": "D9VUGW"
     },
     {
         "summary": "Grundlagen Data Science",
@@ -2856,7 +2856,7 @@
         "end": "2026-01-05 11:30:00",
         "location": "KD0201",
         "organizer": null,
-        "created": "2025-11-18 07:01:53",
+        "created": "2025-11-18 08:01:35",
         "last_modified": null,
         "uid": "sked.de291339",
         "Veranstaltung": "Grundlagen Data Science",
@@ -2864,7 +2864,7 @@
         "Art": "SV",
         "Studiengruppe": "24DNI1-3, 24DNI2-3, 24DNI2-STE-3",
         "Anmerkung": "-",
-        "globalID": "QE8J0K"
+        "globalID": "77L1RA"
     },
     {
         "summary": "Marketingpolitiken",
@@ -2872,7 +2872,7 @@
         "end": "2025-12-18 15:30:00",
         "location": "LN0001",
         "organizer": null,
-        "created": "2025-11-18 07:01:53",
+        "created": "2025-11-18 08:01:35",
         "last_modified": null,
         "uid": "sked.de290982",
         "Veranstaltung": "Marketingpolitiken",
@@ -2880,7 +2880,7 @@
         "Art": "SV",
         "Studiengruppe": "24DNI1-3",
         "Anmerkung": "-",
-        "globalID": "BX8CYM"
+        "globalID": "XCKBH4"
     },
     {
         "summary": "Marketingpolitiken",
@@ -2888,7 +2888,7 @@
         "end": "2025-12-16 15:30:00",
         "location": "KE0101",
         "organizer": null,
-        "created": "2025-11-18 07:01:53",
+        "created": "2025-11-18 08:01:35",
         "last_modified": null,
         "uid": "sked.de290981",
         "Veranstaltung": "Marketingpolitiken",
@@ -2896,7 +2896,7 @@
         "Art": "SV",
         "Studiengruppe": "24DNI1-3",
         "Anmerkung": "-",
-        "globalID": "BX8CYM"
+        "globalID": "XCKBH4"
     },
     {
         "summary": "Marketingpolitiken",
@@ -2904,7 +2904,7 @@
         "end": "2025-11-25 15:30:00",
         "location": "KA0005",
         "organizer": null,
-        "created": "2025-11-18 07:01:53",
+        "created": "2025-11-18 08:01:35",
         "last_modified": null,
         "uid": "sked.de290384",
         "Veranstaltung": "Marketingpolitiken",
@@ -2912,7 +2912,7 @@
         "Art": "SV",
         "Studiengruppe": "24DNI1-3",
         "Anmerkung": "-",
-        "globalID": "BX8CYM"
+        "globalID": "XCKBH4"
     },
     {
         "summary": "Marketingpolitiken",
@@ -2920,7 +2920,7 @@
         "end": "2025-11-28 15:30:00",
         "location": "KF0004",
         "organizer": null,
-        "created": "2025-11-18 07:01:53",
+        "created": "2025-11-18 08:01:35",
         "last_modified": null,
         "uid": "sked.de290385",
         "Veranstaltung": "Marketingpolitiken",
@@ -2928,7 +2928,7 @@
         "Art": "SV",
         "Studiengruppe": "24DNI1-3",
         "Anmerkung": "-",
-        "globalID": "BX8CYM"
+        "globalID": "XCKBH4"
     },
     {
         "summary": "Englisch",
@@ -2936,7 +2936,7 @@
         "end": "2025-11-21 15:30:00",
         "location": "KE0102",
         "organizer": null,
-        "created": "2025-11-18 07:01:53",
+        "created": "2025-11-18 08:01:35",
         "last_modified": null,
         "uid": "sked.de290539",
         "Veranstaltung": "Englisch",
@@ -2944,7 +2944,7 @@
         "Art": "BK",
         "Studiengruppe": "24DNI1-3",
         "Anmerkung": "-",
-        "globalID": "3MX2LH"
+        "globalID": "9CQTBY"
     },
     {
         "summary": "Grundlagen Data Science",
@@ -2952,7 +2952,7 @@
         "end": "2025-12-02 15:30:00",
         "location": "KD0202",
         "organizer": null,
-        "created": "2025-11-18 07:01:53",
+        "created": "2025-11-18 08:01:35",
         "last_modified": null,
         "uid": "sked.de290452",
         "Veranstaltung": "Grundlagen Data Science",
@@ -2960,6 +2960,6 @@
         "Art": "SV",
         "Studiengruppe": "24DNI1-3, 24DNI2-3, 24DNI2-STE-3",
         "Anmerkung": "-",
-        "globalID": "QE8J0K"
+        "globalID": "77L1RA"
     }
 ]
