@@ -3,174 +3,174 @@
         "summary": "Thermodynamik",
         "Dozent": "Koke",
         "Studiengruppe": "24BTS-CPV-3, 24BTS-MAS-3",
-        "globalID": "SXEPLJ"
+        "globalID": "G8P7OZ"
     },
     {
         "summary": "Statistik",
         "Dozent": "Grunwald",
         "Studiengruppe": "24BTS-CPV-3, 24BTS-MAS-3",
-        "globalID": "CCZRGS"
+        "globalID": "2G54RJ"
     },
     {
         "summary": "Grundlagen Data Science",
         "Dozent": "Guericke",
         "Studiengruppe": "24BTS-CPV-3",
-        "globalID": "5AMG5S"
+        "globalID": "99AUNI"
     },
     {
         "summary": "Physikalische Chemie",
         "Dozent": "Jordan",
         "Studiengruppe": "24BTS-CPV-3",
-        "globalID": "6GI134"
+        "globalID": "6BKDE6"
     },
     {
         "summary": "Technische Physik - Physikalische Modelle",
         "Dozent": "Voicu",
         "Studiengruppe": "24BTS-CPV-3, 24BTS-EAT-3, 24BTS-MEC-3, 24BTS-TIN-3",
-        "globalID": "ZNXSTB"
+        "globalID": "6L32FT"
     },
     {
         "summary": "Rechnergestütztes Konstruieren",
         "Dozent": "Leonhardt",
         "Studiengruppe": "24BTS-CPV-3, 24BTS-EAT-3, 24BTS-MEC-3, 24BTS-TIN-3",
-        "globalID": "IEQROY"
+        "globalID": "Q8KYGL"
     },
     {
         "summary": "Englisch",
         "Dozent": "Fitzgerald, van Heugten",
         "Studiengruppe": "24BTS-CPV-3, 24BTS-EAT-3, 24BTS-MEC-3, 24BTS-TIN-3",
-        "globalID": "8APKG1"
+        "globalID": "8KVBA4"
     },
     {
         "summary": "Infos zum Studium",
         "Dozent": "Arens-Fischer, Schlautmann-Kemner, Schultheis",
         "Studiengruppe": "24BTS-CPV-3, 24BTS-EAT-3, 24BTS-MAS-3, 24BTS-MEC-3, 24BTS-TIN-3, 24DNB1-3, 24DNB2-3, 24DNB3-3, 24DNB3-STE-3, 24DNB4-3, 24DNE1-3, 24DNE2-3, 24DNI1-3, 24DNI2-3, 24DNI2-STE-3",
-        "globalID": "THKBDF"
+        "globalID": "7NSIBC"
     },
     {
         "summary": "Elektrotechnik (Vorbereitung Kammerprüfung)",
         "Dozent": "Gerdes",
         "Studiengruppe": "24BTS-CPV-3, 24BTS-EAT-3, 24BTS-MAS-3, 24BTS-MEC-3, 24BTS-TIN-3, 24DNE1-3, 24DNE2-3",
-        "globalID": "NZ5VS6"
+        "globalID": "088ZDH"
     },
     {
         "summary": "Semestergespräch",
         "Dozent": "Kerperien",
         "Studiengruppe": "24BTS-CPV-3, 24BTS-EAT-3, 24BTS-MAS-3, 24BTS-MEC-3, 24BTS-TIN-3",
-        "globalID": "3NS6T3"
+        "globalID": "JSSV52"
     },
     {
         "summary": "Metallbau (Vorbereitung Kammerprüfung)",
         "Dozent": "Scholz",
         "Studiengruppe": "24BTS-CPV-3, 24BTS-EAT-3, 24BTS-MAS-3, 24BTS-MEC-3, 24BTS-TIN-3, 24DNE1-3, 24DNE2-3",
-        "globalID": "HL63Y5"
+        "globalID": "91UWYF"
     },
     {
         "summary": "Elektrische und elektronische Bauelemente",
         "Dozent": "Voges",
         "Studiengruppe": "24BTS-EAT-3, 24BTS-MEC-3, 24BTS-TIN-3",
-        "globalID": "CYLQOQ"
+        "globalID": "SPGQQI"
     },
     {
         "summary": "Datenbanken",
         "Dozent": "Siepermann",
         "Studiengruppe": "24BTS-TIN-3, 24DNI1-3, 24DNI2-3, 24DNI2-STE-3",
-        "globalID": "BHP3C3"
+        "globalID": "A89Y78"
     },
     {
         "summary": "Elektrische Maschinen",
         "Dozent": "Terörde",
         "Studiengruppe": "24BTS-EAT-3, 24BTS-MEC-3, 24BTS-TIN-3",
-        "globalID": "B6Q7HQ"
+        "globalID": "C9L116"
     },
     {
         "summary": "Algorythmen und Datenstrukturen",
         "Dozent": "Streekmann",
         "Studiengruppe": "24BTS-TIN-3, 24DNI1-3",
-        "globalID": "49A0TZ"
+        "globalID": "QMVKO0"
     },
     {
         "summary": "Technische Elektrodynamik",
         "Dozent": "Kling",
         "Studiengruppe": "24BTS-EAT-3, 24BTS-MEC-3",
-        "globalID": "59A0YG"
+        "globalID": "6CJYWC"
     },
     {
         "summary": "Auslegung technischer Baugruppen",
         "Dozent": "Austerhoff",
         "Studiengruppe": "24BTS-MAS-3, 24BTS-MEC-3",
-        "globalID": "02VHNB"
+        "globalID": "I8THOP"
     },
     {
         "summary": "Mechanik: Dynamik",
         "Dozent": "Voicu",
         "Studiengruppe": "24BTS-EAT-3, 24BTS-MAS-3, 24BTS-MEC-3",
-        "globalID": "KHOBZ0"
+        "globalID": "944TB4"
     },
     {
         "summary": "Technische Physik - Physikalische Modelle",
         "Dozent": "Voicu",
         "Studiengruppe": "24BTS-MAS-3",
-        "globalID": "YW9LD0"
+        "globalID": "KAQ7VV"
     },
     {
         "summary": "Rechnergestütztes Konstruieren",
         "Dozent": "Leonhardt",
         "Studiengruppe": "24BTS-MAS-3",
-        "globalID": "GXB0JV"
+        "globalID": "T1ZZEW"
     },
     {
         "summary": "Englisch",
         "Dozent": "Fitzgerald, van Heugten",
         "Studiengruppe": "24BTS-MAS-3",
-        "globalID": "PSRIZ2"
+        "globalID": "LFP4OF"
     },
     {
         "summary": "Marketingpolitiken",
         "Dozent": "Diederichs",
         "Studiengruppe": "24DNI1-3",
-        "globalID": "ELMY2I"
+        "globalID": "N0GPP7"
     },
     {
         "summary": "Statistik",
         "Dozent": "Ornau",
         "Studiengruppe": "24DNI1-3, 24DNI2-3, 24DNI2-STE-3",
-        "globalID": "TADZGA"
+        "globalID": "M4HFX9"
     },
     {
         "summary": "Informatik (Vorbereitung Kammerprüfung)",
         "Dozent": "Zilinski",
         "Studiengruppe": "24DNI1-3, 24DNI2-3, 24DNI2-STE-3",
-        "globalID": "E0WWDX"
+        "globalID": "OV7O0Y"
     },
     {
         "summary": "Nachhaltiges Prozessmanagement und angewandte Fallstudien",
         "Dozent": "Barenkamp",
         "Studiengruppe": "24DNI1-3, 24DNI2-3, 24DNI2-STE-3",
-        "globalID": "A75TX6"
+        "globalID": "RXLTPS"
     },
     {
         "summary": "Grundlagen Data Science",
         "Dozent": "Guericke",
         "Studiengruppe": "24DNI1-3, 24DNI2-3, 24DNI2-STE-3",
-        "globalID": "TLS7T4"
+        "globalID": "ZDLFOZ"
     },
     {
         "summary": "Finanzbuchhaltung / Jahresabschluss",
         "Dozent": "Neugebauer",
         "Studiengruppe": "24DNI1-3, 24DNI2-3",
-        "globalID": "UFC1WN"
+        "globalID": "R8NRQJ"
     },
     {
         "summary": "Internes Rechnungswesen",
         "Dozent": "Schwellnuß",
         "Studiengruppe": "24DNI1-3",
-        "globalID": "1SGTRX"
+        "globalID": "M991FM"
     },
     {
         "summary": "Englisch",
         "Dozent": "Friedenstab",
         "Studiengruppe": "24DNI1-3",
-        "globalID": "K8N5PO"
+        "globalID": "LVVJSS"
     }
 ]
