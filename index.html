@@ -84,13 +84,26 @@
     @media (max-width: 640px) {
       #consentBanner p { font-size: .85rem; }
     }
+
+    .kachel{
+      overflow:hidden;
+      text-overflow:ellipsis;
+      display:-webkit-box;
+      -webkit-line-clamp:10;
+      -webkit-box-orient:vertical;
+      white-space:normal;
+    }
+    body.month-view .kachel{
+      -webkit-line-clamp:2;
+    }
+    
   </style>
 </head>
 <body class="h-full bg-slate-50 text-slate-800">
   <div class="max-w-7xl mx-auto p-4 md:p-8">
-    <header class="mb-6">
-      <h1 class="text-2xl md:text-3xl font-extrabold tracking-tight">Stundenplan konfigurieren</h1>
-      <p class="text-slate-600 mt-1">Wähle deine Module und zeige anschließend alle zugehörigen Veranstaltungen kompakt im Kalender.</p>
+    <header class="mb-6" id="mainHeader">
+      <h1 id="mainTitle" class="text-2xl md:text-3xl font-extrabold tracking-tight">Stundenplan konfigurieren</h1>
+      <p id="mainSubtitle" class="text-slate-600 mt-1">Wähle deine Module und zeige anschließend alle zugehörigen Veranstaltungen kompakt im Kalender.</p>
     </header>
 
     <!-- STEP 1: Auswahl -->
@@ -121,7 +134,6 @@
         <div class="mt-4 flex flex-wrap items-center justify-between gap-3">
           <div id="legend" class="flex flex-wrap gap-2"></div>
           <div class="flex items-center gap-3">
-            <button id="btnRestore" class="rounded-xl border border-slate-200 px-4 py-2 text-slate-600 hover:bg-slate-100">Letzte Auswahl</button>
             <button id="btnConfirm" class="rounded-xl bg-indigo-600 px-5 py-2.5 font-semibold text-white shadow-soft hover:bg-indigo-700">Kalender anzeigen</button>
           </div>
         </div>
@@ -140,6 +152,7 @@
               <span class="font-bold">Letzte Datenaktualisierung:</span>
               <span class="js-last-updated text-[11px]">wird geladen…</span>
             </li>
+            <li class="font-bold">Für die Richtigkeit und Vollständigkeit der bereitgestellten Daten wird keine Haftung übernommen. Die Website befindet sich noch in der Entwicklungsphase!</li>
             <li class="font-bold">Dies ist KEINE offizielle Webseite der Hochschule Osnabrück!</li>
             <li class="font-bold">Dies ist eine Private, nicht-kommerzielle Website für Studierende der Hochschule Osnabrück. Keine geschäftsmäßige Nutzung.</li>
             <li class="font-bold">Diese Website speichert lokale Einstellungen (z. B. gewählten Kurs) ausschließlich lokal im Browser (LocalStorage). Es findet keine Serverübertragung oder Speicherung personenbezogener Daten statt.</li>
@@ -168,6 +181,7 @@
               <span class="font-bold">Letzte Datenaktualisierung:</span>
               <span class="js-last-updated text-[11px]">wird geladen…</span>
             </li>
+            <li class="font-bold">Für die Richtigkeit und Vollständigkeit der bereitgestellten Daten wird keine Haftung übernommen. Die Website befindet sich noch in der Entwicklungsphase!</li>
             <li class="font-bold">Dies ist KEINE offizielle Webseite der Hochschule Osnabrück!</li>
             <li class="font-bold">Dies ist eine Private, nicht-kommerzielle Website für Studierende der Hochschule Osnabrück. Keine geschäftsmäßige Nutzung.</li>
             <li class="font-bold">Diese Website speichert lokale Einstellungen (z. B. gewählten Kurs) ausschließlich lokal im Browser (LocalStorage). Es findet keine Serverübertragung oder Speicherung personenbezogener Daten statt.</li>
@@ -398,9 +412,7 @@
     document.getElementById('btnClearAll').addEventListener('click', ()=>{
       SELECTED.clear(); saveSelection([]); renderCourseList(document.getElementById('search').value);
     });
-    document.getElementById('btnRestore').addEventListener('click', ()=>{
-      SELECTED = new Set(loadSelection()); renderCourseList(document.getElementById('search').value);
-    });
+
 
     // ---------------- Build events ----------------
     function buildCalendarEvents() {
@@ -430,6 +442,10 @@
 
     // ---------------- Calendar ----------------
     function showCalendar() {
+      // Titel ändern beim Kalender
+      document.getElementById('mainTitle').textContent = 'Stundenplan';
+      document.getElementById('mainSubtitle').classList.add('hidden');
+
       document.getElementById('step-select').classList.add('hidden');
       document.getElementById('step-calendar').classList.remove('hidden');
 
@@ -490,37 +506,40 @@
           }
 
           // LIST: Pastell + sicherer Textinhalt
-const row = info.el;
-row.classList.add('list-colored');
-row.style.setProperty('--row-bg', pal.soft);
-row.style.setProperty('--row-text', '#0f172a');
-row.style.setProperty('--row-dot', pal.dot);
+          const row = info.el;
+          row.classList.add('list-colored');
+          row.style.setProperty('--row-bg', pal.soft);
+          row.style.setProperty('--row-text', '#0f172a');
+          row.style.setProperty('--row-dot', pal.dot);
 
-const titleTd = row.querySelector('td.fc-list-event-title');
-if (titleTd) {
-  titleTd.innerHTML = ''; // Alte Inhalte leeren, wir rendern neu
-  const titleSpan = document.createElement('span');
-  titleSpan.textContent = info.event.extendedProps.raw.summary || info.event.title || 'Unbenannt';
-  titleSpan.style.fontWeight = '700';
-  titleSpan.style.color = '#0f172a';
+          const titleTd = row.querySelector('td.fc-list-event-title');
+          if (titleTd) {
+            titleTd.innerHTML = ''; // Alte Inhalte leeren, wir rendern neu
+            const titleSpan = document.createElement('span');
+            titleSpan.textContent = info.event.extendedProps.raw.summary || info.event.title || 'Unbenannt';
+            titleSpan.style.fontWeight = '700';
+            titleSpan.style.color = '#0f172a';
 
-  const room = info.event.extendedProps.room;
-  const roomSpan = document.createElement('span');
-  if (room) {
-    roomSpan.textContent = ` · Raum ${room}`;
-    roomSpan.style.marginLeft = '0.25rem';
-    roomSpan.style.fontWeight = '600';
-    roomSpan.style.color = '#0f172a';
-  }
+            const room = info.event.extendedProps.room;
+            const roomSpan = document.createElement('span');
+            if (room) {
+              roomSpan.textContent = ` · Raum ${room}`;
+              roomSpan.style.marginLeft = '0.25rem';
+              roomSpan.style.fontWeight = '600';
+              roomSpan.style.color = '#0f172a';
+            }
 
-  titleTd.appendChild(titleSpan);
-  if (room) titleTd.appendChild(roomSpan);
-}
+            titleTd.appendChild(titleSpan);
+            if (room) titleTd.appendChild(roomSpan);
+          }
 
         },
 
         // Letzte Ansicht merken
-        viewDidMount: (arg) => saveLastView(arg.view.type),
+        viewDidMount: (arg) => { 
+          saveLastView(arg.view.type);
+          document.body.classList.toggle('month-view', arg.view.type === 'dayGridMonth');
+        },
         datesSet: (arg) => saveLastView(arg.view.type),
 
         // Eigener Inhalt in Grid-Ansichten: Kursname + Raum
@@ -529,6 +548,8 @@ if (titleTd) {
 
           const room = arg.event.extendedProps.room;
           const course = arg.event.title;
+          const group = arg.event.extendedProps.raw?.Studiengruppe || '';
+
 
           // Fallback-Zeit, falls arg.timeText leer ist
           let timeText = arg.timeText || '';
@@ -541,14 +562,27 @@ if (titleTd) {
 
           const wrap = document.createElement('div');
           wrap.className = 'text-[11px] leading-tight';
-          wrap.style.whiteSpace = 'nowrap';
+          wrap.style.whiteSpace = 'normal';
           wrap.style.overflow = 'hidden';
           wrap.style.textOverflow = 'ellipsis';
+          wrap.style.wordBreak = 'break-word';
+
+
+          const groupDiv = document.createElement('div');
+          groupDiv.className = 'text-[8px] leading-tight mt-[1px]';
+          groupDiv.textContent = group || '';
+
 
           wrap.innerHTML = `
-            <div class="font-semibold">${timeText ? timeText + ' · ' : ''}${course}</div>
-            <div class="opacity-90">${room ? 'Raum ' + room : ''}</div>
+            <div class="font-semibold kachel">
+              ${course}<br>
+              ${timeText ? timeText : ''}<br>
+              <span class="text-[9px] opacity-90">${arg.event.extendedProps.raw?.Art || ''}</span>
+              </div>
           `;
+
+          //wrap.appendChild(groupDiv); DEACTIVATED!
+
           return { domNodes: [wrap] };
         }
       });
@@ -561,9 +595,11 @@ if (titleTd) {
         const raw = ev.extendedProps.raw || {};
         mTitle.textContent = ev.title;
         mBody.innerHTML = `
-          <div><span class="font-medium">Zeit:</span> ${ev.start?.toLocaleString('de-DE')} – ${ev.end?.toLocaleString('de-DE')}</div>
+          <div><span class="font-medium">Zeit:</span> ${raw.start.slice(0,16).replace('T',' ')} – ${raw.end.slice(0,16).replace('T',' ')}</div>
           <div><span class="font-medium">Dozent:</span> ${ev.extendedProps.lecturer || '—'}</div>
           <div><span class="font-medium">Raum:</span> ${ev.extendedProps.room || '—'}</div>
+          <div><span class="font-medium">Art: </span>${ev.extendedProps.raw.Art || '—'}</div>
+          <div><span class="font-medium">Gruppe: </span>${ev.extendedProps.raw.Studiengruppe || '—'}</div>
           <div class="text-slate-500 mt-2 text-xs">UID: ${raw.uid || '—'} · Kurs-ID: ${ev.extendedProps.gid}</div>
         `;
         modal.showModal();
@@ -579,6 +615,9 @@ if (titleTd) {
     document.getElementById('btnBack').addEventListener('click', ()=>{
       document.getElementById('step-calendar').classList.add('hidden');
       document.getElementById('step-select').classList.remove('hidden');
+      // Titel zurücksetzen
+      document.getElementById('mainTitle').textContent = 'Stundenplan konfigurieren';
+      document.getElementById('mainSubtitle').classList.remove('hidden'); 
       renderCourseList(document.getElementById('search').value);
     });
 
