@@ -3057,5 +3057,21 @@
         "Studiengruppe": "24BTS-MAS-3",
         "Anmerkung": "-",
         "globalID": "T1ZZEW"
+    },
+    {
+        "summary": "Physikalische Chemie",
+        "start": "2025-11-25 15:45:00",
+        "end": "2025-11-25 19:00:00",
+        "location": "KE0102",
+        "organizer": null,
+        "created": "2025-11-22 08:01:36",
+        "last_modified": null,
+        "uid": "sked.de291442",
+        "Veranstaltung": "Physikalische Chemie",
+        "Dozent": "Jordan",
+        "Art": "SV",
+        "Studiengruppe": "24BTS-CPV-3",
+        "Anmerkung": "-",
+        "globalID": "6BKDE6"
     }
 ]
