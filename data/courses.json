@@ -172,5 +172,11 @@
         "Dozent": "Friedenstab",
         "Studiengruppe": "24DNI1-3",
         "globalID": "LVVJSS"
+    },
+    {
+        "summary": "Finanzbuchhaltung / Jahresabschluss",
+        "Dozent": "Neugebauer",
+        "Studiengruppe": "24DNE2-3, 24DNI1-3, 24DNI2-3",
+        "globalID": "CXI9Y7"
     }
 ]
