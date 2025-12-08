@@ -178,5 +178,11 @@
         "Dozent": "Neugebauer",
         "Studiengruppe": "24DNE2-3, 24DNI1-3, 24DNI2-3",
         "globalID": "CXI9Y7"
+    },
+    {
+        "summary": "Elektrische und elektronische Bauelemente",
+        "Dozent": "Kuhr, Voges",
+        "Studiengruppe": "24BTS-EAT-3, 24BTS-MEC-3, 24BTS-TIN-3",
+        "globalID": "3L79LX"
     }
 ]
