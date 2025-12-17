@@ -184,5 +184,11 @@
         "Dozent": "Kuhr, Voges",
         "Studiengruppe": "24BTS-EAT-3, 24BTS-MEC-3, 24BTS-TIN-3",
         "globalID": "3L79LX"
+    },
+    {
+        "summary": "Physikalische Chemie",
+        "Dozent": "Jordan, Les",
+        "Studiengruppe": "24BTS-CPV-3",
+        "globalID": "LYYST5"
     }
 ]
