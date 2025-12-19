@@ -190,5 +190,17 @@
         "Dozent": "Jordan, Les",
         "Studiengruppe": "24BTS-CPV-3",
         "globalID": "LYYST5"
+    },
+    {
+        "summary": "Technische Physik - Physikalische Modelle",
+        "Dozent": "_IDS, Voicu",
+        "Studiengruppe": "24BTS-CPV-3, 24BTS-EAT-3, 24BTS-MEC-3, 24BTS-TIN-3",
+        "globalID": "WII18Z"
+    },
+    {
+        "summary": "Statistik",
+        "Dozent": "_IDS, Ornau",
+        "Studiengruppe": "24DNI1-3, 24DNI2-3, 24DNI2-STE-3",
+        "globalID": "D26NH1"
     }
 ]
