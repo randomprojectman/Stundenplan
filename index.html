@@ -31,18 +31,15 @@
     .fc .fc-toolbar-title { font-weight: 700; }
     .tag { display:inline-flex; align-items:center; gap:.5rem; border-radius:12px; padding:.25rem .6rem; font-size:.8rem; font-weight:600; color:#fff }
 
-    /* Header kompakt auf Mobile */
     .fc .fc-header-toolbar { flex-wrap: wrap; row-gap: .5rem; }
     .fc .fc-toolbar-chunk .fc-button { padding:.3rem .5rem; font-size:.85rem; }
 
-    /* MONTH/TIMEGRID: Events als farbige Pills */
     .fc-daygrid-event { border-radius: 10px !important; border: 0 !important; }
     .fc-daygrid-event .fc-event-time, .fc-daygrid-event .fc-event-title {
       white-space: nowrap; overflow: hidden; text-overflow: ellipsis;
     }
     .fc .fc-daygrid-event:hover { filter: saturate(1.1) brightness(1.02); }
 
-    /* ==== LIST-VIEW: keine weißen Unterbrechungen ==== */
     .fc .fc-list-table {
       border: 0;
       border-collapse: separate;
@@ -73,7 +70,6 @@
     .fc .fc-list-event-time { color:#0f172a; font-weight:600; }
     .fc .fc-list-event-title a { color:#0f172a !important; font-weight:700; text-decoration:none; }
 
-    /* Tages-Header in der List-View */
     .fc .fc-list-day { border: 0; }
     .fc .fc-list-day-cushion {
       background:#f1f5f9; color:#0f172a; font-weight:700;
@@ -93,12 +89,13 @@
       -webkit-box-orient:vertical;
       white-space:normal;
     }
+
     body.month-view .kachel{
       -webkit-line-clamp:2;
     }
-    
   </style>
 </head>
+
 <body class="h-full bg-slate-50 text-slate-800">
   <div class="max-w-7xl mx-auto p-4 md:p-8">
     <header class="mb-6" id="mainHeader">
@@ -108,7 +105,6 @@
 
     <!-- STEP 1: Auswahl -->
     <div id="step-select" class="grid md:grid-cols-3 gap-6">
-      <!-- left: Suche + Liste -->
       <section class="md:col-span-2 bg-white rounded-2xl p-4 md:p-6 shadow-soft">
         <div class="flex flex-col md:flex-row md:items-center md:justify-between gap-3">
           <div class="flex-1">
@@ -117,9 +113,9 @@
               <input id="search" type="text" placeholder="Tippe Modul, Dozent oder Studiengruppe"
                      class="w-full rounded-xl border border-slate-200 bg-slate-50 px-4 py-2.5 pr-24 focus:outline-none focus:ring-2 focus:ring-indigo-500" />
               <div class="absolute inset-y-0 right-0 flex items-center pr-2 gap-2 text-xs text-slate-500">
-                <button id="btnSelectAll" class="px-2 py-1 hover:text-indigo-600">alle</button>
+                <button id="btnSelectAll" type="button" class="px-2 py-1 hover:text-indigo-600">alle</button>
                 <span class="opacity-40">|</span>
-                <button id="btnClearAll" class="px-2 py-1 hover:text-rose-600">keine</button>
+                <button id="btnClearAll" type="button" class="px-2 py-1 hover:text-rose-600">keine</button>
               </div>
             </div>
           </div>
@@ -134,12 +130,11 @@
         <div class="mt-4 flex flex-wrap items-center justify-between gap-3">
           <div id="legend" class="flex flex-wrap gap-2"></div>
           <div class="flex items-center gap-3">
-            <button id="btnConfirm" class="rounded-xl bg-indigo-600 px-5 py-2.5 font-semibold text-white shadow-soft hover:bg-indigo-700">Kalender anzeigen</button>
+            <button id="btnConfirm" type="button" class="rounded-xl bg-indigo-600 px-5 py-2.5 font-semibold text-white shadow-soft hover:bg-indigo-700">Kalender anzeigen</button>
           </div>
         </div>
       </section>
 
-      <!-- right: Hinweise -->
       <aside class="bg-white rounded-2xl p-5 shadow-soft">
         <h2 class="font-semibold mb-2">Status</h2>
         <ul id="status" class="space-y-2 text-sm text-slate-600">
@@ -154,8 +149,8 @@
             </li>
             <li class="font-bold">Für die Richtigkeit und Vollständigkeit der bereitgestellten Daten wird keine Haftung übernommen. Die Website befindet sich noch in der Entwicklungsphase!</li>
             <li class="font-bold">Dies ist KEINE offizielle Webseite der Hochschule Osnabrück!</li>
-            <li class="font-bold">Dies ist eine Private, nicht-kommerzielle Website für Studierende der Hochschule Osnabrück. Keine geschäftsmäßige Nutzung.</li>
-            <li class="font-bold">Diese Website speichert lokale Einstellungen (z. B. gewählten Kurs) ausschließlich lokal im Browser (LocalStorage). Es findet keine Serverübertragung oder Speicherung personenbezogener Daten statt.</li>
+            <li class="font-bold">Dies ist eine private, nicht-kommerzielle Website für Studierende der Hochschule Osnabrück. Keine geschäftsmäßige Nutzung.</li>
+            <li class="font-bold">Diese Website speichert lokale Einstellungen ausschließlich lokal im Browser. Es findet keine Serverübertragung oder Speicherung personenbezogener Daten statt.</li>
             <li>Zeitzone Europe/Berlin.</li>
           </ul>
         </div>
@@ -166,11 +161,12 @@
     <div id="step-calendar" class="hidden">
       <div class="flex flex-wrap items-center justify-between gap-3 mb-3">
         <div class="flex items-center gap-2">
-          <button id="btnBack" class="rounded-xl border border-slate-200 px-4 py-2 text-slate-700 hover:bg-slate-100">Module ändern</button>
+          <button id="btnBack" type="button" class="rounded-xl border border-slate-200 px-4 py-2 text-slate-700 hover:bg-slate-100">Module ändern</button>
           <div id="activeLegend" class="hidden md:flex flex-wrap gap-2"></div>
         </div>
         <div class="text-sm text-slate-600">Zeitzone: <span class="font-medium">Europe/Berlin</span></div>
       </div>
+
       <div id="calendar" class="bg-white rounded-2xl shadow-soft p-3"></div>
 
       <footer class="mt-6">
@@ -183,8 +179,8 @@
             </li>
             <li class="font-bold">Für die Richtigkeit und Vollständigkeit der bereitgestellten Daten wird keine Haftung übernommen. Die Website befindet sich noch in der Entwicklungsphase!</li>
             <li class="font-bold">Dies ist KEINE offizielle Webseite der Hochschule Osnabrück!</li>
-            <li class="font-bold">Dies ist eine Private, nicht-kommerzielle Website für Studierende der Hochschule Osnabrück. Keine geschäftsmäßige Nutzung.</li>
-            <li class="font-bold">Diese Website speichert lokale Einstellungen (z. B. gewählten Kurs) ausschließlich lokal im Browser (LocalStorage). Es findet keine Serverübertragung oder Speicherung personenbezogener Daten statt.</li>
+            <li class="font-bold">Dies ist eine private, nicht-kommerzielle Website für Studierende der Hochschule Osnabrück. Keine geschäftsmäßige Nutzung.</li>
+            <li class="font-bold">Diese Website speichert lokale Einstellungen ausschließlich lokal im Browser. Es findet keine Serverübertragung oder Speicherung personenbezogener Daten statt.</li>
             <li>Zeitzone Europe/Berlin.</li>
           </ul>
         </div>
@@ -196,11 +192,13 @@
   <div id="consentBanner" class="hidden fixed bottom-0 inset-x-0 z-50">
     <div class="mx-auto max-w-5xl m-3 rounded-2xl bg-slate-900 text-white p-4 shadow-soft">
       <div class="flex flex-col sm:flex-row gap-3 sm:items-center sm:justify-between">
-        <p>Diese Website speichert deine Kursauswahl und die zuletzt genutzte Ansicht lokal im Browser, damit du beim nächsten Besuch direkt startest.
-          Keine Cookies von Drittanbietern, keine personenbezogenen Daten.</p>
+        <p>
+          Diese Website speichert deine Kursauswahl und die zuletzt genutzte Ansicht lokal im Browser,
+          damit du beim nächsten Besuch direkt startest. Keine Cookies von Drittanbietern, keine personenbezogenen Daten.
+        </p>
         <div class="flex gap-2 shrink-0">
-          <button id="consentDecline" class="rounded-xl bg-slate-700 hover:bg-slate-600 px-4 py-2">Ablehnen</button>
-          <button id="consentAccept" class="rounded-xl bg-emerald-600 hover:bg-emerald-700 px-4 py-2 font-semibold">Akzeptieren</button>
+          <button id="consentDecline" type="button" class="rounded-xl bg-slate-700 hover:bg-slate-600 px-4 py-2">Ablehnen</button>
+          <button id="consentAccept" type="button" class="rounded-xl bg-emerald-600 hover:bg-emerald-700 px-4 py-2 font-semibold">Akzeptieren</button>
         </div>
       </div>
     </div>
@@ -211,7 +209,7 @@
     <div class="p-5">
       <div class="flex items-start justify-between mb-2">
         <h3 id="mTitle" class="text-lg font-bold"></h3>
-        <button id="mClose" class="text-slate-500 hover:text-slate-800">✕</button>
+        <button id="mClose" type="button" class="text-slate-500 hover:text-slate-800">✕</button>
       </div>
       <div id="mBody" class="space-y-1 text-sm text-slate-700"></div>
     </div>
@@ -224,44 +222,194 @@
       total:   'data/total_data/total.json',
     };
 
-    // ---------------- Consent / Storage ----------------
-    const CONSENT_KEY   = 'sp_consent';           // 'granted' | 'denied'
-    const SELECT_KEY    = 'selectedGlobalIDs';
-    const LAST_VIEW_KEY = 'sp_last_view';
+    // ---------------- Storage Keys ----------------
+    const STORAGE_PREFIX     = 'stundenplan_v2_';
+    const CONSENT_KEY        = STORAGE_PREFIX + 'consent';
+    const SELECT_KEY         = STORAGE_PREFIX + 'selectedGlobalIDs';
+    const LAST_VIEW_KEY      = STORAGE_PREFIX + 'lastView';
+    const DATA_SIGNATURE_KEY = STORAGE_PREFIX + 'dataSignature';
 
-    const consent = {
-      get()  { return localStorage.getItem(CONSENT_KEY); },
-      set(v) { localStorage.setItem(CONSENT_KEY, v); },
-      allowed() { return localStorage.getItem(CONSENT_KEY) === 'granted'; }
-    };
+    // Alte Keys aus vorherigen Versionen.
+    // Dadurch bleiben defekte Altzustände nicht aktiv.
+    const LEGACY_KEYS = [
+      'sp_consent',
+      'selectedGlobalIDs',
+      'sp_last_view'
+    ];
 
-    function saveSelection(ids) { if (consent.allowed()) localStorage.setItem(SELECT_KEY, JSON.stringify(ids)); }
-    function loadSelection() {
-      if (!consent.allowed()) return [];
-      try { return JSON.parse(localStorage.getItem(SELECT_KEY) || '[]'); } catch { return []; }
+    const VALID_VIEWS = new Set([
+      'dayGridMonth',
+      'timeGridWeek',
+      'timeGridDay',
+      'listWeek'
+    ]);
+
+    // ---------------- Safe Helpers ----------------
+    function safeLocalStorageGet(key) {
+      try {
+        return localStorage.getItem(key);
+      } catch {
+        return null;
+      }
     }
 
-    function saveLastView(viewType) { if (consent.allowed()) localStorage.setItem(LAST_VIEW_KEY, viewType); }
-    function loadLastView() { return consent.allowed() ? localStorage.getItem(LAST_VIEW_KEY) : null; }
+    function safeLocalStorageSet(key, value) {
+      try {
+        localStorage.setItem(key, value);
+      } catch (err) {
+        console.warn('LocalStorage konnte nicht geschrieben werden:', err);
+      }
+    }
 
-    function showConsentBannerIfNeeded() { if (!consent.get()) document.getElementById('consentBanner').classList.remove('hidden'); }
-    function hideConsentBanner() { document.getElementById('consentBanner').classList.add('hidden'); }
+    function safeLocalStorageRemove(key) {
+      try {
+        localStorage.removeItem(key);
+      } catch (err) {
+        console.warn('LocalStorage konnte nicht bereinigt werden:', err);
+      }
+    }
 
-    document.getElementById('consentAccept').addEventListener('click', () => {
-      consent.set('granted');
-      saveSelection([...SELECTED]);
-      saveLastView(calendar?.view?.type || '');
-      hideConsentBanner();
-    });
-    document.getElementById('consentDecline').addEventListener('click', () => {
-      consent.set('denied');
-      localStorage.removeItem(SELECT_KEY);
-      localStorage.removeItem(LAST_VIEW_KEY);
-      hideConsentBanner();
-    });
+    function safeJsonParse(value, fallback) {
+      if (!value) return fallback;
+      try {
+        const parsed = JSON.parse(value);
+        return parsed ?? fallback;
+      } catch {
+        return fallback;
+      }
+    }
+
+    function escapeHtml(value) {
+      return String(value ?? '')
+        .replaceAll('&', '&amp;')
+        .replaceAll('<', '&lt;')
+        .replaceAll('>', '&gt;')
+        .replaceAll('"', '&quot;')
+        .replaceAll("'", '&#039;');
+    }
+
+    function normalizeDateTime(s) {
+      return typeof s === 'string' ? s.replace(' ', 'T') : s;
+    }
+
+    function getCourseID(course) {
+      return String(course?.globalID || course?.summary || '').trim();
+    }
+
+    function getEventCourseID(ev) {
+      return String(ev?.globalID || ev?.summary || '').trim();
+    }
+
+    function clearLegacyStorageKeys() {
+      LEGACY_KEYS.forEach(safeLocalStorageRemove);
+    }
+
+    function computeDataSignature(courses, events, lastUpdated) {
+      const courseIDs = courses
+        .map(getCourseID)
+        .filter(Boolean)
+        .sort()
+        .join('|');
+
+      const eventCount = Array.isArray(events) ? events.length : 0;
+      const courseCount = Array.isArray(courses) ? courses.length : 0;
+      const updated = lastUpdated instanceof Date && !isNaN(lastUpdated.getTime())
+        ? lastUpdated.toISOString()
+        : 'unknown';
+
+      return `${updated}::courses=${courseCount}::events=${eventCount}::ids=${courseIDs}`;
+    }
+
+    // ---------------- Consent / Storage ----------------
+    const consent = {
+      get() {
+        return safeLocalStorageGet(CONSENT_KEY);
+      },
+      set(v) {
+        safeLocalStorageSet(CONSENT_KEY, v);
+      },
+      allowed() {
+        return safeLocalStorageGet(CONSENT_KEY) === 'granted';
+      }
+    };
+
+    function saveSelection(ids) {
+      if (!consent.allowed()) return;
+      const cleanIDs = Array.from(new Set(ids.map(String).filter(Boolean)));
+      safeLocalStorageSet(SELECT_KEY, JSON.stringify(cleanIDs));
+    }
+
+    function loadRawSelection() {
+      if (!consent.allowed()) return [];
+      const raw = safeLocalStorageGet(SELECT_KEY);
+      const parsed = safeJsonParse(raw, []);
+      return Array.isArray(parsed) ? parsed.map(String).filter(Boolean) : [];
+    }
+
+    function loadValidSelection() {
+      if (!consent.allowed()) return [];
+
+      const validIDs = new Set(COURSES.map(getCourseID).filter(Boolean));
+      const rawIDs = loadRawSelection();
+
+      const cleaned = rawIDs.filter(id => validIDs.has(id));
+
+      if (cleaned.length !== rawIDs.length) {
+        saveSelection(cleaned);
+        setStatus(`Alte gespeicherte Kursauswahl bereinigt: ${rawIDs.length - cleaned.length} ungültige ID(s) entfernt.`);
+      }
+
+      return cleaned;
+    }
+
+    function saveLastView(viewType) {
+      if (!consent.allowed()) return;
+      if (!VALID_VIEWS.has(viewType)) return;
+      safeLocalStorageSet(LAST_VIEW_KEY, viewType);
+    }
+
+    function loadLastView() {
+      if (!consent.allowed()) return null;
+      const saved = safeLocalStorageGet(LAST_VIEW_KEY);
+      if (VALID_VIEWS.has(saved)) return saved;
+
+      if (saved) {
+        safeLocalStorageRemove(LAST_VIEW_KEY);
+        setStatus('Ungültige gespeicherte Kalenderansicht wurde zurückgesetzt.');
+      }
+
+      return null;
+    }
+
+    function handleDatasetChange() {
+      if (!consent.allowed()) return;
+
+      const newSignature = computeDataSignature(COURSES, EVENTS, LAST_UPDATED);
+      const oldSignature = safeLocalStorageGet(DATA_SIGNATURE_KEY);
+
+      if (oldSignature && oldSignature !== newSignature) {
+        safeLocalStorageRemove(SELECT_KEY);
+        safeLocalStorageRemove(LAST_VIEW_KEY);
+        SELECTED.clear();
+        setStatus('Neuer Datenstand erkannt. Alte Kursauswahl wurde zurückgesetzt, damit keine alten Semesterdaten geladen werden.');
+      }
+
+      safeLocalStorageSet(DATA_SIGNATURE_KEY, newSignature);
+    }
+
+    function showConsentBannerIfNeeded() {
+      if (!consent.get()) {
+        document.getElementById('consentBanner').classList.remove('hidden');
+      }
+    }
+
+    function hideConsentBanner() {
+      document.getElementById('consentBanner').classList.add('hidden');
+    }
 
     // ---------------- Status helper ----------------
     const statusEl = document.getElementById('status');
+
     function setStatus(msg, ok = true) {
       const li = document.createElement('li');
       li.textContent = msg;
@@ -270,22 +418,37 @@
     }
 
     // ---------------- Colors ----------------
-    function hashHue(str) { let h = 0; for (let i = 0; i < str.length; i++) h = (h * 31 + str.charCodeAt(i)) >>> 0; return h % 360; }
-    function paletteFor(id) {
-      const h = hashHue(id || Math.random().toString());
-      const solid = `hsl(${h} 72% 50%)`;     // kräftig, für Month/Week Blocks
-      const border = `hsl(${h} 72% 32%)`;
-      const soft =  `hsl(${h} 80% 92%)`;     // pastell, für List-Zeilen
-      const dot  =  `hsl(${h} 65% 38%)`;     // Punkt in der Liste
-      return { h, solid, border, soft, dot, textOnSolid: '#fff', textOnSoft: '#0f172a' };
+    function hashHue(str) {
+      let h = 0;
+      const s = String(str || '');
+      for (let i = 0; i < s.length; i++) {
+        h = (h * 31 + s.charCodeAt(i)) >>> 0;
+      }
+      return h % 360;
     }
 
-    function normalizeDateTime(s) { return s?.replace(' ', 'T'); }
+    function paletteFor(id) {
+      const h = hashHue(id || Math.random().toString());
+      const solid = `hsl(${h} 72% 50%)`;
+      const border = `hsl(${h} 72% 32%)`;
+      const soft =  `hsl(${h} 80% 92%)`;
+      const dot  =  `hsl(${h} 65% 38%)`;
+
+      return {
+        h,
+        solid,
+        border,
+        soft,
+        dot,
+        textOnSolid: '#fff',
+        textOnSoft: '#0f172a'
+      };
+    }
 
     // ---------------- State ----------------
     let COURSES = [];
     let EVENTS  = [];
-    let SELECTED = new Set(loadSelection());
+    let SELECTED = new Set();
     let calendar = null;
     let LAST_UPDATED = null;
 
@@ -298,40 +461,68 @@
     }
 
     function updateLastUpdatedUI() {
-      if (!LAST_UPDATED) return;
-      const text = formatLastUpdated(LAST_UPDATED);
+      const text = LAST_UPDATED ? formatLastUpdated(LAST_UPDATED) : 'nicht verfügbar';
       document.querySelectorAll('.js-last-updated').forEach(el => {
         el.textContent = text;
       });
     }
 
     // ---------------- Fetch ----------------
-    async function loadData() {
-      const [cRes, eRes] = await Promise.all([ fetch(paths.courses), fetch(paths.total) ]);
-      if (!cRes.ok) throw new Error(`Konnte courses.json nicht laden (${cRes.status})`);
-      if (!eRes.ok) throw new Error(`Konnte total.json nicht laden (${eRes.status})`);
+    async function fetchJsonFresh(url) {
+      const separator = url.includes('?') ? '&' : '?';
+      const bustUrl = `${url}${separator}_=${Date.now()}`;
 
-      // NEU: Last-Modified der Daten bestimmen (vor JSON-Parsing)
-      const lastHeader =
-        cRes.headers.get('Last-Modified') ||
-        eRes.headers.get('Last-Modified');
-
-      if (lastHeader) {
-        const d = new Date(lastHeader);
-        if (!isNaN(d.getTime())) {
-          LAST_UPDATED = d;
-          updateLastUpdatedUI();
-          setStatus(`Letzte Datenaktualisierung: ${formatLastUpdated(d)}`);
-        } else {
-          setStatus('Konnte Last-Modified-Header nicht interpretieren.', false);
+      const res = await fetch(bustUrl, {
+        cache: 'no-store',
+        headers: {
+          'Cache-Control': 'no-cache'
         }
+      });
+
+      if (!res.ok) {
+        throw new Error(`Konnte ${url} nicht laden (${res.status})`);
+      }
+
+      return res;
+    }
+
+    async function loadData() {
+      const [cRes, eRes] = await Promise.all([
+        fetchJsonFresh(paths.courses),
+        fetchJsonFresh(paths.total)
+      ]);
+
+      const cLast = cRes.headers.get('Last-Modified');
+      const eLast = eRes.headers.get('Last-Modified');
+
+      const dates = [cLast, eLast]
+        .map(h => h ? new Date(h) : null)
+        .filter(d => d && !isNaN(d.getTime()));
+
+      if (dates.length > 0) {
+        LAST_UPDATED = new Date(Math.max(...dates.map(d => d.getTime())));
+        updateLastUpdatedUI();
+        setStatus(`Letzte Datenaktualisierung: ${formatLastUpdated(LAST_UPDATED)}`);
       } else {
+        LAST_UPDATED = null;
+        updateLastUpdatedUI();
         setStatus('Kein Last-Modified-Header für JSON-Dateien gefunden.', false);
       }
 
+      const coursesJson = await cRes.json();
+      const eventsJson = await eRes.json();
 
-      COURSES = await cRes.json();
-      EVENTS  = await eRes.json();
+      if (!Array.isArray(coursesJson)) {
+        throw new Error('courses.json hat kein gültiges Array-Format.');
+      }
+
+      if (!Array.isArray(eventsJson)) {
+        throw new Error('total.json hat kein gültiges Array-Format.');
+      }
+
+      COURSES = coursesJson;
+      EVENTS  = eventsJson;
+
       setStatus(`Geladen: ${COURSES.length} Kurse · ${EVENTS.length} Veranstaltungen.`);
     }
 
@@ -343,42 +534,49 @@
 
     function courseMatchesQuery(course, q) {
       if (!q) return true;
-      q = q.toLowerCase();
+      const query = q.toLowerCase();
+
       return (
-        (course.summary||'').toLowerCase().includes(q) ||
-        (course.Dozent||'').toLowerCase().includes(q) ||
-        (course.Studiengruppe||'').toLowerCase().includes(q) ||
-        (course.globalID||'').toLowerCase().includes(q)
+        String(course.summary || '').toLowerCase().includes(query) ||
+        String(course.Dozent || '').toLowerCase().includes(query) ||
+        String(course.Studiengruppe || '').toLowerCase().includes(query) ||
+        String(course.globalID || '').toLowerCase().includes(query)
       );
     }
 
     function renderCourseList(filter = '') {
       courseList.innerHTML = '';
       legend.innerHTML = '';
+
       const frag = document.createDocumentFragment();
       const legFrag = document.createDocumentFragment();
 
       COURSES
         .filter(c => courseMatchesQuery(c, filter))
-        .sort((a,b)=> (a.summary||'').localeCompare(b.summary||''))
+        .sort((a,b) => String(a.summary || '').localeCompare(String(b.summary || ''), 'de'))
         .forEach(c => {
-          const id = c.globalID || c.summary || crypto.randomUUID();
+          const id = getCourseID(c);
+          if (!id) return;
+
           const checked = SELECTED.has(id);
           const pal = paletteFor(id);
 
           const label = document.createElement('label');
-          label.className = `flex items-start gap-3 rounded-xl border border-slate-200 p-3 hover:shadow-soft transition-shadow cursor-pointer`;
+          label.className = 'flex items-start gap-3 rounded-xl border border-slate-200 p-3 hover:shadow-soft transition-shadow cursor-pointer';
+
           label.innerHTML = `
-            <input type="checkbox" class="mt-1 h-4 w-4" data-id="${id}" ${checked?'checked':''} />
+            <input type="checkbox" class="mt-1 h-4 w-4" data-id="${escapeHtml(id)}" ${checked ? 'checked' : ''} />
             <div class="flex-1">
-              <div class="flex items-center justify-between">
-                <div class="font-semibold">${c.summary || 'Unbenannt'}</div>
-                <span class="inline-flex h-3 w-3 rounded-full" style="background:${pal.solid}; border:2px solid ${pal.border}"></span>
+              <div class="flex items-center justify-between gap-2">
+                <div class="font-semibold">${escapeHtml(c.summary || 'Unbenannt')}</div>
+                <span class="inline-flex h-3 w-3 rounded-full shrink-0" style="background:${pal.solid}; border:2px solid ${pal.border}"></span>
               </div>
-              <div class="text-xs text-slate-600 mt-0.5">Dozent: <span class="font-medium">${c.Dozent || '—'}</span></div>
-              <div class="text-xs text-slate-500">Gruppe: ${c.Studiengruppe || '—'}</div>
-              <div class="text-[10px] text-slate-400 mt-0.5">ID: ${id}</div>
-            </div>`;
+              <div class="text-xs text-slate-600 mt-0.5">Dozent: <span class="font-medium">${escapeHtml(c.Dozent || '—')}</span></div>
+              <div class="text-xs text-slate-500">Gruppe: ${escapeHtml(c.Studiengruppe || '—')}</div>
+              <div class="text-[10px] text-slate-400 mt-0.5">ID: ${escapeHtml(id)}</div>
+            </div>
+          `;
+
           frag.appendChild(label);
 
           if (checked) {
@@ -395,66 +593,99 @@
       selectedCount.textContent = SELECTED.size;
     }
 
-    // Selection handlers
-    document.getElementById('search').addEventListener('input', (e)=> renderCourseList(e.target.value));
-    courseList.addEventListener('change', (e)=>{
-      const cb = e.target.closest('input[type="checkbox"]'); if (!cb) return;
-      const id = cb.dataset.id;
-      if (cb.checked) SELECTED.add(id); else SELECTED.delete(id);
-      saveSelection([...SELECTED]);
-      renderCourseList(document.getElementById('search').value);
-    });
-    document.getElementById('btnSelectAll').addEventListener('click', ()=>{
-      COURSES.forEach(c => SELECTED.add(c.globalID||c.summary));
-      saveSelection([...SELECTED]);
-      renderCourseList(document.getElementById('search').value);
-    });
-    document.getElementById('btnClearAll').addEventListener('click', ()=>{
-      SELECTED.clear(); saveSelection([]); renderCourseList(document.getElementById('search').value);
+    // ---------------- Selection handlers ----------------
+    document.getElementById('search').addEventListener('input', (e) => {
+      renderCourseList(e.target.value);
     });
 
+    courseList.addEventListener('change', (e) => {
+      const cb = e.target.closest('input[type="checkbox"]');
+      if (!cb) return;
+
+      const id = cb.dataset.id;
+
+      if (cb.checked) {
+        SELECTED.add(id);
+      } else {
+        SELECTED.delete(id);
+      }
+
+      saveSelection([...SELECTED]);
+      renderCourseList(document.getElementById('search').value);
+    });
+
+    document.getElementById('btnSelectAll').addEventListener('click', () => {
+      const filter = document.getElementById('search').value;
+
+      COURSES
+        .filter(c => courseMatchesQuery(c, filter))
+        .forEach(c => {
+          const id = getCourseID(c);
+          if (id) SELECTED.add(id);
+        });
+
+      saveSelection([...SELECTED]);
+      renderCourseList(filter);
+    });
+
+    document.getElementById('btnClearAll').addEventListener('click', () => {
+      SELECTED.clear();
+      saveSelection([]);
+      renderCourseList(document.getElementById('search').value);
+    });
 
     // ---------------- Build events ----------------
     function buildCalendarEvents() {
       const selectedIDs = new Set(SELECTED);
-      const byID = new Map(COURSES.map(c=>[c.globalID||c.summary, c]));
+      const byID = new Map(COURSES.map(c => [getCourseID(c), c]));
+
       return EVENTS
-        .filter(ev => selectedIDs.has(ev.globalID || ev.summary))
+        .filter(ev => selectedIDs.has(getEventCourseID(ev)))
         .map(ev => {
-          const id = ev.globalID || ev.summary || 'X';
+          const id = getEventCourseID(ev) || 'X';
           const pal = paletteFor(id);
-          const title = ev.summary || byID.get(id)?.summary || 'Veranstaltung';
+          const course = byID.get(id);
+
+          const title = ev.summary || course?.summary || 'Veranstaltung';
           const room = ev.location || ev.Raum || '';
-          const lecturer = ev.Dozent || byID.get(id)?.Dozent || '';
+          const lecturer = ev.Dozent || course?.Dozent || '';
+
           return {
-            id: ev.uid || crypto.randomUUID(),
-            // Titel bewusst NUR der Kursname, Raum separat in extendedProps
-            title: `${title}${room ? ` · Raum ${room}` : ''}`,
+            id: ev.uid || `${id}-${ev.start || ''}-${ev.end || ''}`,
+            title,
             start: normalizeDateTime(ev.start),
             end: normalizeDateTime(ev.end),
-            extendedProps: { lecturer, room, gid: id, raw: ev, pal },
+            extendedProps: {
+              lecturer,
+              room,
+              gid: id,
+              raw: ev,
+              pal
+            },
             backgroundColor: pal.solid,
             borderColor: pal.border,
             textColor: pal.textOnSolid
           };
-        });
+        })
+        .filter(ev => ev.start && ev.end);
     }
 
     // ---------------- Calendar ----------------
     function showCalendar() {
-      // Titel ändern beim Kalender
       document.getElementById('mainTitle').textContent = 'Stundenplan';
       document.getElementById('mainSubtitle').classList.add('hidden');
 
       document.getElementById('step-select').classList.add('hidden');
       document.getElementById('step-calendar').classList.remove('hidden');
 
-      // Legend aktiv
       activeLegend.innerHTML = '';
+
       const frag = document.createDocumentFragment();
+
       COURSES.forEach(c => {
-        const id = c.globalID || c.summary;
+        const id = getCourseID(c);
         if (!SELECTED.has(id)) return;
+
         const pal = paletteFor(id);
         const el = document.createElement('div');
         el.className = 'tag';
@@ -462,11 +693,16 @@
         el.textContent = c.summary || 'Unbenannt';
         frag.appendChild(el);
       });
+
       activeLegend.appendChild(frag);
       activeLegend.classList.toggle('hidden', SELECTED.size === 0);
 
       const calendarEl = document.getElementById('calendar');
-      if (calendar) calendar.destroy();
+
+      if (calendar) {
+        calendar.destroy();
+        calendar = null;
+      }
 
       const savedView = loadLastView();
       const isSmall = window.matchMedia('(max-width: 640px)').matches;
@@ -482,7 +718,13 @@
         slotMinTime: '07:00:00',
         slotMaxTime: '21:00:00',
         initialView,
-        buttonText: { today: 'today', month: 'month', week: 'week', day: 'day', list: 'list' },
+        buttonText: {
+          today: 'Heute',
+          month: 'Monat',
+          week: 'Woche',
+          day: 'Tag',
+          list: 'Liste'
+        },
         headerToolbar: {
           left: 'prev,next today',
           center: 'title',
@@ -491,21 +733,19 @@
         eventDisplay: 'block',
         events: buildCalendarEvents(),
 
-        // Styling je nach Ansicht
         eventDidMount: (info) => {
           const pal = info.event.extendedProps.pal;
+          const room = info.event.extendedProps.room;
+          const lecturer = info.event.extendedProps.lecturer;
 
           if (!info.view.type.startsWith('list')) {
-            // Grid-Ansichten: sichtbarer Text in der Kachel
-            
             info.el.style.borderRadius = '12px';
             info.el.style.color = pal.textOnSolid;
             info.el.style.padding = '2px 6px';
-            info.el.title = `${info.event.title}${info.event.extendedProps.room ? ' · Raum ' + info.event.extendedProps.room : ''}${info.event.extendedProps.lecturer ? ' · ' + info.event.extendedProps.lecturer : ''}`;
+            info.el.title = `${info.event.title}${room ? ' · Raum ' + room : ''}${lecturer ? ' · ' + lecturer : ''}`;
             return;
           }
 
-          // LIST: Pastell + sicherer Textinhalt
           const row = info.el;
           row.classList.add('list-colored');
           row.style.setProperty('--row-bg', pal.soft);
@@ -514,50 +754,53 @@
 
           const titleTd = row.querySelector('td.fc-list-event-title');
           if (titleTd) {
-            titleTd.innerHTML = ''; // Alte Inhalte leeren, wir rendern neu
+            titleTd.innerHTML = '';
+
             const titleSpan = document.createElement('span');
-            titleSpan.textContent = info.event.extendedProps.raw.summary || info.event.title || 'Unbenannt';
+            titleSpan.textContent = info.event.extendedProps.raw?.summary || info.event.title || 'Unbenannt';
             titleSpan.style.fontWeight = '700';
             titleSpan.style.color = '#0f172a';
 
-            const room = info.event.extendedProps.room;
-            const roomSpan = document.createElement('span');
+            titleTd.appendChild(titleSpan);
+
             if (room) {
+              const roomSpan = document.createElement('span');
               roomSpan.textContent = ` · Raum ${room}`;
               roomSpan.style.marginLeft = '0.25rem';
               roomSpan.style.fontWeight = '600';
               roomSpan.style.color = '#0f172a';
+              titleTd.appendChild(roomSpan);
             }
-
-            titleTd.appendChild(titleSpan);
-            if (room) titleTd.appendChild(roomSpan);
           }
-
         },
 
-        // Letzte Ansicht merken
-        viewDidMount: (arg) => { 
+        viewDidMount: (arg) => {
           saveLastView(arg.view.type);
           document.body.classList.toggle('month-view', arg.view.type === 'dayGridMonth');
         },
-        datesSet: (arg) => saveLastView(arg.view.type),
 
-        // Eigener Inhalt in Grid-Ansichten: Kursname + Raum
+        datesSet: (arg) => {
+          saveLastView(arg.view.type);
+        },
+
         eventContent: (arg) => {
-          if (arg.view.type.startsWith('list')) return; // Listen-Template lassen, wir fügen Raum via eventDidMount ein
+          if (arg.view.type.startsWith('list')) return;
 
-          const room = arg.event.extendedProps.room;
-          const course = arg.event.title;
-          const group = arg.event.extendedProps.raw?.Studiengruppe || '';
+          const room = arg.event.extendedProps.room || '';
+          const raw = arg.event.extendedProps.raw || {};
+          const course = arg.event.title || 'Unbenannt';
+          const art = raw.Art || '';
 
-
-          // Fallback-Zeit, falls arg.timeText leer ist
           let timeText = arg.timeText || '';
+
           if (!timeText && arg.event.start && arg.event.end) {
-            const s = arg.event.start;
-            const e = arg.event.end;
-            const fmt = (d)=> d.toLocaleTimeString('de-DE',{hour:'2-digit',minute:'2-digit'});
-            timeText = `${fmt(s)}–${fmt(e)}`;
+            const fmt = (d) => d.toLocaleTimeString('de-DE', {
+              hour: '2-digit',
+              minute: '2-digit',
+              timeZone: 'Europe/Berlin'
+            });
+
+            timeText = `${fmt(arg.event.start)}–${fmt(arg.event.end)}`;
           }
 
           const wrap = document.createElement('div');
@@ -567,57 +810,76 @@
           wrap.style.textOverflow = 'ellipsis';
           wrap.style.wordBreak = 'break-word';
 
+          const main = document.createElement('div');
+          main.className = 'font-semibold kachel';
 
-          const groupDiv = document.createElement('div');
-          groupDiv.className = 'text-[8px] leading-tight mt-[1px]';
-          groupDiv.textContent = group || '';
+          const courseLine = document.createElement('div');
+          courseLine.textContent = room ? `${course} · Raum ${room}` : course;
 
+          const timeLine = document.createElement('div');
+          timeLine.textContent = timeText || '';
 
-          wrap.innerHTML = `
-            <div class="font-semibold kachel">
-              ${course}<br>
-              ${timeText ? timeText : ''}<br>
-              <span class="text-[9px] opacity-90">${arg.event.extendedProps.raw?.Art || ''}</span>
-              </div>
-          `;
+          const artLine = document.createElement('div');
+          artLine.className = 'text-[9px] opacity-90';
+          artLine.textContent = art;
 
-          //wrap.appendChild(groupDiv); DEACTIVATED!
+          main.appendChild(courseLine);
+          if (timeText) main.appendChild(timeLine);
+          if (art) main.appendChild(artLine);
+
+          wrap.appendChild(main);
 
           return { domNodes: [wrap] };
+        },
+
+        eventClick: (info) => {
+          const ev = info.event;
+          const raw = ev.extendedProps.raw || {};
+
+          const startText = raw.start
+            ? String(raw.start).slice(0,16).replace('T',' ')
+            : '—';
+
+          const endText = raw.end
+            ? String(raw.end).slice(0,16).replace('T',' ')
+            : '—';
+
+          mTitle.textContent = ev.title;
+
+          mBody.innerHTML = `
+            <div><span class="font-medium">Zeit:</span> ${escapeHtml(startText)} – ${escapeHtml(endText)}</div>
+            <div><span class="font-medium">Dozent:</span> ${escapeHtml(ev.extendedProps.lecturer || '—')}</div>
+            <div><span class="font-medium">Raum:</span> ${escapeHtml(ev.extendedProps.room || '—')}</div>
+            <div><span class="font-medium">Art:</span> ${escapeHtml(raw.Art || '—')}</div>
+            <div><span class="font-medium">Gruppe:</span> ${escapeHtml(raw.Studiengruppe || '—')}</div>
+            <div class="text-slate-500 mt-2 text-xs">UID: ${escapeHtml(raw.uid || '—')} · Kurs-ID: ${escapeHtml(ev.extendedProps.gid || '—')}</div>
+          `;
+
+          modal.showModal();
         }
       });
 
       calendar.render();
-
-      // Event-Klick -> Modal
-      calendar.setOption('eventClick', (info) => {
-        const ev = info.event;
-        const raw = ev.extendedProps.raw || {};
-        mTitle.textContent = ev.title;
-        mBody.innerHTML = `
-          <div><span class="font-medium">Zeit:</span> ${raw.start.slice(0,16).replace('T',' ')} – ${raw.end.slice(0,16).replace('T',' ')}</div>
-          <div><span class="font-medium">Dozent:</span> ${ev.extendedProps.lecturer || '—'}</div>
-          <div><span class="font-medium">Raum:</span> ${ev.extendedProps.room || '—'}</div>
-          <div><span class="font-medium">Art: </span>${ev.extendedProps.raw.Art || '—'}</div>
-          <div><span class="font-medium">Gruppe: </span>${ev.extendedProps.raw.Studiengruppe || '—'}</div>
-          <div class="text-slate-500 mt-2 text-xs">UID: ${raw.uid || '—'} · Kurs-ID: ${ev.extendedProps.gid}</div>
-        `;
-        modal.showModal();
-      });
     }
 
     // ---------------- Buttons ----------------
-    document.getElementById('btnConfirm').addEventListener('click', ()=>{
-      if (SELECTED.size === 0) { alert('Bitte wähle mindestens ein Modul.'); return; }
+    document.getElementById('btnConfirm').addEventListener('click', () => {
+      if (SELECTED.size === 0) {
+        alert('Bitte wähle mindestens ein Modul.');
+        return;
+      }
+
       saveSelection([...SELECTED]);
       showCalendar();
     });
-    document.getElementById('btnBack').addEventListener('click', ()=>{
+
+    document.getElementById('btnBack').addEventListener('click', () => {
       document.getElementById('step-calendar').classList.add('hidden');
       document.getElementById('step-select').classList.remove('hidden');
-      // Titel zurücksetzen
+
       document.getElementById('mainTitle').textContent = 'Stundenplan konfigurieren';
-      document.getElementById('mainSubtitle').classList.remove('hidden'); 
+      document.getElementById('mainSubtitle').classList.remove('hidden');
+
       renderCourseList(document.getElementById('search').value);
     });
 
@@ -625,20 +887,68 @@
     const modal  = document.getElementById('eventModal');
     const mTitle = document.getElementById('mTitle');
     const mBody  = document.getElementById('mBody');
-    document.getElementById('mClose').addEventListener('click', ()=> modal.close());
-    modal.addEventListener('click', (e)=>{ if (e.target === modal) modal.close(); });
+
+    document.getElementById('mClose').addEventListener('click', () => {
+      modal.close();
+    });
+
+    modal.addEventListener('click', (e) => {
+      if (e.target === modal) modal.close();
+    });
+
+    // ---------------- Consent buttons ----------------
+    document.getElementById('consentAccept').addEventListener('click', () => {
+      clearLegacyStorageKeys();
+
+      consent.set('granted');
+
+      const signature = computeDataSignature(COURSES, EVENTS, LAST_UPDATED);
+      safeLocalStorageSet(DATA_SIGNATURE_KEY, signature);
+
+      saveSelection([...SELECTED]);
+
+      if (calendar?.view?.type) {
+        saveLastView(calendar.view.type);
+      }
+
+      hideConsentBanner();
+      setStatus('Lokale Speicherung aktiviert.');
+    });
+
+    document.getElementById('consentDecline').addEventListener('click', () => {
+      consent.set('denied');
+
+      safeLocalStorageRemove(SELECT_KEY);
+      safeLocalStorageRemove(LAST_VIEW_KEY);
+      safeLocalStorageRemove(DATA_SIGNATURE_KEY);
+      clearLegacyStorageKeys();
+
+      SELECTED.clear();
+      hideConsentBanner();
+
+      renderCourseList(document.getElementById('search').value);
+      setStatus('Lokale Speicherung deaktiviert. Alte lokale Auswahl wurde gelöscht.');
+    });
 
     // ---------------- Boot ----------------
-    (async function init(){
+    (async function init() {
       try {
+        clearLegacyStorageKeys();
         showConsentBannerIfNeeded();
-        await loadData();
-        setStatus('Daten bereit. Wähle deine Module.');
 
-        SELECTED = new Set(loadSelection());
+        await loadData();
+
+        handleDatasetChange();
+
+        SELECTED = new Set(loadValidSelection());
+
         renderCourseList();
 
-        if (consent.allowed() && SELECTED.size > 0) showCalendar();
+        setStatus('Daten bereit. Wähle deine Module.');
+
+        if (consent.allowed() && SELECTED.size > 0) {
+          showCalendar();
+        }
       } catch (err) {
         console.error(err);
         setStatus(err.message || 'Unbekannter Fehler beim Laden.', false);
