@@ -1662,5 +1662,21 @@
         "Studiengruppe": "24DNI1-4, 24DNI2-4, 24DNI-STE-4",
         "Anmerkung": "-",
         "globalID": "NK52CY"
+    },
+    {
+        "summary": "Nachhaltige Energietechnik",
+        "start": "2026-05-06 13:00:00",
+        "end": "2026-05-06 16:15:00",
+        "location": "KD0303",
+        "organizer": null,
+        "created": "2026-04-28 14:00:49",
+        "last_modified": null,
+        "uid": "sked.de299057",
+        "Veranstaltung": "Nachhaltige Energietechnik",
+        "Dozent": "Koke",
+        "Art": "SV",
+        "Studiengruppe": "24BTS-CPV-4, 24BTS-MAS-4",
+        "Anmerkung": "-",
+        "globalID": "KURUP3"
     }
 ]
