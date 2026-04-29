@@ -178,5 +178,11 @@
         "Dozent": "Stadtfeld",
         "Studiengruppe": "24DNI1-4",
         "globalID": "9YY46B"
+    },
+    {
+        "summary": "Software Engineering",
+        "Dozent": "Metz",
+        "Studiengruppe": "24BTS-TIN-4, 24DNI1-4, 24DNI2-4, 24DNI-STE-4, 25BTS2-TIN-2",
+        "globalID": "SIOATD"
     }
 ]
