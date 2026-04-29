@@ -223,18 +223,23 @@
     };
 
     // ---------------- Storage Keys ----------------
-    const STORAGE_PREFIX     = 'stundenplan_v2_';
+    const STORAGE_PREFIX     = 'stundenplan_v3_';
     const CONSENT_KEY        = STORAGE_PREFIX + 'consent';
     const SELECT_KEY         = STORAGE_PREFIX + 'selectedGlobalIDs';
     const LAST_VIEW_KEY      = STORAGE_PREFIX + 'lastView';
-    const DATA_SIGNATURE_KEY = STORAGE_PREFIX + 'dataSignature';
+    const DATA_SCOPE_KEY     = STORAGE_PREFIX + 'dataScope';
 
     // Alte Keys aus vorherigen Versionen.
-    // Dadurch bleiben defekte Altzustände nicht aktiv.
+    // Wichtig: Die neue Version löscht nicht mehr wegen jeder JSON-Änderung,
+    // sondern nur noch bei ungültigen IDs oder echtem Semester-/Datenbereich-Wechsel.
     const LEGACY_KEYS = [
       'sp_consent',
       'selectedGlobalIDs',
-      'sp_last_view'
+      'sp_last_view',
+      'stundenplan_v2_consent',
+      'stundenplan_v2_selectedGlobalIDs',
+      'stundenplan_v2_lastView',
+      'stundenplan_v2_dataSignature'
     ];
 
     const VALID_VIEWS = new Set([
@@ -304,20 +309,77 @@
       LEGACY_KEYS.forEach(safeLocalStorageRemove);
     }
 
-    function computeDataSignature(courses, events, lastUpdated) {
-      const courseIDs = courses
-        .map(getCourseID)
-        .filter(Boolean)
-        .sort()
-        .join('|');
+    function uniqClean(values) {
+      return Array.from(new Set(values.map(v => String(v ?? '').trim()).filter(Boolean)));
+    }
 
-      const eventCount = Array.isArray(events) ? events.length : 0;
-      const courseCount = Array.isArray(courses) ? courses.length : 0;
-      const updated = lastUpdated instanceof Date && !isNaN(lastUpdated.getTime())
-        ? lastUpdated.toISOString()
-        : 'unknown';
+    function getFirstExistingValue(obj, keys) {
+      for (const key of keys) {
+        if (obj && obj[key] !== undefined && obj[key] !== null && String(obj[key]).trim() !== '') {
+          return String(obj[key]).trim();
+        }
+      }
+      return '';
+    }
 
-      return `${updated}::courses=${courseCount}::events=${eventCount}::ids=${courseIDs}`;
+    function getDatePart(value) {
+      if (!value) return '';
+      const s = String(value);
+      const m = s.match(/^(\d{4}-\d{2}-\d{2})/);
+      return m ? m[1] : '';
+    }
+
+    function getYearMonth(value) {
+      const d = getDatePart(value);
+      return d ? d.slice(0, 7) : '';
+    }
+
+    function determineTermByMonths(events) {
+      const months = uniqClean(
+        events
+          .map(ev => getYearMonth(ev?.start))
+          .filter(Boolean)
+      ).sort();
+
+      if (months.length === 0) return '';
+
+      // Bewusst grob: verhindert Reset bei kleinen Wochen-/Terminupdates.
+      // Ein echter neuer Datenbereich/Semesterwechsel ändert meist den Monatsbereich deutlich.
+      return `${months[0]}..${months[months.length - 1]}`;
+    }
+
+    function computeDataScope(courses, events) {
+      // Beste Lösung: Wenn deine JSON-Daten ein explizites Semester enthalten,
+      // wird genau dieses Feld verwendet. Dann bleibt die Auswahl bei normalen Updates stabil
+      // und wird nur beim Semesterwechsel zurückgesetzt.
+      const semesterKeys = [
+        'semester',
+        'Semester',
+        'term',
+        'Term',
+        'semesterID',
+        'SemesterID',
+        'datenstandSemester',
+        'DatenstandSemester'
+      ];
+
+      const explicitCourseTerms = uniqClean(courses.map(c => getFirstExistingValue(c, semesterKeys)));
+      if (explicitCourseTerms.length > 0) {
+        return `semester:${explicitCourseTerms.sort().join('|')}`;
+      }
+
+      const explicitEventTerms = uniqClean(events.map(ev => getFirstExistingValue(ev, semesterKeys)));
+      if (explicitEventTerms.length > 0) {
+        return `semester:${explicitEventTerms.sort().join('|')}`;
+      }
+
+      // Fallback, wenn kein Semester-Feld vorhanden ist:
+      // Der Zeitraum der vorhandenen Veranstaltungen dient als Datenbereich.
+      // Dadurch löscht ein bloßes JSON-Update nicht mehr die Auswahl.
+      const dateScope = determineTermByMonths(events);
+      if (dateScope) return `date-scope:${dateScope}`;
+
+      return 'scope:unknown';
     }
 
     // ---------------- Consent / Storage ----------------
@@ -335,15 +397,14 @@
 
     function saveSelection(ids) {
       if (!consent.allowed()) return;
-      const cleanIDs = Array.from(new Set(ids.map(String).filter(Boolean)));
-      safeLocalStorageSet(SELECT_KEY, JSON.stringify(cleanIDs));
+      safeLocalStorageSet(SELECT_KEY, JSON.stringify(uniqClean(ids)));
     }
 
     function loadRawSelection() {
       if (!consent.allowed()) return [];
       const raw = safeLocalStorageGet(SELECT_KEY);
       const parsed = safeJsonParse(raw, []);
-      return Array.isArray(parsed) ? parsed.map(String).filter(Boolean) : [];
+      return Array.isArray(parsed) ? uniqClean(parsed) : [];
     }
 
     function loadValidSelection() {
@@ -351,12 +412,11 @@
 
       const validIDs = new Set(COURSES.map(getCourseID).filter(Boolean));
       const rawIDs = loadRawSelection();
-
       const cleaned = rawIDs.filter(id => validIDs.has(id));
 
       if (cleaned.length !== rawIDs.length) {
         saveSelection(cleaned);
-        setStatus(`Alte gespeicherte Kursauswahl bereinigt: ${rawIDs.length - cleaned.length} ungültige ID(s) entfernt.`);
+        setStatus(`Gespeicherte Kursauswahl bereinigt: ${rawIDs.length - cleaned.length} nicht mehr vorhandene ID(s) entfernt.`);
       }
 
       return cleaned;
@@ -381,20 +441,20 @@
       return null;
     }
 
-    function handleDatasetChange() {
+    function handleDatasetScopeChange() {
       if (!consent.allowed()) return;
 
-      const newSignature = computeDataSignature(COURSES, EVENTS, LAST_UPDATED);
-      const oldSignature = safeLocalStorageGet(DATA_SIGNATURE_KEY);
+      const newScope = computeDataScope(COURSES, EVENTS);
+      const oldScope = safeLocalStorageGet(DATA_SCOPE_KEY);
 
-      if (oldSignature && oldSignature !== newSignature) {
+      if (oldScope && oldScope !== newScope) {
         safeLocalStorageRemove(SELECT_KEY);
         safeLocalStorageRemove(LAST_VIEW_KEY);
         SELECTED.clear();
-        setStatus('Neuer Datenstand erkannt. Alte Kursauswahl wurde zurückgesetzt, damit keine alten Semesterdaten geladen werden.');
+        setStatus('Neuer Semester-/Datenbereich erkannt. Alte Kursauswahl wurde zurückgesetzt.');
       }
 
-      safeLocalStorageSet(DATA_SIGNATURE_KEY, newSignature);
+      safeLocalStorageSet(DATA_SCOPE_KEY, newScope);
     }
 
     function showConsentBannerIfNeeded() {
@@ -902,8 +962,8 @@
 
       consent.set('granted');
 
-      const signature = computeDataSignature(COURSES, EVENTS, LAST_UPDATED);
-      safeLocalStorageSet(DATA_SIGNATURE_KEY, signature);
+      const scope = computeDataScope(COURSES, EVENTS);
+      safeLocalStorageSet(DATA_SCOPE_KEY, scope);
 
       saveSelection([...SELECTED]);
 
@@ -920,7 +980,7 @@
 
       safeLocalStorageRemove(SELECT_KEY);
       safeLocalStorageRemove(LAST_VIEW_KEY);
-      safeLocalStorageRemove(DATA_SIGNATURE_KEY);
+      safeLocalStorageRemove(DATA_SCOPE_KEY);
       clearLegacyStorageKeys();
 
       SELECTED.clear();
@@ -938,7 +998,7 @@
 
         await loadData();
 
-        handleDatasetChange();
+        handleDatasetScopeChange();
 
         SELECTED = new Set(loadValidSelection());
 
