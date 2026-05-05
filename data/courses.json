@@ -184,5 +184,17 @@
         "Dozent": "Metz",
         "Studiengruppe": "24BTS-TIN-4, 24DNI1-4, 24DNI2-4, 24DNI-STE-4, 25BTS2-TIN-2",
         "globalID": "SIOATD"
+    },
+    {
+        "summary": "Digitale Signalverarbeitung",
+        "Dozent": "Ahuis",
+        "Studiengruppe": "24BTS-EAT-4, 24BTS-MEC-4, 24BTS-TIN-4",
+        "globalID": "DL3A6B"
+    },
+    {
+        "summary": "Digitaltechnik und Rechnerarchitekturen",
+        "Dozent": "Ahuis",
+        "Studiengruppe": "24DNI1-4",
+        "globalID": "2IY5H1"
     }
 ]
