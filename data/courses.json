@@ -202,5 +202,11 @@
         "Dozent": "Ahuis, Voges",
         "Studiengruppe": "24BTS-EAT-4, 24BTS-MEC-4, 24BTS-TIN-4",
         "globalID": "NIUBW1"
+    },
+    {
+        "summary": "Semestergespräch",
+        "Dozent": "Kerperien",
+        "Studiengruppe": "24BTS-CPV-4, 24BTS-EAT-4, 24BTS-MAS-4, 24BTS-MEC-4, 24BTS-TIN-4",
+        "globalID": "DZQKIR"
     }
 ]
