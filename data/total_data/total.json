@@ -3470,5 +3470,21 @@
         "Studiengruppe": "24BTS-CPV-4, 24BTS-EAT-4, 24BTS-MAS-4, 24BTS-MEC-4, 24BTS-TIN-4",
         "Anmerkung": "-",
         "globalID": "DZQKIR"
+    },
+    {
+        "summary": "Entwurfsberechnung statischer Systeme",
+        "start": "2026-06-16 15:45:00",
+        "end": "2026-06-16 19:00:00",
+        "location": "KD0004",
+        "organizer": null,
+        "created": "2026-05-09 09:00:51",
+        "last_modified": null,
+        "uid": "sked.de300550",
+        "Veranstaltung": "Entwurfsberechnung statischer Systeme",
+        "Dozent": "Schmidt",
+        "Art": "SV",
+        "Studiengruppe": "24BTS-EAT-4, 24BTS-MAS-4, 24BTS-MEC-4",
+        "Anmerkung": "-",
+        "globalID": "VO6FOE"
     }
 ]
