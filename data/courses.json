@@ -208,5 +208,11 @@
         "Dozent": "Kerperien",
         "Studiengruppe": "24BTS-CPV-4, 24BTS-EAT-4, 24BTS-MAS-4, 24BTS-MEC-4, 24BTS-TIN-4",
         "globalID": "DZQKIR"
+    },
+    {
+        "summary": "Digitaltechnik und Rechnerarchitekturen",
+        "Dozent": "Ahuis",
+        "Studiengruppe": "24BBSW-4, 24BTS-EAT-4",
+        "globalID": "O599AO"
     }
 ]

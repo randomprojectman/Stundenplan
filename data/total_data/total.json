@@ -3486,5 +3486,37 @@
         "Studiengruppe": "24BTS-EAT-4, 24BTS-MAS-4, 24BTS-MEC-4",
         "Anmerkung": "-",
         "globalID": "VO6FOE"
+    },
+    {
+        "summary": "Digitaltechnik und Rechnerarchitekturen",
+        "start": "2026-05-22 15:45:00",
+        "end": "2026-05-22 19:00:00",
+        "location": "KC0101 (E-Lab)",
+        "organizer": null,
+        "created": "2026-05-11 11:00:54",
+        "last_modified": null,
+        "uid": "sked.de300564",
+        "Veranstaltung": "Digitaltechnik und Rechnerarchitekturen",
+        "Dozent": "Ahuis",
+        "Art": "Lab",
+        "Studiengruppe": "24BBSW-4, 24BTS-EAT-4",
+        "Anmerkung": "-",
+        "globalID": "O599AO"
+    },
+    {
+        "summary": "Digitaltechnik und Rechnerarchitekturen",
+        "start": "2026-06-05 14:30:00",
+        "end": "2026-06-05 17:45:00",
+        "location": "KC0101 (E-Lab)",
+        "organizer": null,
+        "created": "2026-05-11 11:00:54",
+        "last_modified": null,
+        "uid": "sked.de300566",
+        "Veranstaltung": "Digitaltechnik und Rechnerarchitekturen",
+        "Dozent": "Ahuis",
+        "Art": "Lab",
+        "Studiengruppe": "24BBSW-4, 24BTS-EAT-4",
+        "Anmerkung": "-",
+        "globalID": "O599AO"
     }
 ]
