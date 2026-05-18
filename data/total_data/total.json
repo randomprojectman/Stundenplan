@@ -3582,5 +3582,21 @@
         "Studiengruppe": "24BTS-CPV-4",
         "Anmerkung": "-",
         "globalID": "L2PUTB"
+    },
+    {
+        "summary": "Semestergespräch",
+        "start": "2026-06-09 11:30:00",
+        "end": "2026-06-09 12:15:00",
+        "location": "KD0202",
+        "organizer": null,
+        "created": "2026-05-18 12:01:03",
+        "last_modified": null,
+        "uid": "sked.de300542",
+        "Veranstaltung": "Semestergespräch",
+        "Dozent": "Kerperien",
+        "Art": "Info",
+        "Studiengruppe": "24BTS-CPV-4, 24BTS-EAT-4, 24BTS-MAS-4, 24BTS-MEC-4, 24BTS-TIN-4",
+        "Anmerkung": "-",
+        "globalID": "DZQKIR"
     }
 ]
