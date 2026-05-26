@@ -226,5 +226,11 @@
         "Dozent": "Arens-Fischer, Schlangen",
         "Studiengruppe": "24DNI1-4, 24DNI2-4, 24DNI-STE-4",
         "globalID": "0ZZC9H"
+    },
+    {
+        "summary": "Englisch",
+        "Dozent": "Lingenua",
+        "Studiengruppe": "24BTS-CPV-4, 24BTS-EAT-4, 24BTS-MAS-4, 24BTS-MEC-4, 24BTS-TIN-4, 24DNE1-4, 24DNE2-4, 24DNI1-4, 24DNI2-4, 24DNI-STE-4",
+        "globalID": "Z41YTT"
     }
 ]
