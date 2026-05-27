@@ -3695,5 +3695,21 @@
         "Anmerkung": "Informationsveranstaltung zur Schwerpunktswahl (Ausbildung- & Praxisintegrierend)",
         "https": "//hs-osnabrueck.zoom.us/j/94499089831",
         "globalID": "5WZHW0"
+    },
+    {
+        "summary": "Infos zum Studium",
+        "start": "2026-06-17 19:00:00",
+        "end": "2026-06-17 20:30:00",
+        "location": "Online",
+        "organizer": null,
+        "created": "2026-05-27 15:01:04",
+        "last_modified": null,
+        "uid": "sked.de300795",
+        "Veranstaltung": "Infos zum Studium",
+        "Dozent": "Kerperien",
+        "Art": "Info",
+        "Studiengruppe": "24BTS-CPV-4, 24BTS-EAT-4, 24BTS-MAS-4, 24BTS-MEC-4, 24BTS-TIN-4, 24DNB1-4, 24DNB2-4, 24DNB3-4, 24DNB4-4, 24DNB-STE-4, 24DNE1-4, 24DNE2-4, 24DNI1-4, 24DNI2-4, 24DNI-STE-4",
+        "Anmerkung": "Infos zum Projektstudium",
+        "globalID": "JMMAHR"
     }
 ]
