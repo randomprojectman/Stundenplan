@@ -3678,5 +3678,22 @@
         "Studiengruppe": "24BTS-CPV-4, 24BTS-EAT-4, 24BTS-MAS-4, 24BTS-MEC-4, 24BTS-TIN-4, 24DNE1-4, 24DNE2-4, 24DNI1-4, 24DNI2-4, 24DNI-STE-4",
         "Anmerkung": "-",
         "globalID": "Z41YTT"
+    },
+    {
+        "summary": "Infos zum Studium",
+        "start": "2026-06-03 20:00:00",
+        "end": "2026-06-03 21:00:00",
+        "location": "Online",
+        "organizer": null,
+        "created": "2026-05-27 11:00:54",
+        "last_modified": null,
+        "uid": "sked.de300788",
+        "Veranstaltung": "Infos zum Studium",
+        "Dozent": "Arens-Fischer",
+        "Art": "Info",
+        "Studiengruppe": "24BTS-CPV-4, 24BTS-EAT-4, 24BTS-MAS-4, 24BTS-MEC-4, 24BTS-TIN-4, 24DNB1-4, 24DNB2-4, 24DNB3-4, 24DNB4-4, 24DNB-STE-4, 24DNE1-4, 24DNE2-4, 24DNI1-4, 24DNI2-4, 24DNI-STE-4",
+        "Anmerkung": "Informationsveranstaltung zur Schwerpunktswahl (Ausbildung- & Praxisintegrierend)",
+        "https": "//hs-osnabrueck.zoom.us/j/94499089831",
+        "globalID": "5WZHW0"
     }
 ]
