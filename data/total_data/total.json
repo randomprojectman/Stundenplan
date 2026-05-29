@@ -3775,5 +3775,37 @@
         "Studiengruppe": "24DNI1-4, 24DNI2-4, 24DNI-STE-4",
         "Anmerkung": "-",
         "globalID": "JD88CT"
+    },
+    {
+        "summary": "Digitaltechnik und Rechnerarchitekturen",
+        "start": "2026-06-27 10:30:00",
+        "end": "2026-06-27 12:00:00",
+        "location": "KD0201, KD0202",
+        "organizer": null,
+        "created": "2026-05-29 11:00:52",
+        "last_modified": null,
+        "uid": "sked.de300427",
+        "Veranstaltung": "Digitaltechnik und Rechnerarchitekturen",
+        "Dozent": "Voges",
+        "Art": "K",
+        "Studiengruppe": "24BBSW-4, 24BTS-EAT-4",
+        "Anmerkung": "-",
+        "globalID": "LWJXKC"
+    },
+    {
+        "summary": "Digitaltechnik und Rechnerarchitekturen",
+        "start": "2026-06-27 10:30:00",
+        "end": "2026-06-27 12:00:00",
+        "location": "KD0201, KD0202",
+        "organizer": null,
+        "created": "2026-05-29 11:00:58",
+        "last_modified": null,
+        "uid": "sked.de300426",
+        "Veranstaltung": "Digitaltechnik und Rechnerarchitekturen",
+        "Dozent": "Voges",
+        "Art": "K",
+        "Studiengruppe": "24DNI1-4, 24DNI2-4, 24DNI-STE-4",
+        "Anmerkung": "-",
+        "globalID": "9GPLMY"
     }
 ]
