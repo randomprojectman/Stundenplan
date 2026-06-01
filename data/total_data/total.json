@@ -3807,5 +3807,21 @@
         "Studiengruppe": "24DNI1-4, 24DNI2-4, 24DNI-STE-4",
         "Anmerkung": "-",
         "globalID": "9GPLMY"
+    },
+    {
+        "summary": "Betriebssysteme",
+        "start": "2026-06-26 08:30:00",
+        "end": "2026-06-26 10:00:00",
+        "location": "LK0101/LK0102, LK0103",
+        "organizer": null,
+        "created": "2026-06-01 13:01:04",
+        "last_modified": null,
+        "uid": "sked.de300840",
+        "Veranstaltung": "Betriebssysteme",
+        "Dozent": "Guericke",
+        "Art": "K",
+        "Studiengruppe": "24BTS-TIN-4, 24DNI1-4",
+        "Anmerkung": "-",
+        "globalID": "UT7GNY"
     }
 ]
