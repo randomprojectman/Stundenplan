@@ -3839,5 +3839,21 @@
         "Studiengruppe": "24BTS-EAT-4, 24BTS-MEC-4, 24BTS-TIN-4",
         "Anmerkung": "-",
         "globalID": "FVQNGP"
+    },
+    {
+        "summary": "Innovative Werkstoffe",
+        "start": "2026-06-30 10:30:00",
+        "end": "2026-06-30 12:00:00",
+        "location": "LK0101/LK0102, LK0103",
+        "organizer": null,
+        "created": "2026-06-02 11:00:55",
+        "last_modified": null,
+        "uid": "sked.de300894",
+        "Veranstaltung": "Innovative Werkstoffe",
+        "Dozent": "Schnadt-Kirschner",
+        "Art": "K",
+        "Studiengruppe": "24BTS-CPV-4, 24BTS-MAS-4",
+        "Anmerkung": "-",
+        "globalID": "9WFBO1"
     }
 ]
