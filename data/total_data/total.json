@@ -4015,5 +4015,37 @@
         "Studiengruppe": "24BTS-TIN-4, 24DNI1-4, 24DNI2-4, 24DNI-STE-4, 25BTS2-TIN-2",
         "Anmerkung": "-",
         "globalID": "SIOATD"
+    },
+    {
+        "summary": "Tutorium",
+        "start": "2026-06-09 16:30:00",
+        "end": "2026-06-09 19:45:00",
+        "location": "LK0101/LK0102",
+        "organizer": null,
+        "created": "2026-06-02 23:00:53",
+        "last_modified": null,
+        "uid": "sked.de300924",
+        "Veranstaltung": "Tutorium",
+        "Dozent": "-",
+        "Art": "Tut",
+        "Studiengruppe": "24BTS-CPV-4, 24BTS-EAT-4, 24BTS-MAS-4, 24BTS-MEC-4, 24BTS-TIN-4",
+        "Anmerkung": "Regelungstechnik",
+        "globalID": "WOHRTE"
+    },
+    {
+        "summary": "Betriebssysteme",
+        "start": "2026-06-30 08:30:00",
+        "end": "2026-06-30 10:00:00",
+        "location": "KD0201, KD0202",
+        "organizer": null,
+        "created": "2026-06-02 23:00:55",
+        "last_modified": null,
+        "uid": "sked.de300840",
+        "Veranstaltung": "Betriebssysteme",
+        "Dozent": "Guericke",
+        "Art": "K",
+        "Studiengruppe": "24BTS-TIN-4, 24DNI1-4",
+        "Anmerkung": "-",
+        "globalID": "UT7GNY"
     }
 ]

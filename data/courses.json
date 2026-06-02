@@ -250,5 +250,11 @@
         "Dozent": "Arens-Fischer, Schlangen",
         "Studiengruppe": "24BTS-CPV-4, 24BTS-EAT-4, 24BTS-MAS-4, 24BTS-MEC-4, 24BTS-TIN-4",
         "globalID": "JK7AL8"
+    },
+    {
+        "summary": "Tutorium",
+        "Dozent": "-",
+        "Studiengruppe": "24BTS-CPV-4, 24BTS-EAT-4, 24BTS-MAS-4, 24BTS-MEC-4, 24BTS-TIN-4",
+        "globalID": "WOHRTE"
     }
 ]
