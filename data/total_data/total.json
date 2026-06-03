@@ -4063,5 +4063,37 @@
         "Studiengruppe": "24BTS-CPV-4, 24BTS-EAT-4, 24BTS-MAS-4, 24BTS-MEC-4, 24BTS-TIN-4",
         "Anmerkung": "-",
         "globalID": "0D3N6N"
+    },
+    {
+        "summary": "Nachhaltige Energietechnik",
+        "start": "2026-07-03 08:30:00",
+        "end": "2026-07-03 10:00:00",
+        "location": "LK0101/LK0102, LK0103",
+        "organizer": null,
+        "created": "2026-06-03 18:00:51",
+        "last_modified": null,
+        "uid": "sked.de300918",
+        "Veranstaltung": "Nachhaltige Energietechnik",
+        "Dozent": "Koke",
+        "Art": "K",
+        "Studiengruppe": "24BTS-CPV-4, 24BTS-MAS-4",
+        "Anmerkung": "-",
+        "globalID": "KURUP3"
+    },
+    {
+        "summary": "Entwurfsberechnung statischer Systeme",
+        "start": "2026-07-02 08:30:00",
+        "end": "2026-07-02 10:00:00",
+        "location": "LK0101/LK0102, LK0103",
+        "organizer": null,
+        "created": "2026-06-03 18:00:51",
+        "last_modified": null,
+        "uid": "sked.de300904",
+        "Veranstaltung": "Entwurfsberechnung statischer Systeme",
+        "Dozent": "Schmidt",
+        "Art": "K",
+        "Studiengruppe": "24BTS-EAT-4, 24BTS-MAS-4, 24BTS-MEC-4",
+        "Anmerkung": "-",
+        "globalID": "VO6FOE"
     }
 ]
