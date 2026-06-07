@@ -42,22 +42,10 @@
         "globalID": "0D3N6N"
     },
     {
-        "summary": "Innovative Werkstoffe",
-        "Dozent": "Schnadt-Kirschner",
-        "Studiengruppe": "24BTS-CPV-4, 24BTS-MAS-4",
-        "globalID": "9WFBO1"
-    },
-    {
         "summary": "Entwurfsberechnung statischer Systeme",
         "Dozent": "Schmidt",
         "Studiengruppe": "24BTS-EAT-4, 24BTS-MAS-4, 24BTS-MEC-4",
         "globalID": "VO6FOE"
-    },
-    {
-        "summary": "Systemanalyse und quantitative Entscheidungstheorie",
-        "Dozent": "Arens-Fischer",
-        "Studiengruppe": "24BTS-CPV-4, 24BTS-EAT-4, 24BTS-MAS-4, 24BTS-MEC-4, 24BTS-TIN-4",
-        "globalID": "3D82PE"
     },
     {
         "summary": "Elektrotechnik (Vorbereitung Kammerprüfung)",
@@ -82,18 +70,6 @@
         "Dozent": "Jordan",
         "Studiengruppe": "24BTS-CPV-4, 24DNE1-4, 24DNE2-4",
         "globalID": "61ZIRU"
-    },
-    {
-        "summary": "Grundlagen nachhaltiger Kunststofftechnik",
-        "Dozent": "Les",
-        "Studiengruppe": "24BTS-CPV-4, 24DNE1-4, 24DNE2-4",
-        "globalID": "I69PQY"
-    },
-    {
-        "summary": "Grundlagen nachhaltiger Kunststofftechnik",
-        "Dozent": "Henglmüller",
-        "Studiengruppe": "24BTS-CPV-4, 24DNE1-4, 24DNE2-4",
-        "globalID": "GU5IN3"
     },
     {
         "summary": "Digitale Signalverarbeitung",
@@ -156,12 +132,6 @@
         "globalID": "KVK2OF"
     },
     {
-        "summary": "Systemanalyse und quantitative Entscheidungstheorie",
-        "Dozent": "Schlangen",
-        "Studiengruppe": "24DNI1-4, 24DNI2-4, 24DNI-STE-4",
-        "globalID": "NK52CY"
-    },
-    {
         "summary": "Nachhaltigkeitsmarketing",
         "Dozent": "Grunwald",
         "Studiengruppe": "24DNI1-4, 24DNI2-4, 24DNI-STE-4",
@@ -186,46 +156,16 @@
         "globalID": "SIOATD"
     },
     {
-        "summary": "Digitale Signalverarbeitung",
-        "Dozent": "Ahuis",
-        "Studiengruppe": "24BTS-EAT-4, 24BTS-MEC-4, 24BTS-TIN-4",
-        "globalID": "DL3A6B"
-    },
-    {
         "summary": "Digitaltechnik und Rechnerarchitekturen",
         "Dozent": "Ahuis",
         "Studiengruppe": "24DNI1-4",
         "globalID": "2IY5H1"
     },
     {
-        "summary": "Digitale Signalverarbeitung",
-        "Dozent": "Ahuis, Voges",
-        "Studiengruppe": "24BTS-EAT-4, 24BTS-MEC-4, 24BTS-TIN-4",
-        "globalID": "NIUBW1"
-    },
-    {
         "summary": "Semestergespräch",
         "Dozent": "Kerperien",
         "Studiengruppe": "24BTS-CPV-4, 24BTS-EAT-4, 24BTS-MAS-4, 24BTS-MEC-4, 24BTS-TIN-4",
         "globalID": "DZQKIR"
-    },
-    {
-        "summary": "Digitaltechnik und Rechnerarchitekturen",
-        "Dozent": "Ahuis",
-        "Studiengruppe": "24BBSW-4, 24BTS-EAT-4",
-        "globalID": "O599AO"
-    },
-    {
-        "summary": "Grundlagen nachhaltiger Kunststofftechnik",
-        "Dozent": "Henglmüller, Les",
-        "Studiengruppe": "24BTS-CPV-4, 24DNE1-4, 24DNE2-4",
-        "globalID": "BF6XZA"
-    },
-    {
-        "summary": "Systemanalyse und quantitative Entscheidungstheorie",
-        "Dozent": "Arens-Fischer, Schlangen",
-        "Studiengruppe": "24DNI1-4, 24DNI2-4, 24DNI-STE-4",
-        "globalID": "0ZZC9H"
     },
     {
         "summary": "Englisch",
@@ -240,27 +180,9 @@
         "globalID": "5WZHW0"
     },
     {
-        "summary": "Infos zum Studium",
-        "Dozent": "Kerperien",
-        "Studiengruppe": "24BTS-CPV-4, 24BTS-EAT-4, 24BTS-MAS-4, 24BTS-MEC-4, 24BTS-TIN-4, 24DNB1-4, 24DNB2-4, 24DNB3-4, 24DNB4-4, 24DNB-STE-4, 24DNE1-4, 24DNE2-4, 24DNI1-4, 24DNI2-4, 24DNI-STE-4",
-        "globalID": "JMMAHR"
-    },
-    {
-        "summary": "Systemanalyse und quantitative Entscheidungstheorie",
-        "Dozent": "Arens-Fischer, Schlangen",
-        "Studiengruppe": "24BTS-CPV-4, 24BTS-EAT-4, 24BTS-MAS-4, 24BTS-MEC-4, 24BTS-TIN-4",
-        "globalID": "JK7AL8"
-    },
-    {
         "summary": "Tutorium",
         "Dozent": "-",
         "Studiengruppe": "24BTS-CPV-4, 24BTS-EAT-4, 24BTS-MAS-4, 24BTS-MEC-4, 24BTS-TIN-4",
         "globalID": "WOHRTE"
-    },
-    {
-        "summary": "Konstruktion technischer Baugruppen",
-        "Dozent": "_IDS, Vogel",
-        "Studiengruppe": "24BTS-MAS-4, 24BTS-MEC-4",
-        "globalID": "D8BMIO"
     }
 ]
