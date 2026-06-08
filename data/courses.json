@@ -108,12 +108,6 @@
         "globalID": "9GPLMY"
     },
     {
-        "summary": "Semestergespräch",
-        "Dozent": "Kizinna",
-        "Studiengruppe": "24DNI1-4",
-        "globalID": "KVK2OF"
-    },
-    {
         "summary": "Nachhaltigkeitsmarketing",
         "Dozent": "Grunwald",
         "Studiengruppe": "24DNI1-4, 24DNI2-4, 24DNI-STE-4",
@@ -132,12 +126,6 @@
         "globalID": "SIOATD"
     },
     {
-        "summary": "Digitaltechnik und Rechnerarchitekturen",
-        "Dozent": "Ahuis",
-        "Studiengruppe": "24DNI1-4",
-        "globalID": "2IY5H1"
-    },
-    {
         "summary": "Semestergespräch",
         "Dozent": "Kerperien",
         "Studiengruppe": "24BTS-CPV-4, 24BTS-EAT-4, 24BTS-MAS-4, 24BTS-MEC-4, 24BTS-TIN-4",
@@ -151,7 +139,7 @@
     },
     {
         "summary": "Infos zum Studium",
-        "Dozent": "Arens-Fischer",
+        "Dozent": "Kerperien",
         "Studiengruppe": "24BTS-CPV-4, 24BTS-EAT-4, 24BTS-MAS-4, 24BTS-MEC-4, 24BTS-TIN-4, 24DNB1-4, 24DNB2-4, 24DNB3-4, 24DNB4-4, 24DNB-STE-4, 24DNE1-4, 24DNE2-4, 24DNI1-4, 24DNI2-4, 24DNI-STE-4",
         "globalID": "5WZHW0"
     },
