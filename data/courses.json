@@ -101,7 +101,6 @@
         "Studiengruppe": "24BTS-MEC-4, 24DNI1-4, 24DNI2-4, 24DNI-STE-4",
         "globalID": "BQVVQ9"
     },
-
     {
         "summary": "Digitaltechnik und Rechnerarchitekturen",
         "Dozent": "Voges",
@@ -161,5 +160,10 @@
         "Dozent": "-",
         "Studiengruppe": "24BTS-CPV-4, 24BTS-EAT-4, 24BTS-MAS-4, 24BTS-MEC-4, 24BTS-TIN-4",
         "globalID": "WOHRTE"
+    },
+    {
+        "summary": "Systemanalyse und quantitative Entscheidungstheorie",
+        "Studiengruppe": "24BTS-CPV-4, 24BTS-EAT-4, 24BTS-MAS-4, 24BTS-MEC-4, 24BTS-TIN-4",
+        "globalID": "4LXYD5"
     }
 ]
