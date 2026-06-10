@@ -98,9 +98,26 @@
 
 <body class="h-full bg-slate-50 text-slate-800">
   <div class="max-w-7xl mx-auto p-4 md:p-8">
-    <header class="mb-6" id="mainHeader">
-      <h1 id="mainTitle" class="text-2xl md:text-3xl font-extrabold tracking-tight">Stundenplan konfigurieren</h1>
-      <p id="mainSubtitle" class="text-slate-600 mt-1">Wähle deine Module und zeige anschließend alle zugehörigen Veranstaltungen kompakt im Kalender.</p>
+    <header class="mb-6 flex flex-col md:flex-row md:items-center md:justify-between gap-4" id="mainHeader">
+      <div class="flex-1">
+        <h1 id="mainTitle" class="text-2xl md:text-3xl font-extrabold tracking-tight">Stundenplan konfigurieren</h1>
+        <p id="mainSubtitle" class="text-slate-600 mt-1">Wähle deine Module und zeige anschließend alle zugehörigen Veranstaltungen kompakt im Kalender.</p>
+      </div>
+      
+      <!-- Profile Selector -->
+      <div class="flex items-center gap-2">
+        <div class="relative inline-block w-full md:w-48">
+          <select id="profileSelector" class="w-full rounded-xl border border-slate-200 bg-white px-3 py-2.5 text-sm font-medium text-slate-800 hover:border-slate-300 focus:outline-none focus:ring-2 focus:ring-indigo-500 cursor-pointer appearance-none pr-8">
+            <!-- Options populated by JS -->
+          </select>
+          <div class="pointer-events-none absolute inset-y-0 right-0 flex items-center px-3 text-slate-500">
+            <svg class="h-4 w-4 fill-current" viewBox="0 0 20 20"><path d="M9.293 12.95l.707.707L15.657 8l-1.414-1.414L10 10.828 5.757 6.586 4.343 8z"/></svg>
+          </div>
+        </div>
+        <button id="btnProfileSettings" type="button" class="rounded-xl border border-slate-200 px-3 py-2.5 text-slate-700 hover:bg-slate-100 transition-colors" title="Profile verwalten">
+          <svg class="h-5 w-5" viewBox="0 0 20 20" fill="currentColor"><path d="M10.5 1.5H9.5V0h1v1.5zm-4 2.121L6.121 2.121 5.414 1.414 4.707 2.121zm7.778 0l.707-.707.707.707-.707.707zm-9.192 3.05l1.414-1.414 1.06 1.06-1.413 1.414zm10.606 0l.707.707-1.414 1.414-.707-.707zM3 10.5v-1h1.5v1H3zm13.5 0v-1H18v1h-1.5zm-12.621 4.05l1.06-1.06 1.414 1.414-1.06 1.06zm10.606 0l1.06 1.06-1.414 1.414-1.06-1.06zM6.121 17.879l.707-.707.707.707-.707.707zm7.778 0l.707.707-.707.707-.707-.707zM10.5 18.5v1.5h-1V18.5h1z" transform="rotate(-45 10 10)"/></svg>
+        </button>
+      </div>
     </header>
 
     <!-- STEP 1: Auswahl -->
@@ -215,6 +232,36 @@
     </div>
   </dialog>
 
+  <!-- Profile Manager Modal -->
+  <dialog id="profileModal" class="rounded-2xl backdrop:bg-black/40 p-0 w-full max-w-md">
+    <div class="p-6">
+      <div class="flex items-start justify-between mb-4">
+        <h2 class="text-lg font-bold">Profile verwalten</h2>
+        <button id="profileModalClose" type="button" class="text-slate-500 hover:text-slate-800">✕</button>
+      </div>
+
+      <!-- Neues Profil erstellen -->
+      <div class="mb-5 pb-5 border-b border-slate-200">
+        <label class="block text-sm font-semibold text-slate-700 mb-2">Neues Profil</label>
+        <div class="flex gap-2">
+          <input id="newProfileName" type="text" placeholder="z.B. Winterplan" 
+                 class="flex-1 rounded-lg border border-slate-200 bg-slate-50 px-3 py-2 text-sm focus:outline-none focus:ring-2 focus:ring-indigo-500" />
+          <button id="btnCreateProfile" type="button" class="rounded-lg bg-indigo-600 px-4 py-2 text-sm font-semibold text-white hover:bg-indigo-700">
+            Erstellen
+          </button>
+        </div>
+      </div>
+
+      <!-- Profil-Liste -->
+      <div>
+        <label class="block text-sm font-semibold text-slate-700 mb-2">Deine Profile</label>
+        <div id="profilesList" class="space-y-2 max-h-80 overflow-y-auto">
+          <!-- Profiles populated by JS -->
+        </div>
+      </div>
+    </div>
+  </dialog>
+
   <script>
     // ---------------- Paths ----------------
     const paths = {
@@ -228,6 +275,7 @@
     const SELECT_KEY         = STORAGE_PREFIX + 'selectedGlobalIDs';
     const LAST_VIEW_KEY      = STORAGE_PREFIX + 'lastView';
     const DATA_SCOPE_KEY     = STORAGE_PREFIX + 'dataScope';
+    const PROFILES_KEY       = STORAGE_PREFIX + 'profiles';
 
     // Alte Keys aus vorherigen Versionen.
     // Wichtig: Die neue Version löscht nicht mehr wegen jeder JSON-Änderung,
@@ -395,16 +443,159 @@
       }
     };
 
+    // ============= PROFILE MANAGEMENT SYSTEM =============
+    const profileManager = {
+      loadProfiles() {
+        if (!consent.allowed()) return [];
+        const data = safeLocalStorageGet(PROFILES_KEY);
+        const parsed = safeJsonParse(data, null);
+        
+        if (!parsed || !Array.isArray(parsed)) {
+          return this.getDefaultProfile();
+        }
+        
+        return parsed;
+      },
+
+      saveProfiles(profiles) {
+        if (!consent.allowed()) return;
+        safeLocalStorageSet(PROFILES_KEY, JSON.stringify(profiles));
+      },
+
+      getDefaultProfile() {
+        return [{
+          id: 'default-' + Date.now(),
+          name: 'Mein Stundenplan',
+          selectedGlobalIDs: [],
+          createdAt: new Date().toISOString()
+        }];
+      },
+
+      getAllProfiles() {
+        const profiles = this.loadProfiles();
+        return profiles.length > 0 ? profiles : this.getDefaultProfile();
+      },
+
+      getActiveProfileId() {
+        if (!consent.allowed()) return null;
+        const profiles = this.getAllProfiles();
+        const saved = safeLocalStorageGet(STORAGE_PREFIX + 'activeProfileId');
+        
+        // Wenn kein Profil existiert, das erste erstellen
+        if (profiles.length === 0) {
+          const defaultProfile = this.getDefaultProfile()[0];
+          this.saveProfiles([defaultProfile]);
+          this.setActiveProfileId(defaultProfile.id);
+          return defaultProfile.id;
+        }
+
+        // Wenn gespeicherte ID existiert und gültig ist, verwenden
+        if (saved && profiles.some(p => p.id === saved)) {
+          return saved;
+        }
+
+        // Sonst das erste Profil verwenden
+        const firstId = profiles[0].id;
+        this.setActiveProfileId(firstId);
+        return firstId;
+      },
+
+      setActiveProfileId(profileId) {
+        if (!consent.allowed()) return;
+        safeLocalStorageSet(STORAGE_PREFIX + 'activeProfileId', profileId);
+      },
+
+      getActiveProfile() {
+        const profiles = this.getAllProfiles();
+        const activeId = this.getActiveProfileId();
+        return profiles.find(p => p.id === activeId) || profiles[0];
+      },
+
+      getProfileById(id) {
+        const profiles = this.getAllProfiles();
+        return profiles.find(p => p.id === id);
+      },
+
+      createProfile(name) {
+        const profiles = this.getAllProfiles();
+        const newProfile = {
+          id: 'profile-' + Date.now() + '-' + Math.random().toString(36).substr(2, 9),
+          name: name || 'Neues Profil',
+          selectedGlobalIDs: [],
+          createdAt: new Date().toISOString()
+        };
+        profiles.push(newProfile);
+        this.saveProfiles(profiles);
+        this.setActiveProfileId(newProfile.id);
+        return newProfile;
+      },
+
+      renameProfile(profileId, newName) {
+        const profiles = this.getAllProfiles();
+        const profile = profiles.find(p => p.id === profileId);
+        if (profile) {
+          profile.name = newName || 'Profil';
+          this.saveProfiles(profiles);
+        }
+        return profile;
+      },
+
+      deleteProfile(profileId) {
+        const profiles = this.getAllProfiles();
+        
+        if (profiles.length <= 1) {
+          return false; // Letztes Profil kann nicht gelöscht werden
+        }
+
+        const filtered = profiles.filter(p => p.id !== profileId);
+        this.saveProfiles(filtered);
+
+        // Wenn aktives Profil gelöscht wurde, auf erstes wechseln
+        if (this.getActiveProfileId() === profileId) {
+          this.setActiveProfileId(filtered[0].id);
+        }
+
+        return true;
+      },
+
+      switchProfile(profileId) {
+        if (this.getProfileById(profileId)) {
+          this.setActiveProfileId(profileId);
+          return true;
+        }
+        return false;
+      },
+
+      saveProfileSelection(profileId, selectedIds) {
+        const profiles = this.getAllProfiles();
+        const profile = profiles.find(p => p.id === profileId);
+        if (profile) {
+          profile.selectedGlobalIDs = uniqClean(selectedIds);
+          this.saveProfiles(profiles);
+        }
+      },
+
+      getProfileSelection(profileId) {
+        const profile = this.getProfileById(profileId);
+        return profile ? (profile.selectedGlobalIDs || []) : [];
+      },
+
+      getActiveProfileSelection() {
+        const activeProfile = this.getActiveProfile();
+        return activeProfile ? (activeProfile.selectedGlobalIDs || []) : [];
+      }
+    };
+
     function saveSelection(ids) {
       if (!consent.allowed()) return;
-      safeLocalStorageSet(SELECT_KEY, JSON.stringify(uniqClean(ids)));
+      const activeProfile = profileManager.getActiveProfile();
+      profileManager.saveProfileSelection(activeProfile.id, ids);
     }
 
     function loadRawSelection() {
       if (!consent.allowed()) return [];
-      const raw = safeLocalStorageGet(SELECT_KEY);
-      const parsed = safeJsonParse(raw, []);
-      return Array.isArray(parsed) ? uniqClean(parsed) : [];
+      const selection = profileManager.getActiveProfileSelection();
+      return Array.isArray(selection) ? uniqClean(selection) : [];
     }
 
     function loadValidSelection() {
@@ -585,6 +776,160 @@
 
       setStatus(`Geladen: ${COURSES.length} Kurse · ${EVENTS.length} Veranstaltungen.`);
     }
+
+    // ============= PROFILE UI FUNCTIONS =============
+    function updateProfileSelector() {
+      const selector = document.getElementById('profileSelector');
+      const profiles = profileManager.getAllProfiles();
+      const activeId = profileManager.getActiveProfileId();
+
+      selector.innerHTML = profiles.map(p => 
+        `<option value="${escapeHtml(p.id)}" ${p.id === activeId ? 'selected' : ''}>${escapeHtml(p.name)}</option>`
+      ).join('');
+    }
+
+    function renderProfilesList() {
+      const container = document.getElementById('profilesList');
+      const profiles = profileManager.getAllProfiles();
+      const activeId = profileManager.getActiveProfileId();
+
+      if (profiles.length === 0) {
+        container.innerHTML = '<p class="text-slate-500 text-sm">Keine Profile vorhanden.</p>';
+        return;
+      }
+
+      container.innerHTML = profiles.map(p => {
+        const isActive = p.id === activeId;
+        const selectionCount = (p.selectedGlobalIDs || []).length;
+
+        return `
+          <div class="flex items-center justify-between gap-3 rounded-lg border ${isActive ? 'border-indigo-300 bg-indigo-50' : 'border-slate-200'} p-3">
+            <div class="flex-1 min-w-0">
+              <p class="font-medium text-slate-800 truncate">${escapeHtml(p.name)}</p>
+              <p class="text-xs text-slate-500">${selectionCount} Module ausgewählt</p>
+            </div>
+            <div class="flex items-center gap-2 shrink-0">
+              ${isActive ? '<span class="text-xs font-semibold text-indigo-600 px-2 py-1 bg-indigo-100 rounded">Aktiv</span>' : ''}
+              ${profiles.length > 1 && !isActive ? `
+                <button class="btn-switch-profile px-3 py-1.5 text-xs font-medium text-indigo-600 hover:bg-indigo-50 rounded-lg" data-profile-id="${escapeHtml(p.id)}">
+                  Wechseln
+                </button>
+              ` : ''}
+              <button class="btn-rename-profile px-3 py-1.5 text-xs font-medium text-slate-600 hover:bg-slate-100 rounded-lg" data-profile-id="${escapeHtml(p.id)}">
+                ✏️
+              </button>
+              ${profiles.length > 1 ? `
+                <button class="btn-delete-profile px-3 py-1.5 text-xs font-medium text-rose-600 hover:bg-rose-50 rounded-lg" data-profile-id="${escapeHtml(p.id)}">
+                  🗑
+                </button>
+              ` : ''}
+            </div>
+          </div>
+        `;
+      }).join('');
+
+      // Event-Listener für Profil-Buttons
+      container.querySelectorAll('.btn-switch-profile').forEach(btn => {
+        btn.addEventListener('click', () => {
+          const profileId = btn.dataset.profileId;
+          switchProfileUI(profileId);
+        });
+      });
+
+      container.querySelectorAll('.btn-rename-profile').forEach(btn => {
+        btn.addEventListener('click', () => {
+          const profileId = btn.dataset.profileId;
+          const profile = profileManager.getProfileById(profileId);
+          const newName = prompt('Neuer Name für Profil:', profile.name);
+          if (newName && newName.trim()) {
+            profileManager.renameProfile(profileId, newName.trim());
+            renderProfilesList();
+            updateProfileSelector();
+          }
+        });
+      });
+
+      container.querySelectorAll('.btn-delete-profile').forEach(btn => {
+        btn.addEventListener('click', () => {
+          const profileId = btn.dataset.profileId;
+          const profile = profileManager.getProfileById(profileId);
+          if (confirm(`Profil "${profile.name}" wirklich löschen?`)) {
+            const wasActive = profileManager.getActiveProfileId() === profileId;
+            profileManager.deleteProfile(profileId);
+            renderProfilesList();
+            updateProfileSelector();
+            if (wasActive) {
+              // Selektion wird auf neues aktives Profil aktualisiert
+              SELECTED = new Set(loadValidSelection());
+              renderCourseList();
+            }
+          }
+        });
+      });
+    }
+
+    function switchProfileUI(profileId) {
+      if (!profileManager.switchProfile(profileId)) {
+        return;
+      }
+
+      // Speichere aktuelle Selektion im alten Profil (passiert implizit in saveSelection)
+      // Lade die Selektion des neuen Profils
+      SELECTED = new Set(loadValidSelection());
+      updateProfileSelector();
+      renderCourseList();
+      renderProfilesList();
+
+      setStatus(`Profil gewechselt zu "${profileManager.getActiveProfile().name}".`);
+    }
+
+    // Profile Modal
+    const profileModal = document.getElementById('profileModal');
+    const profileModalClose = document.getElementById('profileModalClose');
+    const btnProfileSettings = document.getElementById('btnProfileSettings');
+    const btnCreateProfile = document.getElementById('btnCreateProfile');
+    const newProfileName = document.getElementById('newProfileName');
+
+    btnProfileSettings.addEventListener('click', () => {
+      newProfileName.value = '';
+      renderProfilesList();
+      profileModal.showModal();
+    });
+
+    profileModalClose.addEventListener('click', () => {
+      profileModal.close();
+    });
+
+    profileModal.addEventListener('click', (e) => {
+      if (e.target === profileModal) profileModal.close();
+    });
+
+    btnCreateProfile.addEventListener('click', () => {
+      const name = newProfileName.value.trim();
+      if (!name) {
+        alert('Bitte gib einen Namen für das neue Profil ein.');
+        return;
+      }
+      profileManager.createProfile(name);
+      updateProfileSelector();
+      renderProfilesList();
+      switchProfileUI(profileManager.getActiveProfileId());
+      newProfileName.value = '';
+      setStatus(`Neues Profil "${name}" erstellt.`);
+    });
+
+    newProfileName.addEventListener('keypress', (e) => {
+      if (e.key === 'Enter') {
+        btnCreateProfile.click();
+      }
+    });
+
+    document.getElementById('profileSelector').addEventListener('change', (e) => {
+      const profileId = e.target.value;
+      switchProfileUI(profileId);
+    });
+
+    // ============= END PROFILE UI FUNCTIONS =============
 
     // ---------------- Course list ----------------
     const courseList     = document.getElementById('courseList');
@@ -965,11 +1310,19 @@
       const scope = computeDataScope(COURSES, EVENTS);
       safeLocalStorageSet(DATA_SCOPE_KEY, scope);
 
+      // Initialisiere Profile wenn noch nicht vorhanden
+      const profiles = profileManager.getAllProfiles();
+      if (profiles.length === 0 || !safeLocalStorageGet(PROFILES_KEY)) {
+        profileManager.saveProfiles(profileManager.getDefaultProfile());
+      }
+
       saveSelection([...SELECTED]);
 
       if (calendar?.view?.type) {
         saveLastView(calendar.view.type);
       }
+
+      updateProfileSelector();
 
       hideConsentBanner();
       setStatus('Lokale Speicherung aktiviert.');
@@ -981,12 +1334,15 @@
       safeLocalStorageRemove(SELECT_KEY);
       safeLocalStorageRemove(LAST_VIEW_KEY);
       safeLocalStorageRemove(DATA_SCOPE_KEY);
+      safeLocalStorageRemove(PROFILES_KEY);
+      safeLocalStorageRemove(STORAGE_PREFIX + 'activeProfileId');
       clearLegacyStorageKeys();
 
       SELECTED.clear();
       hideConsentBanner();
 
       renderCourseList(document.getElementById('search').value);
+      updateProfileSelector();
       setStatus('Lokale Speicherung deaktiviert. Alte lokale Auswahl wurde gelöscht.');
     });
 
@@ -1002,6 +1358,7 @@
 
         SELECTED = new Set(loadValidSelection());
 
+        updateProfileSelector();
         renderCourseList();
 
         setStatus('Daten bereit. Wähle deine Module.');
