@@ -880,7 +880,14 @@
       renderCourseList();
       renderProfilesList();
 
-      setStatus(`Profil gewechselt zu "${profileManager.getActiveProfile().name}".`);
+      // Aktualisiere Kalender wenn man gerade in der Kalender-Ansicht ist
+      const isInCalendarView = document.getElementById('step-calendar').classList.contains('hidden') === false;
+      if (isInCalendarView && calendar) {
+        // Kalender mit neuen Events aus der aktuellen Profil-Selektion updaten
+        const newEvents = buildCalendarEvents();
+        calendar.removeAllEvents();
+        calendar.addEventSource(newEvents);
+      }
     }
 
     // Profile Modal
@@ -910,12 +917,24 @@
         alert('Bitte gib einen Namen für das neue Profil ein.');
         return;
       }
+      const isInCalendarView = document.getElementById('step-calendar').classList.contains('hidden') === false;
+      
       profileManager.createProfile(name);
       updateProfileSelector();
       renderProfilesList();
       switchProfileUI(profileManager.getActiveProfileId());
       newProfileName.value = '';
-      setStatus(`Neues Profil "${name}" erstellt.`);
+      
+      // Schließe Modal
+      profileModal.close();
+      
+      // Wenn man im Kalender ist und das neue Profil leer ist, zur Auswahl gehen
+      if (isInCalendarView && SELECTED.size === 0) {
+        document.getElementById('step-calendar').classList.add('hidden');
+        document.getElementById('step-select').classList.remove('hidden');
+        document.getElementById('mainTitle').textContent = 'Stundenplan konfigurieren';
+        document.getElementById('mainSubtitle').classList.remove('hidden');
+      }
     });
 
     newProfileName.addEventListener('keypress', (e) => {
