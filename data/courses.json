@@ -153,5 +153,20 @@
         "summary": "Systemanalyse und quantitative Entscheidungstheorie",
         "Studiengruppe": "24BTS-CPV-4, 24BTS-EAT-4, 24BTS-MAS-4, 24BTS-MEC-4, 24BTS-TIN-4",
         "globalID": "4LXYD5"
+    },
+    {
+        "summary": "Systemanalyse und quantitative Entscheidungstheorie",
+        "Studiengruppe": "24DNI1-4, 24DNI2-4, 24DNI-STE-4",
+        "globalID": "E1V75E"
+    },
+    {
+        "summary": "Introduction to Logistics",
+        "Studiengruppe": "24DNI2-4, 24DNI-STE-4",
+        "globalID": "1QCA6H"
+    },
+    {
+        "summary": "Betriebssysteme",
+        "Studiengruppe": "24DNI2-4, 24DNI-STE-4",
+        "globalID": "VY7F3S"
     }
 ]
