@@ -1,3 +1,4 @@
+
 <!doctype html>
 <html lang="de" class="h-full">
 <head>
@@ -5,22 +6,19 @@
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <title>Stundenplan • Auswahl & Kalender</title>
 
+  <meta name="description" content="Private, inoffizielle Stundenplan-Ansicht für Studierende der Hochschule Osnabrück. Module auswählen und als Kalender anzeigen. Speicherung erfolgt ausschließlich lokal im Browser." />
+  <meta name="robots" content="noindex, nofollow" />
+  <meta name="color-scheme" content="light" />
+  <meta name="theme-color" content="#4f46e5" />
+  <meta name="referrer" content="no-referrer" />
+  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Crect width='100' height='100' rx='22' fill='%234f46e5'/%3E%3Crect x='24' y='26' width='52' height='50' rx='8' fill='white'/%3E%3Crect x='24' y='26' width='52' height='14' rx='8' fill='%23c7d2fe'/%3E%3Crect x='33' y='48' width='12' height='10' rx='2' fill='%234f46e5'/%3E%3Crect x='55' y='48' width='12' height='10' rx='2' fill='%23a5b4fc'/%3E%3C/svg%3E" />
+
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
 
-  <!-- Tailwind -->
-  <script src="https://cdn.tailwindcss.com"></script>
-  <script>
-    tailwind.config = {
-      theme: {
-        extend: {
-          fontFamily: { sans: ['Inter','ui-sans-serif','system-ui'] },
-          boxShadow: { soft: '0 10px 30px rgba(2, 6, 23, 0.08)' }
-        }
-      }
-    }
-  </script>
+  <!-- Tailwind: vorkompiliert und inline eingebettet (keine Produktions-CDN-Abhaengigkeit) -->
+  <style id="tailwind-compiled">*,:after,:before{--tw-border-spacing-x:0;--tw-border-spacing-y:0;--tw-translate-x:0;--tw-translate-y:0;--tw-rotate:0;--tw-skew-x:0;--tw-skew-y:0;--tw-scale-x:1;--tw-scale-y:1;--tw-pan-x: ;--tw-pan-y: ;--tw-pinch-zoom: ;--tw-scroll-snap-strictness:proximity;--tw-gradient-from-position: ;--tw-gradient-via-position: ;--tw-gradient-to-position: ;--tw-ordinal: ;--tw-slashed-zero: ;--tw-numeric-figure: ;--tw-numeric-spacing: ;--tw-numeric-fraction: ;--tw-ring-inset: ;--tw-ring-offset-width:0px;--tw-ring-offset-color:#fff;--tw-ring-color:rgba(59,130,246,.5);--tw-ring-offset-shadow:0 0 #0000;--tw-ring-shadow:0 0 #0000;--tw-shadow:0 0 #0000;--tw-shadow-colored:0 0 #0000;--tw-blur: ;--tw-brightness: ;--tw-contrast: ;--tw-grayscale: ;--tw-hue-rotate: ;--tw-invert: ;--tw-saturate: ;--tw-sepia: ;--tw-drop-shadow: ;--tw-backdrop-blur: ;--tw-backdrop-brightness: ;--tw-backdrop-contrast: ;--tw-backdrop-grayscale: ;--tw-backdrop-hue-rotate: ;--tw-backdrop-invert: ;--tw-backdrop-opacity: ;--tw-backdrop-saturate: ;--tw-backdrop-sepia: ;--tw-contain-size: ;--tw-contain-layout: ;--tw-contain-paint: ;--tw-contain-style: }::backdrop{--tw-border-spacing-x:0;--tw-border-spacing-y:0;--tw-translate-x:0;--tw-translate-y:0;--tw-rotate:0;--tw-skew-x:0;--tw-skew-y:0;--tw-scale-x:1;--tw-scale-y:1;--tw-pan-x: ;--tw-pan-y: ;--tw-pinch-zoom: ;--tw-scroll-snap-strictness:proximity;--tw-gradient-from-position: ;--tw-gradient-via-position: ;--tw-gradient-to-position: ;--tw-ordinal: ;--tw-slashed-zero: ;--tw-numeric-figure: ;--tw-numeric-spacing: ;--tw-numeric-fraction: ;--tw-ring-inset: ;--tw-ring-offset-width:0px;--tw-ring-offset-color:#fff;--tw-ring-color:rgba(59,130,246,.5);--tw-ring-offset-shadow:0 0 #0000;--tw-ring-shadow:0 0 #0000;--tw-shadow:0 0 #0000;--tw-shadow-colored:0 0 #0000;--tw-blur: ;--tw-brightness: ;--tw-contrast: ;--tw-grayscale: ;--tw-hue-rotate: ;--tw-invert: ;--tw-saturate: ;--tw-sepia: ;--tw-drop-shadow: ;--tw-backdrop-blur: ;--tw-backdrop-brightness: ;--tw-backdrop-contrast: ;--tw-backdrop-grayscale: ;--tw-backdrop-hue-rotate: ;--tw-backdrop-invert: ;--tw-backdrop-opacity: ;--tw-backdrop-saturate: ;--tw-backdrop-sepia: ;--tw-contain-size: ;--tw-contain-layout: ;--tw-contain-paint: ;--tw-contain-style: }/*! tailwindcss v3.4.19 | MIT License | https://tailwindcss.com*/*,:after,:before{box-sizing:border-box;border:0 solid #e5e7eb}:after,:before{--tw-content:""}:host,html{line-height:1.5;-webkit-text-size-adjust:100%;-moz-tab-size:4;-o-tab-size:4;tab-size:4;font-family:Inter,ui-sans-serif,system-ui,sans-serif;font-feature-settings:normal;font-variation-settings:normal;-webkit-tap-highlight-color:transparent}body{margin:0;line-height:inherit}hr{height:0;color:inherit;border-top-width:1px}abbr:where([title]){-webkit-text-decoration:underline dotted;text-decoration:underline dotted}h1,h2,h3,h4,h5,h6{font-size:inherit;font-weight:inherit}a{color:inherit;text-decoration:inherit}b,strong{font-weight:bolder}code,kbd,pre,samp{font-family:ui-monospace,SFMono-Regular,Menlo,Monaco,Consolas,Liberation Mono,Courier New,monospace;font-feature-settings:normal;font-variation-settings:normal;font-size:1em}small{font-size:80%}sub,sup{font-size:75%;line-height:0;position:relative;vertical-align:baseline}sub{bottom:-.25em}sup{top:-.5em}table{text-indent:0;border-color:inherit;border-collapse:collapse}button,input,optgroup,select,textarea{font-family:inherit;font-feature-settings:inherit;font-variation-settings:inherit;font-size:100%;font-weight:inherit;line-height:inherit;letter-spacing:inherit;color:inherit;margin:0;padding:0}button,select{text-transform:none}button,input:where([type=button]),input:where([type=reset]),input:where([type=submit]){-webkit-appearance:button;background-color:transparent;background-image:none}:-moz-focusring{outline:auto}:-moz-ui-invalid{box-shadow:none}progress{vertical-align:baseline}::-webkit-inner-spin-button,::-webkit-outer-spin-button{height:auto}[type=search]{-webkit-appearance:textfield;outline-offset:-2px}::-webkit-search-decoration{-webkit-appearance:none}::-webkit-file-upload-button{-webkit-appearance:button;font:inherit}summary{display:list-item}blockquote,dd,dl,figure,h1,h2,h3,h4,h5,h6,hr,p,pre{margin:0}fieldset{margin:0}fieldset,legend{padding:0}menu,ol,ul{list-style:none;margin:0;padding:0}dialog{padding:0}textarea{resize:vertical}input::-moz-placeholder,textarea::-moz-placeholder{opacity:1;color:#9ca3af}input::placeholder,textarea::placeholder{opacity:1;color:#9ca3af}[role=button],button{cursor:pointer}:disabled{cursor:default}audio,canvas,embed,iframe,img,object,svg,video{display:block;vertical-align:middle}img,video{max-width:100%;height:auto}[hidden]:where(:not([hidden=until-found])){display:none}.container{width:100%}@media (min-width:640px){.container{max-width:640px}}@media (min-width:768px){.container{max-width:768px}}@media (min-width:1024px){.container{max-width:1024px}}@media (min-width:1280px){.container{max-width:1280px}}@media (min-width:1536px){.container{max-width:1536px}}.sr-only{position:absolute;width:1px;height:1px;padding:0;margin:-1px;overflow:hidden;clip:rect(0,0,0,0);white-space:nowrap;border-width:0}.pointer-events-none{pointer-events:none}.fixed{position:fixed}.absolute{position:absolute}.relative{position:relative}.inset-x-0{left:0;right:0}.inset-y-0{top:0;bottom:0}.bottom-0{bottom:0}.right-0{right:0}.z-50{z-index:50}.m-3{margin:.75rem}.mx-auto{margin-left:auto;margin-right:auto}.mb-1{margin-bottom:.25rem}.mb-2{margin-bottom:.5rem}.mb-3{margin-bottom:.75rem}.mb-4{margin-bottom:1rem}.mb-5{margin-bottom:1.25rem}.mb-6{margin-bottom:1.5rem}.mt-0\.5{margin-top:.125rem}.mt-1{margin-top:.25rem}.mt-2{margin-top:.5rem}.mt-4{margin-top:1rem}.mt-6{margin-top:1.5rem}.block{display:block}.inline-block{display:inline-block}.inline{display:inline}.flex{display:flex}.inline-flex{display:inline-flex}.table{display:table}.grid{display:grid}.hidden{display:none}.h-3{height:.75rem}.h-4{height:1rem}.h-5{height:1.25rem}.h-full{height:100%}.max-h-80{max-height:20rem}.w-3{width:.75rem}.w-4{width:1rem}.w-5{width:1.25rem}.w-full{width:100%}.min-w-0{min-width:0}.max-w-5xl{max-width:64rem}.max-w-7xl{max-width:80rem}.max-w-lg{max-width:32rem}.max-w-md{max-width:28rem}.flex-1{flex:1 1 0%}.shrink-0{flex-shrink:0}.border-collapse{border-collapse:collapse}.transform{transform:translate(var(--tw-translate-x),var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y))}.cursor-pointer{cursor:pointer}.list-disc{list-style-type:disc}.appearance-none{-webkit-appearance:none;-moz-appearance:none;appearance:none}.flex-col{flex-direction:column}.flex-wrap{flex-wrap:wrap}.items-start{align-items:flex-start}.items-center{align-items:center}.justify-between{justify-content:space-between}.gap-2{gap:.5rem}.gap-3{gap:.75rem}.gap-4{gap:1rem}.gap-6{gap:1.5rem}.space-y-1>:not([hidden])~:not([hidden]){--tw-space-y-reverse:0;margin-top:calc(.25rem*(1 - var(--tw-space-y-reverse)));margin-bottom:calc(.25rem*var(--tw-space-y-reverse))}.space-y-2>:not([hidden])~:not([hidden]){--tw-space-y-reverse:0;margin-top:calc(.5rem*(1 - var(--tw-space-y-reverse)));margin-bottom:calc(.5rem*var(--tw-space-y-reverse))}.overflow-y-auto{overflow-y:auto}.truncate{overflow:hidden;text-overflow:ellipsis;white-space:nowrap}.rounded{border-radius:.25rem}.rounded-2xl{border-radius:1rem}.rounded-full{border-radius:9999px}.rounded-lg{border-radius:.5rem}.rounded-xl{border-radius:.75rem}.border{border-width:1px}.border-b{border-bottom-width:1px}.border-indigo-300{--tw-border-opacity:1;border-color:rgb(165 180 252/var(--tw-border-opacity,1))}.border-slate-200{--tw-border-opacity:1;border-color:rgb(226 232 240/var(--tw-border-opacity,1))}.bg-emerald-600{--tw-bg-opacity:1;background-color:rgb(5 150 105/var(--tw-bg-opacity,1))}.bg-indigo-100{--tw-bg-opacity:1;background-color:rgb(224 231 255/var(--tw-bg-opacity,1))}.bg-indigo-50{--tw-bg-opacity:1;background-color:rgb(238 242 255/var(--tw-bg-opacity,1))}.bg-indigo-600{--tw-bg-opacity:1;background-color:rgb(79 70 229/var(--tw-bg-opacity,1))}.bg-slate-50{--tw-bg-opacity:1;background-color:rgb(248 250 252/var(--tw-bg-opacity,1))}.bg-slate-700{--tw-bg-opacity:1;background-color:rgb(51 65 85/var(--tw-bg-opacity,1))}.bg-slate-900{--tw-bg-opacity:1;background-color:rgb(15 23 42/var(--tw-bg-opacity,1))}.bg-white{--tw-bg-opacity:1;background-color:rgb(255 255 255/var(--tw-bg-opacity,1))}.fill-current{fill:currentColor}.p-0{padding:0}.p-3{padding:.75rem}.p-4{padding:1rem}.p-5{padding:1.25rem}.p-6{padding:1.5rem}.px-2{padding-left:.5rem;padding-right:.5rem}.px-3{padding-left:.75rem;padding-right:.75rem}.px-4{padding-left:1rem;padding-right:1rem}.px-5{padding-left:1.25rem;padding-right:1.25rem}.py-1{padding-top:.25rem;padding-bottom:.25rem}.py-1\.5{padding-top:.375rem;padding-bottom:.375rem}.py-2{padding-top:.5rem;padding-bottom:.5rem}.py-2\.5{padding-top:.625rem;padding-bottom:.625rem}.pb-5{padding-bottom:1.25rem}.pl-4{padding-left:1rem}.pr-2{padding-right:.5rem}.pr-24{padding-right:6rem}.pr-8{padding-right:2rem}.text-2xl{font-size:1.5rem;line-height:2rem}.text-\[10px\]{font-size:10px}.text-\[11px\]{font-size:11px}.text-\[9px\]{font-size:9px}.text-lg{font-size:1.125rem;line-height:1.75rem}.text-sm{font-size:.875rem;line-height:1.25rem}.text-xs{font-size:.75rem;line-height:1rem}.font-bold{font-weight:700}.font-extrabold{font-weight:800}.font-medium{font-weight:500}.font-semibold{font-weight:600}.leading-tight{line-height:1.25}.tracking-tight{letter-spacing:-.025em}.text-indigo-600{--tw-text-opacity:1;color:rgb(79 70 229/var(--tw-text-opacity,1))}.text-rose-600{--tw-text-opacity:1;color:rgb(225 29 72/var(--tw-text-opacity,1))}.text-slate-400{--tw-text-opacity:1;color:rgb(148 163 184/var(--tw-text-opacity,1))}.text-slate-500{--tw-text-opacity:1;color:rgb(100 116 139/var(--tw-text-opacity,1))}.text-slate-600{--tw-text-opacity:1;color:rgb(71 85 105/var(--tw-text-opacity,1))}.text-slate-700{--tw-text-opacity:1;color:rgb(51 65 85/var(--tw-text-opacity,1))}.text-slate-800{--tw-text-opacity:1;color:rgb(30 41 59/var(--tw-text-opacity,1))}.text-white{--tw-text-opacity:1;color:rgb(255 255 255/var(--tw-text-opacity,1))}.opacity-40{opacity:.4}.opacity-90{opacity:.9}.shadow-soft{--tw-shadow:0 10px 30px rgba(2,6,23,.08);--tw-shadow-colored:0 10px 30px var(--tw-shadow-color);box-shadow:var(--tw-ring-offset-shadow,0 0 #0000),var(--tw-ring-shadow,0 0 #0000),var(--tw-shadow)}.outline{outline-style:solid}.filter{filter:var(--tw-blur) var(--tw-brightness) var(--tw-contrast) var(--tw-grayscale) var(--tw-hue-rotate) var(--tw-invert) var(--tw-saturate) var(--tw-sepia) var(--tw-drop-shadow)}.transition-colors{transition-property:color,background-color,border-color,text-decoration-color,fill,stroke;transition-timing-function:cubic-bezier(.4,0,.2,1);transition-duration:.15s}.transition-shadow{transition-property:box-shadow;transition-timing-function:cubic-bezier(.4,0,.2,1);transition-duration:.15s}.backdrop\:bg-black\/40::backdrop{background-color:rgba(0,0,0,.4)}.hover\:border-slate-300:hover{--tw-border-opacity:1;border-color:rgb(203 213 225/var(--tw-border-opacity,1))}.hover\:bg-emerald-700:hover{--tw-bg-opacity:1;background-color:rgb(4 120 87/var(--tw-bg-opacity,1))}.hover\:bg-indigo-50:hover{--tw-bg-opacity:1;background-color:rgb(238 242 255/var(--tw-bg-opacity,1))}.hover\:bg-indigo-700:hover{--tw-bg-opacity:1;background-color:rgb(67 56 202/var(--tw-bg-opacity,1))}.hover\:bg-rose-50:hover{--tw-bg-opacity:1;background-color:rgb(255 241 242/var(--tw-bg-opacity,1))}.hover\:bg-slate-100:hover{--tw-bg-opacity:1;background-color:rgb(241 245 249/var(--tw-bg-opacity,1))}.hover\:bg-slate-600:hover{--tw-bg-opacity:1;background-color:rgb(71 85 105/var(--tw-bg-opacity,1))}.hover\:text-indigo-600:hover{--tw-text-opacity:1;color:rgb(79 70 229/var(--tw-text-opacity,1))}.hover\:text-rose-600:hover{--tw-text-opacity:1;color:rgb(225 29 72/var(--tw-text-opacity,1))}.hover\:text-slate-800:hover{--tw-text-opacity:1;color:rgb(30 41 59/var(--tw-text-opacity,1))}.hover\:shadow-soft:hover{--tw-shadow:0 10px 30px rgba(2,6,23,.08);--tw-shadow-colored:0 10px 30px var(--tw-shadow-color);box-shadow:var(--tw-ring-offset-shadow,0 0 #0000),var(--tw-ring-shadow,0 0 #0000),var(--tw-shadow)}.focus\:outline-none:focus{outline:2px solid transparent;outline-offset:2px}.focus\:ring-2:focus{--tw-ring-offset-shadow:var(--tw-ring-inset) 0 0 0 var(--tw-ring-offset-width) var(--tw-ring-offset-color);--tw-ring-shadow:var(--tw-ring-inset) 0 0 0 calc(2px + var(--tw-ring-offset-width)) var(--tw-ring-color);box-shadow:var(--tw-ring-offset-shadow),var(--tw-ring-shadow),var(--tw-shadow,0 0 #0000)}.focus\:ring-indigo-500:focus{--tw-ring-opacity:1;--tw-ring-color:rgb(99 102 241/var(--tw-ring-opacity,1))}@media (min-width:640px){.sm\:grid-cols-2{grid-template-columns:repeat(2,minmax(0,1fr))}.sm\:flex-row{flex-direction:row}.sm\:items-center{align-items:center}.sm\:justify-between{justify-content:space-between}}@media (min-width:768px){.md\:col-span-2{grid-column:span 2/span 2}.md\:inline{display:inline}.md\:flex{display:flex}.md\:w-48{width:12rem}.md\:grid-cols-3{grid-template-columns:repeat(3,minmax(0,1fr))}.md\:flex-row{flex-direction:row}.md\:items-center{align-items:center}.md\:justify-between{justify-content:space-between}.md\:p-6{padding:1.5rem}.md\:p-8{padding:2rem}.md\:text-3xl{font-size:1.875rem;line-height:2.25rem}}@media (min-width:1024px){.lg\:grid-cols-3{grid-template-columns:repeat(3,minmax(0,1fr))}}</style>
 
   <!-- FullCalendar v6 -->
   <link href="https://cdn.jsdelivr.net/npm/fullcalendar@6.1.15/index.global.min.css" rel="stylesheet" />
@@ -93,10 +91,49 @@
     body.month-view .kachel{
       -webkit-line-clamp:2;
     }
+
+    /* Robuster Dialog-Hintergrund, unabhängig von Tailwind-Varianten */
+    dialog::backdrop { background: rgba(2, 6, 23, .45); }
+    dialog[open] { animation: dialogIn .15s ease-out; }
+    @keyframes dialogIn { from { opacity: 0; transform: translateY(6px); } to { opacity: 1; transform: none; } }
+
+    /* Sichtbarer Fokus für Tastatur-Navigation */
+    a:focus-visible, button:focus-visible, input:focus-visible,
+    select:focus-visible, [tabindex]:focus-visible {
+      outline: 2px solid #4f46e5;
+      outline-offset: 2px;
+      border-radius: 8px;
+    }
+
+    /* Hilfstext für Screenreader */
+    .sr-only {
+      position:absolute; width:1px; height:1px; padding:0; margin:-1px;
+      overflow:hidden; clip:rect(0,0,0,0); white-space:nowrap; border:0;
+    }
+
+    @media (prefers-reduced-motion: reduce) {
+      *, *::before, *::after {
+        animation-duration: .001ms !important;
+        animation-iteration-count: 1 !important;
+        transition-duration: .001ms !important;
+      }
+    }
+
+    @media print {
+      #consentBanner, #mainHeader .flex.items-center.gap-2,
+      #btnBack, #step-select { display: none !important; }
+      .shadow-soft { box-shadow: none !important; }
+    }
   </style>
 </head>
 
 <body class="h-full bg-slate-50 text-slate-800">
+  <noscript>
+    <div style="margin:1rem;padding:1rem;border-radius:12px;background:#fee2e2;color:#7f1d1d;font-family:system-ui,sans-serif">
+      Diese Anwendung benötigt JavaScript, um Module und den Kalender anzuzeigen.
+      Bitte aktiviere JavaScript in deinem Browser.
+    </div>
+  </noscript>
   <div class="max-w-7xl mx-auto p-4 md:p-8">
     <header class="mb-6 flex flex-col md:flex-row md:items-center md:justify-between gap-4" id="mainHeader">
       <div class="flex-1">
@@ -107,14 +144,14 @@
       <!-- Profile Selector -->
       <div class="flex items-center gap-2">
         <div class="relative inline-block w-full md:w-48">
-          <select id="profileSelector" class="w-full rounded-xl border border-slate-200 bg-white px-3 py-2.5 text-sm font-medium text-slate-800 hover:border-slate-300 focus:outline-none focus:ring-2 focus:ring-indigo-500 cursor-pointer appearance-none pr-8">
+          <select id="profileSelector" aria-label="Aktives Profil auswählen" class="w-full rounded-xl border border-slate-200 bg-white px-3 py-2.5 text-sm font-medium text-slate-800 hover:border-slate-300 focus:outline-none focus:ring-2 focus:ring-indigo-500 cursor-pointer appearance-none pr-8">
             <!-- Options populated by JS -->
           </select>
           <div class="pointer-events-none absolute inset-y-0 right-0 flex items-center px-3 text-slate-500">
             <svg class="h-4 w-4 fill-current" viewBox="0 0 20 20"><path d="M9.293 12.95l.707.707L15.657 8l-1.414-1.414L10 10.828 5.757 6.586 4.343 8z"/></svg>
           </div>
         </div>
-        <button id="btnProfileSettings" type="button" class="rounded-xl border border-slate-200 px-3 py-2.5 text-slate-700 hover:bg-slate-100 transition-colors" title="Profile verwalten">
+        <button id="btnProfileSettings" type="button" aria-label="Profile verwalten" class="rounded-xl border border-slate-200 px-3 py-2.5 text-slate-700 hover:bg-slate-100 transition-colors" title="Profile verwalten">
           <svg class="h-5 w-5" viewBox="0 0 20 20" fill="currentColor"><path d="M10.5 1.5H9.5V0h1v1.5zm-4 2.121L6.121 2.121 5.414 1.414 4.707 2.121zm7.778 0l.707-.707.707.707-.707.707zm-9.192 3.05l1.414-1.414 1.06 1.06-1.413 1.414zm10.606 0l.707.707-1.414 1.414-.707-.707zM3 10.5v-1h1.5v1H3zm13.5 0v-1H18v1h-1.5zm-12.621 4.05l1.06-1.06 1.414 1.414-1.06 1.06zm10.606 0l1.06 1.06-1.414 1.414-1.06-1.06zM6.121 17.879l.707-.707.707.707-.707.707zm7.778 0l.707.707-.707.707-.707-.707zM10.5 18.5v1.5h-1V18.5h1z" transform="rotate(-45 10 10)"/></svg>
         </button>
       </div>
@@ -127,7 +164,7 @@
           <div class="flex-1">
             <label class="block text-sm font-semibold text-slate-700 mb-1" for="search">Module suchen</label>
             <div class="relative">
-              <input id="search" type="text" placeholder="Tippe Modul, Dozent oder Studiengruppe"
+              <input id="search" type="search" autocomplete="off" autocapitalize="off" spellcheck="false" enterkeyhint="search" placeholder="Tippe Modul, Dozent oder Studiengruppe"
                      class="w-full rounded-xl border border-slate-200 bg-slate-50 px-4 py-2.5 pr-24 focus:outline-none focus:ring-2 focus:ring-indigo-500" />
               <div class="absolute inset-y-0 right-0 flex items-center pr-2 gap-2 text-xs text-slate-500">
                 <button id="btnSelectAll" type="button" class="px-2 py-1 hover:text-indigo-600">alle</button>
@@ -226,7 +263,7 @@
     <div class="p-5">
       <div class="flex items-start justify-between mb-2">
         <h3 id="mTitle" class="text-lg font-bold"></h3>
-        <button id="mClose" type="button" class="text-slate-500 hover:text-slate-800">✕</button>
+        <button id="mClose" type="button" aria-label="Schließen" class="text-slate-500 hover:text-slate-800">✕</button>
       </div>
       <div id="mBody" class="space-y-1 text-sm text-slate-700"></div>
     </div>
@@ -237,19 +274,20 @@
     <div class="p-6">
       <div class="flex items-start justify-between mb-4">
         <h2 class="text-lg font-bold">Profile verwalten</h2>
-        <button id="profileModalClose" type="button" class="text-slate-500 hover:text-slate-800">✕</button>
+        <button id="profileModalClose" type="button" aria-label="Schließen" class="text-slate-500 hover:text-slate-800">✕</button>
       </div>
 
       <!-- Neues Profil erstellen -->
       <div class="mb-5 pb-5 border-b border-slate-200">
         <label class="block text-sm font-semibold text-slate-700 mb-2">Neues Profil</label>
         <div class="flex gap-2">
-          <input id="newProfileName" type="text" placeholder="z.B. Winterplan" 
+          <input id="newProfileName" type="text" maxlength="40" placeholder="z.B. Winterplan" 
                  class="flex-1 rounded-lg border border-slate-200 bg-slate-50 px-3 py-2 text-sm focus:outline-none focus:ring-2 focus:ring-indigo-500" />
           <button id="btnCreateProfile" type="button" class="rounded-lg bg-indigo-600 px-4 py-2 text-sm font-semibold text-white hover:bg-indigo-700">
             Erstellen
           </button>
         </div>
+        <p id="newProfileError" class="text-xs text-rose-600 mt-2 hidden" role="alert"></p>
       </div>
 
       <!-- Profil-Liste -->
@@ -519,7 +557,7 @@
       createProfile(name) {
         const profiles = this.getAllProfiles();
         const newProfile = {
-          id: 'profile-' + Date.now() + '-' + Math.random().toString(36).substr(2, 9),
+          id: 'profile-' + Date.now() + '-' + Math.random().toString(36).slice(2, 11),
           name: name || 'Neues Profil',
           selectedGlobalIDs: [],
           createdAt: new Date().toISOString()
@@ -598,7 +636,7 @@
       return Array.isArray(selection) ? uniqClean(selection) : [];
     }
 
-    function loadValidSelection() {
+    function loadValidSelection({ announce = true } = {}) {
       if (!consent.allowed()) return [];
 
       const validIDs = new Set(COURSES.map(getCourseID).filter(Boolean));
@@ -607,7 +645,9 @@
 
       if (cleaned.length !== rawIDs.length) {
         saveSelection(cleaned);
-        setStatus(`Gespeicherte Kursauswahl bereinigt: ${rawIDs.length - cleaned.length} nicht mehr vorhandene ID(s) entfernt.`);
+        if (announce) {
+          setStatus(`Gespeicherte Kursauswahl bereinigt: ${rawIDs.length - cleaned.length} nicht mehr vorhandene ID(s) entfernt.`);
+        }
       }
 
       return cleaned;
@@ -639,10 +679,28 @@
       const oldScope = safeLocalStorageGet(DATA_SCOPE_KEY);
 
       if (oldScope && oldScope !== newScope) {
-        safeLocalStorageRemove(SELECT_KEY);
+        // Auswahl liegt seit v3 in den Profilen – daher dort bereinigen,
+        // statt den (ungenutzten) Alt-Key zu entfernen.
+        const validIDs = new Set(COURSES.map(getCourseID).filter(Boolean));
+        const profiles = profileManager.getAllProfiles();
+        let removed = 0;
+
+        profiles.forEach(p => {
+          const before = uniqClean(p.selectedGlobalIDs || []);
+          const after = before.filter(id => validIDs.has(id));
+          removed += before.length - after.length;
+          p.selectedGlobalIDs = after;
+        });
+
+        profileManager.saveProfiles(profiles);
         safeLocalStorageRemove(LAST_VIEW_KEY);
         SELECTED.clear();
-        setStatus('Neuer Semester-/Datenbereich erkannt. Alte Kursauswahl wurde zurückgesetzt.');
+
+        setStatus(
+          removed > 0
+            ? `Neuer Semester-/Datenbereich erkannt. ${removed} nicht mehr gültige Auswahl(en) entfernt.`
+            : 'Neuer Semester-/Datenbereich erkannt.'
+        );
       }
 
       safeLocalStorageSet(DATA_SCOPE_KEY, newScope);
@@ -719,22 +777,35 @@
     }
 
     // ---------------- Fetch ----------------
-    async function fetchJsonFresh(url) {
+    async function fetchJsonFresh(url, { timeoutMs = 15000 } = {}) {
       const separator = url.includes('?') ? '&' : '?';
       const bustUrl = `${url}${separator}_=${Date.now()}`;
 
-      const res = await fetch(bustUrl, {
-        cache: 'no-store',
-        headers: {
-          'Cache-Control': 'no-cache'
+      const controller = new AbortController();
+      const timer = setTimeout(() => controller.abort(), timeoutMs);
+
+      try {
+        const res = await fetch(bustUrl, {
+          cache: 'no-store',
+          signal: controller.signal,
+          headers: {
+            'Cache-Control': 'no-cache'
+          }
+        });
+
+        if (!res.ok) {
+          throw new Error(`Konnte ${url} nicht laden (HTTP ${res.status}).`);
         }
-      });
 
-      if (!res.ok) {
-        throw new Error(`Konnte ${url} nicht laden (${res.status})`);
+        return res;
+      } catch (err) {
+        if (err && err.name === 'AbortError') {
+          throw new Error(`Zeitüberschreitung beim Laden von ${url}.`);
+        }
+        throw err;
+      } finally {
+        clearTimeout(timer);
       }
-
-      return res;
     }
 
     async function loadData() {
@@ -775,6 +846,13 @@
       EVENTS  = eventsJson;
 
       setStatus(`Geladen: ${COURSES.length} Kurse · ${EVENTS.length} Veranstaltungen.`);
+
+      const idCount = COURSES.map(getCourseID).filter(Boolean).length;
+      if (COURSES.length === 0) {
+        setStatus('Hinweis: Es wurden keine Kurse gefunden.', false);
+      } else if (idCount === 0) {
+        setStatus('Achtung: Keine gültigen Kurs-IDs (globalID/summary) in den Daten gefunden.', false);
+      }
     }
 
     // ============= PROFILE UI FUNCTIONS =============
@@ -815,11 +893,11 @@
                   Wechseln
                 </button>
               ` : ''}
-              <button class="btn-rename-profile px-3 py-1.5 text-xs font-medium text-slate-600 hover:bg-slate-100 rounded-lg" data-profile-id="${escapeHtml(p.id)}">
+              <button class="btn-rename-profile px-3 py-1.5 text-xs font-medium text-slate-600 hover:bg-slate-100 rounded-lg" data-profile-id="${escapeHtml(p.id)}" aria-label="Profil umbenennen" title="Umbenennen">
                 ✏️
               </button>
               ${profiles.length > 1 ? `
-                <button class="btn-delete-profile px-3 py-1.5 text-xs font-medium text-rose-600 hover:bg-rose-50 rounded-lg" data-profile-id="${escapeHtml(p.id)}">
+                <button class="btn-delete-profile px-3 py-1.5 text-xs font-medium text-rose-600 hover:bg-rose-50 rounded-lg" data-profile-id="${escapeHtml(p.id)}" aria-label="Profil löschen" title="Löschen">
                   🗑
                 </button>
               ` : ''}
@@ -860,7 +938,7 @@
             updateProfileSelector();
             if (wasActive) {
               // Selektion wird auf neues aktives Profil aktualisiert
-              SELECTED = new Set(loadValidSelection());
+              SELECTED = new Set(loadValidSelection({ announce: false }));
               renderCourseList();
             }
           }
@@ -873,9 +951,8 @@
         return;
       }
 
-      // Speichere aktuelle Selektion im alten Profil (passiert implizit in saveSelection)
-      // Lade die Selektion des neuen Profils
-      SELECTED = new Set(loadValidSelection());
+      // Lade die Selektion des neuen Profils (ohne Status-Spam)
+      SELECTED = new Set(loadValidSelection({ announce: false }));
       updateProfileSelector();
       renderCourseList();
       renderProfilesList();
@@ -883,10 +960,9 @@
       // Aktualisiere Kalender wenn man gerade in der Kalender-Ansicht ist
       const isInCalendarView = document.getElementById('step-calendar').classList.contains('hidden') === false;
       if (isInCalendarView && calendar) {
-        // Kalender mit neuen Events aus der aktuellen Profil-Selektion updaten
-        const newEvents = buildCalendarEvents();
-        calendar.removeAllEvents();
-        calendar.addEventSource(newEvents);
+        // Bestehende Event-Quellen entfernen, damit sie sich nicht anhäufen
+        calendar.getEventSources().forEach(src => src.remove());
+        calendar.addEventSource(buildCalendarEvents());
       }
     }
 
@@ -897,8 +973,23 @@
     const btnCreateProfile = document.getElementById('btnCreateProfile');
     const newProfileName = document.getElementById('newProfileName');
 
+    const newProfileError = document.getElementById('newProfileError');
+
+    function showProfileError(msg) {
+      if (!newProfileError) return;
+      newProfileError.textContent = msg;
+      newProfileError.classList.remove('hidden');
+    }
+
+    function clearProfileError() {
+      if (!newProfileError) return;
+      newProfileError.textContent = '';
+      newProfileError.classList.add('hidden');
+    }
+
     btnProfileSettings.addEventListener('click', () => {
       newProfileName.value = '';
+      clearProfileError();
       renderProfilesList();
       profileModal.showModal();
     });
@@ -914,9 +1005,16 @@
     btnCreateProfile.addEventListener('click', () => {
       const name = newProfileName.value.trim();
       if (!name) {
-        alert('Bitte gib einen Namen für das neue Profil ein.');
+        showProfileError('Bitte gib einen Namen für das neue Profil ein.');
+        newProfileName.focus();
         return;
       }
+      if (!consent.allowed()) {
+        showProfileError('Bitte aktiviere zuerst die lokale Speicherung, um Profile anzulegen.');
+        return;
+      }
+      clearProfileError();
+
       const isInCalendarView = document.getElementById('step-calendar').classList.contains('hidden') === false;
       
       profileManager.createProfile(name);
@@ -936,6 +1034,8 @@
         document.getElementById('mainSubtitle').classList.remove('hidden');
       }
     });
+
+    newProfileName.addEventListener('input', clearProfileError);
 
     newProfileName.addEventListener('keypress', (e) => {
       if (e.key === 'Enter') {
@@ -1018,8 +1118,11 @@
     }
 
     // ---------------- Selection handlers ----------------
+    let searchDebounce = null;
     document.getElementById('search').addEventListener('input', (e) => {
-      renderCourseList(e.target.value);
+      const value = e.target.value;
+      clearTimeout(searchDebounce);
+      searchDebounce = setTimeout(() => renderCourseList(value), 120);
     });
 
     courseList.addEventListener('change', (e) => {
