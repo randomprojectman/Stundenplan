@@ -3977,12 +3977,28 @@
         "globalID": "KURUP3"
     },
     {
+        "summary": "Software Engineering",
+        "start": "2026-07-03 12:30:00",
+        "end": "2026-07-03 14:00:00",
+        "location": "KD0201, KD0202",
+        "organizer": null,
+        "created": "2026-07-02 23:01:01",
+        "last_modified": null,
+        "uid": "sked.de300900",
+        "Veranstaltung": "Software Engineering",
+        "Dozent": "Metz",
+        "Art": "K",
+        "Studiengruppe": "24BTS-TIN-4, 24DNI1-4, 24DNI2-4, 24DNI-STE-4, 25BTS2-TIN-2",
+        "Anmerkung": "-",
+        "globalID": "SIOATD"
+    },
+    {
         "summary": "Fluidmechanik",
         "start": "2026-07-04 09:15:00",
         "end": "2026-07-04 10:45:00",
         "location": "LK0101/LK0102, LK0103",
         "organizer": null,
-        "created": "2026-07-02 23:00:59",
+        "created": "2026-07-03 11:01:11",
         "last_modified": null,
         "uid": "sked.de300919",
         "Veranstaltung": "Fluidmechanik",
@@ -3998,7 +4014,7 @@
         "end": "2026-07-04 10:45:00",
         "location": "KD0202",
         "organizer": null,
-        "created": "2026-07-02 23:01:01",
+        "created": "2026-07-03 11:01:13",
         "last_modified": null,
         "uid": "sked.de300962",
         "Veranstaltung": "Problemorientierte Programmierung",
@@ -4007,21 +4023,5 @@
         "Studiengruppe": "24BTS-MEC-4, 24DNI1-4, 24DNI2-4, 24DNI-STE-4",
         "Anmerkung": "-",
         "globalID": "BQVVQ9"
-    },
-    {
-        "summary": "Software Engineering",
-        "start": "2026-07-03 12:30:00",
-        "end": "2026-07-03 14:00:00",
-        "location": "KD0201, KD0202",
-        "organizer": null,
-        "created": "2026-07-02 23:01:01",
-        "last_modified": null,
-        "uid": "sked.de300900",
-        "Veranstaltung": "Software Engineering",
-        "Dozent": "Metz",
-        "Art": "K",
-        "Studiengruppe": "24BTS-TIN-4, 24DNI1-4, 24DNI2-4, 24DNI-STE-4, 25BTS2-TIN-2",
-        "Anmerkung": "-",
-        "globalID": "SIOATD"
     }
 ]
