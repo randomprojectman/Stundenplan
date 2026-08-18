@@ -98,5 +98,15 @@
         "summary": "Technical Communication and Documentation",
         "Studiengruppe": "24DNI-IMA-5",
         "globalID": "GRYIWH"
+    },
+    {
+        "summary": "Prüfungsvorbereitung Metall",
+        "Studiengruppe": "24BTS-CPV-5, 24BTS-EAT-5, 24BTS-MAS-5, 24BTS-MEC-5, 24BTS-TIN-5, 24DNE-PDM-5, 24DNE-PRM-5, 24DNE-PSM-5, 24DNE-TCN-5",
+        "globalID": "XVAFTA"
+    },
+    {
+        "summary": "Prüfungsvorbereitung Elektro",
+        "Studiengruppe": "24BTS-CPV-5, 24BTS-EAT-5, 24BTS-MAS-5, 24BTS-MEC-5, 24BTS-TIN-5, 24DNE-PDM-5, 24DNE-PRM-5, 24DNE-PSM-5, 24DNE-TCN-5",
+        "globalID": "FKHP9Q"
     }
 ]
