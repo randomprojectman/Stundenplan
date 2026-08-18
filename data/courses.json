@@ -1,1 +1,102 @@
-
+[
+    {
+        "summary": "Projektierung technischer Systeme",
+        "Studiengruppe": "24BTS-CPV-5, 24BTS-EAT-5, 24BTS-MAS-5, 24BTS-MEC-5, 24BTS-TIN-5",
+        "globalID": "M5YMFC"
+    },
+    {
+        "summary": "Kältetechnik",
+        "Studiengruppe": "24BTS-CPV-5",
+        "globalID": "FZ226D"
+    },
+    {
+        "summary": "Verfahrenstechnische Grundoperationen",
+        "Studiengruppe": "24BTS-CPV-5",
+        "globalID": "U0DTJX"
+    },
+    {
+        "summary": "Spezielle Kunststoffe und Biopolymere",
+        "Studiengruppe": "24BTS-CPV-5",
+        "globalID": "29XYOJ"
+    },
+    {
+        "summary": "Experimentelle Steuerungs- und Digitaltechnik",
+        "Studiengruppe": "24BTS-EAT-5, 24BTS-MEC-5, 24BTS-TIN-5",
+        "globalID": "JAVKBE"
+    },
+    {
+        "summary": "Produktionsplanung und -steuerung",
+        "Studiengruppe": "24BTS-EAT-5, 24DNB-LOG-5, 24DNB-MAR-5, 24DNE-PSM-5, 24DNI-PDI-5",
+        "globalID": "8ND9W8"
+    },
+    {
+        "summary": "Programmierprojekt",
+        "Studiengruppe": "24BTS-EAT-5, 24DNI-IBM-5, 24DNI-IMA-5",
+        "globalID": "D3DYJ2"
+    },
+    {
+        "summary": "Fertigungstechnik",
+        "Studiengruppe": "24BTS-MAS-5, 24BTS-MEC-5",
+        "globalID": "KA3R7P"
+    },
+    {
+        "summary": "Maschinengestaltung",
+        "Studiengruppe": "24BTS-MAS-5, 24BTS-MEC-5",
+        "globalID": "GQ3FIK"
+    },
+    {
+        "summary": "Maschinen und Verfahren der Landtechnik",
+        "Studiengruppe": "24BTS-MAS-5",
+        "globalID": "FC6NS6"
+    },
+    {
+        "summary": "Usability & (Software-)Ergonomie",
+        "Studiengruppe": "24BTS-TIN-5, 24DNI-EBU-5, 24DNI-PDI-5",
+        "globalID": "D2HGMK"
+    },
+    {
+        "summary": "Networking: Routers and Routing Processes",
+        "Studiengruppe": "24BTS-TIN-5, 24DNI-EBU-5, 24DNI-ITI-5, 24DNI-PDI-5",
+        "globalID": "8LB1QS"
+    },
+    {
+        "summary": "Methoden der KI - Deep and Reinforcement Learning",
+        "Studiengruppe": "24BTS-TIN-5, 24DNI-IBM-5, 24DNI-IMA-5",
+        "globalID": "OE1H5A"
+    },
+    {
+        "summary": "Informationsmanagement und Data Literacy",
+        "Studiengruppe": "24DNI-EBU-5, 24DNI-IMA-5, 24DNI-ITI-5, 24DNI-PDI-5",
+        "globalID": "W7AL5J"
+    },
+    {
+        "summary": "Agiles Projektmanagement & Changemanagement",
+        "Studiengruppe": "24DNI-EBU-5, 24DNI-IBM-5, 24DNI-IMA-5, 24DNI-ITI-5, 24DNI-PDI-5",
+        "globalID": "XYZ6WA"
+    },
+    {
+        "summary": "Vernetzte Unternehmensprozesse / SCM",
+        "Studiengruppe": "23BBS-MAR-7, 23BBS-PRI-7, 23BBS-STE-7, 23BBS-UNF-7, 24DNI-EBU-5, 24DNI-ITI-5",
+        "globalID": "XH9K9G"
+    },
+    {
+        "summary": "Marktforschung",
+        "Studiengruppe": "24DNB-LOG-5, 24DNB-MAR-5, 24DNI-IBM-5",
+        "globalID": "5XNVAM"
+    },
+    {
+        "summary": "Innovationsmanagement",
+        "Studiengruppe": "24DNE-PDM-5, 24DNE-PRM-5, 24DNI-IBM-5",
+        "globalID": "SLYMGI"
+    },
+    {
+        "summary": "Projektierung von IuK-Systemen",
+        "Studiengruppe": "24DNI-IBM-5, 24DNI-IMA-5, 24DNI-ITI-5",
+        "globalID": "S1TR6J"
+    },
+    {
+        "summary": "Technical Communication and Documentation",
+        "Studiengruppe": "24DNI-IMA-5",
+        "globalID": "GRYIWH"
+    }
+]
