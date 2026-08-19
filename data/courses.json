@@ -108,5 +108,10 @@
         "summary": "Prüfungsvorbereitung Elektro",
         "Studiengruppe": "24BTS-CPV-5, 24BTS-EAT-5, 24BTS-MAS-5, 24BTS-MEC-5, 24BTS-TIN-5, 24DNE-PDM-5, 24DNE-PRM-5, 24DNE-PSM-5, 24DNE-TCN-5",
         "globalID": "FKHP9Q"
+    },
+    {
+        "summary": "Marktforschung",
+        "Studiengruppe": "24DNB-HRM-5, 24DNB-LOG-5, 24DNB-MAR-5, 24DNI-IBM-5",
+        "globalID": "BX5ZY0"
     }
 ]
