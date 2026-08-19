@@ -113,5 +113,10 @@
         "summary": "Marktforschung",
         "Studiengruppe": "24DNB-HRM-5, 24DNB-LOG-5, 24DNB-MAR-5, 24DNI-IBM-5",
         "globalID": "BX5ZY0"
+    },
+    {
+        "summary": "Verteilte Systeme",
+        "Studiengruppe": "24BTS-EAT-5, 24BTS-TIN-5, 24DNI-EBU-5, 24DNI-ITI-5, 24DNI-PDI-5",
+        "globalID": "4E0LC8"
     }
 ]
