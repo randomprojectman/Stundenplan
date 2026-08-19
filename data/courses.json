@@ -118,5 +118,15 @@
         "summary": "Verteilte Systeme",
         "Studiengruppe": "24BTS-EAT-5, 24BTS-TIN-5, 24DNI-EBU-5, 24DNI-ITI-5, 24DNI-PDI-5",
         "globalID": "4E0LC8"
+    },
+    {
+        "summary": "Hydraulik und Pneumatik",
+        "Studiengruppe": "24BTS-CPV-5, 24BTS-MAS-5, 24BTS-MEC-5",
+        "globalID": "YYCCEL"
+    },
+    {
+        "summary": "Mess- und Sensortechnik",
+        "Studiengruppe": "24BTS-CPV-5, 24BTS-EAT-5, 24BTS-MAS-5, 24BTS-MEC-5",
+        "globalID": "IVPZXO"
     }
 ]
