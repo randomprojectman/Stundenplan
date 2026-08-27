@@ -133,5 +133,10 @@
         "summary": "Projektierung technischer Systeme C",
         "Studiengruppe": "24BTS-CPV-5, 24BTS-EAT-5, 24BTS-MAS-5, 24BTS-MEC-5, 24BTS-TIN-5",
         "globalID": "V2V1CP"
+    },
+    {
+        "summary": "Agiles Projektmanagement & Changemanagement",
+        "Studiengruppe": "24BTS-CPV-5, 24BTS-EAT-5, 24BTS-MAS-5, 24BTS-MEC-5, 24BTS-TIN-5",
+        "globalID": "XTKI57"
     }
 ]
